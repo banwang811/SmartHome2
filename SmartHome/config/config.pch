@@ -1,0 +1,25 @@
+//
+//  config.pch
+//  SmartHome
+//
+//  Created by mac on 16/1/5.
+//  Copyright © 2016年 huajun. All rights reserved.
+//
+
+#ifndef config_pch
+#define config_pch
+
+//常用宏定义
+#import "MacroDefine.h"
+
+#import "AppDelegate.h"
+
+#import "AFNetworking.h"
+
+#import "MBProgressHUD.h"
+
+#import "APService.h"
+
+#import "UIColor+extension.h"
+
+#endif
