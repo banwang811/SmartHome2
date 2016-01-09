@@ -20,7 +20,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden = YES;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,6 +59,9 @@
 
 - (IBAction)forgetPassword:(UIButton *)sender {
     
+}
+
+- (IBAction)showPassword:(UIButton *)sender {
 }
 
 - (IBAction)registerClick:(UIButton *)sender {

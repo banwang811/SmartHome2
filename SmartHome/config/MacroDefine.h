@@ -9,7 +9,7 @@
 #ifndef MacroDefine_h
 #define MacroDefine_h
 
-#define SHAPP_DELEGATE  ((AppDelegate *)[UIApplication sharedApplication].delegate)
+#define appDelegate  ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 #define IOS_7_OR_LATER ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
 #define IOS_8_OR_LATER ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0)

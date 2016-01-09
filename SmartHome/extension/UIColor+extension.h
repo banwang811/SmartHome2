@@ -14,4 +14,6 @@
 
 + (UIColor *)defaultTextColor;
 
++ (UIColor *)themeCoclor;
+
 @end

@@ -18,4 +18,8 @@
     return [UIColor whiteColor];
 }
 
++ (UIColor *)themeCoclor{
+    return [UIColor colorWithRed:69/255.0 green:150/255.0 blue:206/255.0 alpha:1];
+}
+
 @end

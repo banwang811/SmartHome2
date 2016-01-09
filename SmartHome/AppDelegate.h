@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "SHTabBarController.h"
+#import "SHLoginController.h"
+#import "AppManager.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

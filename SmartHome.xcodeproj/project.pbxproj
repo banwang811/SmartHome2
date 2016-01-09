@@ -56,6 +56,17 @@
 		A5B6E5121C40FDE50080E06F /* SHRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E50C1C40FDE50080E06F /* SHRegisterController.m */; };
 		A5B6E5131C40FDE50080E06F /* SHRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E50D1C40FDE50080E06F /* SHRegisterController.xib */; };
 		A5B6E5171C40FEA30080E06F /* SHAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5161C40FEA30080E06F /* SHAccountManager.m */; };
+		A5B6E51B1C4100EF0080E06F /* CALayer+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E51A1C4100EF0080E06F /* CALayer+Additions.m */; };
+		A5B6E5201C4101220080E06F /* acc_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E51D1C4101220080E06F /* acc_bg.png */; };
+		A5B6E5211C4101220080E06F /* psw_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E51E1C4101220080E06F /* psw_bg.png */; };
+		A5B6E5221C4101220080E06F /* ver_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E51F1C4101220080E06F /* ver_bg.png */; };
+		A5B6E5251C41041A0080E06F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5231C41041A0080E06F /* logo.png */; };
+		A5B6E5261C41041A0080E06F /* qiu.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5241C41041A0080E06F /* qiu.png */; };
+		A5B6E52B1C410B1C0080E06F /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E52A1C410B1C0080E06F /* AppManager.m */; };
+		A5B6E52E1C410EFE0080E06F /* UIViewController+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E52D1C410EFE0080E06F /* UIViewController+extension.m */; };
+		A5B6E5321C4110C00080E06F /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5301C4110C00080E06F /* close.png */; };
+		A5B6E5331C4110C00080E06F /* show.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5311C4110C00080E06F /* show.png */; };
+		A5B6E5351C4110DB0080E06F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5341C4110DB0080E06F /* back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +182,20 @@
 		A5B6E5151C40FEA30080E06F /* SHAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAccountManager.h; sourceTree = "<group>"; };
 		A5B6E5161C40FEA30080E06F /* SHAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAccountManager.m; sourceTree = "<group>"; };
 		A5B6E5181C40FF430080E06F /* service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = service.h; sourceTree = "<group>"; };
+		A5B6E5191C4100EF0080E06F /* CALayer+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Additions.h"; sourceTree = "<group>"; };
+		A5B6E51A1C4100EF0080E06F /* CALayer+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Additions.m"; sourceTree = "<group>"; };
+		A5B6E51D1C4101220080E06F /* acc_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acc_bg.png; sourceTree = "<group>"; };
+		A5B6E51E1C4101220080E06F /* psw_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = psw_bg.png; sourceTree = "<group>"; };
+		A5B6E51F1C4101220080E06F /* ver_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ver_bg.png; sourceTree = "<group>"; };
+		A5B6E5231C41041A0080E06F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		A5B6E5241C41041A0080E06F /* qiu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qiu.png; sourceTree = "<group>"; };
+		A5B6E5291C410B1C0080E06F /* AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
+		A5B6E52A1C410B1C0080E06F /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
+		A5B6E52C1C410EFE0080E06F /* UIViewController+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+extension.h"; sourceTree = "<group>"; };
+		A5B6E52D1C410EFE0080E06F /* UIViewController+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+extension.m"; sourceTree = "<group>"; };
+		A5B6E5301C4110C00080E06F /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		A5B6E5311C4110C00080E06F /* show.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = show.png; sourceTree = "<group>"; };
+		A5B6E5341C4110DB0080E06F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,8 +394,12 @@
 		0410F96A1C3B97ED0069991E /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				A5B6E5191C4100EF0080E06F /* CALayer+Additions.h */,
+				A5B6E51A1C4100EF0080E06F /* CALayer+Additions.m */,
 				0410F9A01C3BB7090069991E /* UIColor+extension.h */,
 				0410F9A11C3BB7090069991E /* UIColor+extension.m */,
+				A5B6E52C1C410EFE0080E06F /* UIViewController+extension.h */,
+				A5B6E52D1C410EFE0080E06F /* UIViewController+extension.m */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -463,6 +492,8 @@
 		A5B6E5031C40F95A0080E06F /* iPhone_image */ = {
 			isa = PBXGroup;
 			children = (
+				A5B6E52F1C4110720080E06F /* bar */,
+				A5B6E51C1C4101220080E06F /* login */,
 			);
 			path = iPhone_image;
 			sourceTree = "<group>";
@@ -488,8 +519,32 @@
 			children = (
 				A5B6E5151C40FEA30080E06F /* SHAccountManager.h */,
 				A5B6E5161C40FEA30080E06F /* SHAccountManager.m */,
+				A5B6E5291C410B1C0080E06F /* AppManager.h */,
+				A5B6E52A1C410B1C0080E06F /* AppManager.m */,
 			);
 			path = assist;
+			sourceTree = "<group>";
+		};
+		A5B6E51C1C4101220080E06F /* login */ = {
+			isa = PBXGroup;
+			children = (
+				A5B6E5301C4110C00080E06F /* close.png */,
+				A5B6E5311C4110C00080E06F /* show.png */,
+				A5B6E5231C41041A0080E06F /* logo.png */,
+				A5B6E5241C41041A0080E06F /* qiu.png */,
+				A5B6E51D1C4101220080E06F /* acc_bg.png */,
+				A5B6E51E1C4101220080E06F /* psw_bg.png */,
+				A5B6E51F1C4101220080E06F /* ver_bg.png */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		A5B6E52F1C4110720080E06F /* bar */ = {
+			isa = PBXGroup;
+			children = (
+				A5B6E5341C4110DB0080E06F /* back.png */,
+			);
+			path = bar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -597,14 +652,22 @@
 			files = (
 				0410F9651C3B978C0069991E /* Icon.png in Resources */,
 				0410F9601C3B978C0069991E /* 37x-Checkmark.png in Resources */,
+				A5B6E5221C4101220080E06F /* ver_bg.png in Resources */,
+				A5B6E5261C41041A0080E06F /* qiu.png in Resources */,
 				A5B6E5111C40FDE50080E06F /* SHLoginController.xib in Resources */,
 				0410F9631C3B978C0069991E /* Icon-Small.png in Resources */,
+				A5B6E5251C41041A0080E06F /* logo.png in Resources */,
 				040B27111C3B9554003D6E47 /* LaunchScreen.storyboard in Resources */,
+				A5B6E5211C4101220080E06F /* psw_bg.png in Resources */,
 				A5B6E50F1C40FDE50080E06F /* SHForgetPasswordController.xib in Resources */,
+				A5B6E5321C4110C00080E06F /* close.png in Resources */,
+				A5B6E5351C4110DB0080E06F /* back.png in Resources */,
 				A5B6E5131C40FDE50080E06F /* SHRegisterController.xib in Resources */,
 				040B270E1C3B9554003D6E47 /* Assets.xcassets in Resources */,
+				A5B6E5201C4101220080E06F /* acc_bg.png in Resources */,
 				0410F9621C3B978C0069991E /* Icon-iOS7@2x.png in Resources */,
 				0410F9641C3B978C0069991E /* Icon-Small@2x.png in Resources */,
+				A5B6E5331C4110C00080E06F /* show.png in Resources */,
 				0410F9611C3B978C0069991E /* 37x-Checkmark@2x.png in Resources */,
 				0410F9551C3B978C0069991E /* IQKeyboardManager.bundle in Resources */,
 				0410F9661C3B978C0069991E /* Icon@2x.png in Resources */,
@@ -639,6 +702,7 @@
 				0410F9521C3B978C0069991E /* AFURLRequestSerialization.m in Sources */,
 				0410F9511C3B978C0069991E /* AFURLConnectionOperation.m in Sources */,
 				0410F95A1C3B978C0069991E /* IQToolbar.m in Sources */,
+				A5B6E51B1C4100EF0080E06F /* CALayer+Additions.m in Sources */,
 				0410F9771C3BA4BC0069991E /* SHBaseViewController.m in Sources */,
 				0410F99A1C3BB6020069991E /* SHControlController.m in Sources */,
 				0410F99C1C3BB6020069991E /* SHMineController.m in Sources */,
@@ -650,10 +714,12 @@
 				0410F9531C3B978C0069991E /* AFURLResponseSerialization.m in Sources */,
 				040B27061C3B9554003D6E47 /* AppDelegate.m in Sources */,
 				0410F9571C3B978C0069991E /* IQSegmentedNextPrevious.m in Sources */,
+				A5B6E52B1C410B1C0080E06F /* AppManager.m in Sources */,
 				A5B6E5101C40FDE50080E06F /* SHLoginController.m in Sources */,
 				0410F95C1C3B978C0069991E /* UIView+Hierarchy.m in Sources */,
 				0410F99B1C3BB6020069991E /* SHHomeController.m in Sources */,
 				A5B6E5121C40FDE50080E06F /* SHRegisterController.m in Sources */,
+				A5B6E52E1C410EFE0080E06F /* UIViewController+extension.m in Sources */,
 				A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */,
 				0410F9671C3B978C0069991E /* MBProgressHUD.m in Sources */,
 				A5B6E5171C40FEA30080E06F /* SHAccountManager.m in Sources */,
