@@ -123,6 +123,7 @@
                                                 <constraint firstAttribute="width" constant="17" id="Pbs-Up-E09"/>
                                             </constraints>
                                             <state key="normal" image="close.png"/>
+                                            <state key="selected" image="show.png"/>
                                             <connections>
                                                 <action selector="showPassword:" destination="-1" eventType="touchUpInside" id="pOS-Yg-Rgk"/>
                                             </connections>
@@ -243,5 +244,6 @@
         <image name="logo.png" width="265" height="30"/>
         <image name="psw_bg.png" width="44" height="57"/>
         <image name="qiu.png" width="132" height="131"/>
+        <image name="show.png" width="31" height="19"/>
     </resources>
 </document>

@@ -62,6 +62,7 @@
 }
 
 - (IBAction)showPassword:(UIButton *)sender {
+    sender.selected = !sender.selected;
 }
 
 - (IBAction)registerClick:(UIButton *)sender {
