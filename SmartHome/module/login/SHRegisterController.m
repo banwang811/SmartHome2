@@ -7,6 +7,7 @@
 //
 
 #import "SHRegisterController.h"
+#import "SHSetPasswordController.h"
 
 @interface SHRegisterController ()
 
@@ -34,14 +35,16 @@
 }
 
 - (IBAction)registerClick:(UIButton *)sender {
-    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    NSDictionary *parameter=@{};
-    [manager POST:serverAddress parameters:parameter success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
-    }];
+    SHSetPasswordController *controller = [[SHSetPasswordController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+//    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
+//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+//    NSDictionary *parameter=@{};
+//    [manager POST:serverAddress parameters:parameter success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//        
+//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        
+//    }];
 }
 
 - (IBAction)getVerificationCode:(UIButton *)sender {
