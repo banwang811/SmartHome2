@@ -36,6 +36,7 @@
 
 - (IBAction)registerClick:(UIButton *)sender {
     SHSetPasswordController *controller = [[SHSetPasswordController alloc] init];
+    controller.isRegister = YES;
     [self.navigationController pushViewController:controller animated:YES];
 //    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
 //    manager.responseSerializer = [AFHTTPResponseSerializer serializer];

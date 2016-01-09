@@ -10,4 +10,6 @@
 
 @interface SHSetPasswordController : SHBaseViewController
 
+@property (nonatomic, assign)BOOL           isRegister;
+
 @end

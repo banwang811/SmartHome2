@@ -19,6 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setleftBarItem];
+    if (self.isRegister) {
+        self.navigationItem.title = @"设置密码";
+    }else{
+        self.navigationItem.title = @"设置新密码";
+    }
 }
 
 - (void)didReceiveMemoryWarning {
