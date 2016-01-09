@@ -22,4 +22,8 @@
 
 #import "UIColor+extension.h"
 
+#import "SHAccountManager.h"
+
+#import "service.h"
+
 #endif

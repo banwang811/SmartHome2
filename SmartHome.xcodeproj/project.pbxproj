@@ -49,6 +49,13 @@
 		0410F99C1C3BB6020069991E /* SHMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9961C3BB6020069991E /* SHMineController.m */; };
 		0410F99D1C3BB6020069991E /* SHSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9991C3BB6020069991E /* SHSceneController.m */; };
 		0410F9A21C3BB7090069991E /* UIColor+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9A11C3BB7090069991E /* UIColor+extension.m */; };
+		A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */; };
+		A5B6E50F1C40FDE50080E06F /* SHForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */; };
+		A5B6E5101C40FDE50080E06F /* SHLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5091C40FDE50080E06F /* SHLoginController.m */; };
+		A5B6E5111C40FDE50080E06F /* SHLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E50A1C40FDE50080E06F /* SHLoginController.xib */; };
+		A5B6E5121C40FDE50080E06F /* SHRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E50C1C40FDE50080E06F /* SHRegisterController.m */; };
+		A5B6E5131C40FDE50080E06F /* SHRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E50D1C40FDE50080E06F /* SHRegisterController.xib */; };
+		A5B6E5171C40FEA30080E06F /* SHAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5161C40FEA30080E06F /* SHAccountManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +159,18 @@
 		0410F9991C3BB6020069991E /* SHSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSceneController.m; sourceTree = "<group>"; };
 		0410F9A01C3BB7090069991E /* UIColor+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+extension.h"; sourceTree = "<group>"; };
 		0410F9A11C3BB7090069991E /* UIColor+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+extension.m"; sourceTree = "<group>"; };
+		A5B6E5051C40FDE50080E06F /* SHForgetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHForgetPasswordController.h; sourceTree = "<group>"; };
+		A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHForgetPasswordController.m; sourceTree = "<group>"; };
+		A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHForgetPasswordController.xib; sourceTree = "<group>"; };
+		A5B6E5081C40FDE50080E06F /* SHLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLoginController.h; sourceTree = "<group>"; };
+		A5B6E5091C40FDE50080E06F /* SHLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLoginController.m; sourceTree = "<group>"; };
+		A5B6E50A1C40FDE50080E06F /* SHLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHLoginController.xib; sourceTree = "<group>"; };
+		A5B6E50B1C40FDE50080E06F /* SHRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRegisterController.h; sourceTree = "<group>"; };
+		A5B6E50C1C40FDE50080E06F /* SHRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRegisterController.m; sourceTree = "<group>"; };
+		A5B6E50D1C40FDE50080E06F /* SHRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHRegisterController.xib; sourceTree = "<group>"; };
+		A5B6E5151C40FEA30080E06F /* SHAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAccountManager.h; sourceTree = "<group>"; };
+		A5B6E5161C40FEA30080E06F /* SHAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAccountManager.m; sourceTree = "<group>"; };
+		A5B6E5181C40FF430080E06F /* service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = service.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,14 +222,14 @@
 		040B27001C3B9554003D6E47 /* SmartHome */ = {
 			isa = PBXGroup;
 			children = (
+				A5B6E5141C40FE750080E06F /* assist */,
 				0410F9711C3BA47B0069991E /* baseClass */,
 				0410F96D1C3B98290069991E /* config */,
 				0410F97D1C3BAC1E0069991E /* module */,
 				0410F96C1C3B98080069991E /* model */,
-				0410F96B1C3B97FA0069991E /* assist */,
 				0410F96A1C3B97ED0069991E /* extension */,
-				0410F9691C3B97D50069991E /* iPad_image */,
-				0410F9681C3B97BF0069991E /* iPhone_image */,
+				A5B6E5031C40F95A0080E06F /* iPhone_image */,
+				A5B6E5021C40F9480080E06F /* iPad_image */,
 				0410F9121C3B97790069991E /* import */,
 				040B27041C3B9554003D6E47 /* AppDelegate.h */,
 				040B27051C3B9554003D6E47 /* AppDelegate.m */,
@@ -347,20 +366,6 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
-		0410F9681C3B97BF0069991E /* iPhone_image */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = iPhone_image;
-			sourceTree = "<group>";
-		};
-		0410F9691C3B97D50069991E /* iPad_image */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = iPad_image;
-			sourceTree = "<group>";
-		};
 		0410F96A1C3B97ED0069991E /* extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,13 +373,6 @@
 				0410F9A11C3BB7090069991E /* UIColor+extension.m */,
 			);
 			path = extension;
-			sourceTree = "<group>";
-		};
-		0410F96B1C3B97FA0069991E /* assist */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = assist;
 			sourceTree = "<group>";
 		};
 		0410F96C1C3B98080069991E /* model */ = {
@@ -389,6 +387,7 @@
 			children = (
 				0410F97B1C3BA87D0069991E /* config.pch */,
 				0410F97C1C3BAB970069991E /* MacroDefine.h */,
+				A5B6E5181C40FF430080E06F /* service.h */,
 			);
 			path = config;
 			sourceTree = "<group>";
@@ -409,7 +408,7 @@
 		0410F97D1C3BAC1E0069991E /* module */ = {
 			isa = PBXGroup;
 			children = (
-				0410F9A31C3BB9B60069991E /* login */,
+				A5B6E5041C40FDE50080E06F /* login */,
 				0410F98E1C3BB6020069991E /* control */,
 				0410F9911C3BB6020069991E /* home */,
 				0410F9941C3BB6020069991E /* mine */,
@@ -454,11 +453,43 @@
 			path = scene;
 			sourceTree = "<group>";
 		};
-		0410F9A31C3BB9B60069991E /* login */ = {
+		A5B6E5021C40F9480080E06F /* iPad_image */ = {
 			isa = PBXGroup;
 			children = (
 			);
+			path = iPad_image;
+			sourceTree = "<group>";
+		};
+		A5B6E5031C40F95A0080E06F /* iPhone_image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iPhone_image;
+			sourceTree = "<group>";
+		};
+		A5B6E5041C40FDE50080E06F /* login */ = {
+			isa = PBXGroup;
+			children = (
+				A5B6E5051C40FDE50080E06F /* SHForgetPasswordController.h */,
+				A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */,
+				A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */,
+				A5B6E5081C40FDE50080E06F /* SHLoginController.h */,
+				A5B6E5091C40FDE50080E06F /* SHLoginController.m */,
+				A5B6E50A1C40FDE50080E06F /* SHLoginController.xib */,
+				A5B6E50B1C40FDE50080E06F /* SHRegisterController.h */,
+				A5B6E50C1C40FDE50080E06F /* SHRegisterController.m */,
+				A5B6E50D1C40FDE50080E06F /* SHRegisterController.xib */,
+			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		A5B6E5141C40FE750080E06F /* assist */ = {
+			isa = PBXGroup;
+			children = (
+				A5B6E5151C40FEA30080E06F /* SHAccountManager.h */,
+				A5B6E5161C40FEA30080E06F /* SHAccountManager.m */,
+			);
+			path = assist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -566,8 +597,11 @@
 			files = (
 				0410F9651C3B978C0069991E /* Icon.png in Resources */,
 				0410F9601C3B978C0069991E /* 37x-Checkmark.png in Resources */,
+				A5B6E5111C40FDE50080E06F /* SHLoginController.xib in Resources */,
 				0410F9631C3B978C0069991E /* Icon-Small.png in Resources */,
 				040B27111C3B9554003D6E47 /* LaunchScreen.storyboard in Resources */,
+				A5B6E50F1C40FDE50080E06F /* SHForgetPasswordController.xib in Resources */,
+				A5B6E5131C40FDE50080E06F /* SHRegisterController.xib in Resources */,
 				040B270E1C3B9554003D6E47 /* Assets.xcassets in Resources */,
 				0410F9621C3B978C0069991E /* Icon-iOS7@2x.png in Resources */,
 				0410F9641C3B978C0069991E /* Icon-Small@2x.png in Resources */,
@@ -616,9 +650,13 @@
 				0410F9531C3B978C0069991E /* AFURLResponseSerialization.m in Sources */,
 				040B27061C3B9554003D6E47 /* AppDelegate.m in Sources */,
 				0410F9571C3B978C0069991E /* IQSegmentedNextPrevious.m in Sources */,
+				A5B6E5101C40FDE50080E06F /* SHLoginController.m in Sources */,
 				0410F95C1C3B978C0069991E /* UIView+Hierarchy.m in Sources */,
 				0410F99B1C3BB6020069991E /* SHHomeController.m in Sources */,
+				A5B6E5121C40FDE50080E06F /* SHRegisterController.m in Sources */,
+				A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */,
 				0410F9671C3B978C0069991E /* MBProgressHUD.m in Sources */,
+				A5B6E5171C40FEA30080E06F /* SHAccountManager.m in Sources */,
 				0410F94E1C3B978C0069991E /* AFHTTPSessionManager.m in Sources */,
 				0410F9591C3B978C0069991E /* IQTitleBarButtonItem.m in Sources */,
 				0410F95B1C3B978C0069991E /* NSArray+Sort.m in Sources */,
