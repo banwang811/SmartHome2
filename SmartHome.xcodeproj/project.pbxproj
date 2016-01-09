@@ -67,6 +67,8 @@
 		A5B6E5321C4110C00080E06F /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5301C4110C00080E06F /* close.png */; };
 		A5B6E5331C4110C00080E06F /* show.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5311C4110C00080E06F /* show.png */; };
 		A5B6E5351C4110DB0080E06F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5341C4110DB0080E06F /* back.png */; };
+		A5B6E5391C4121ED0080E06F /* SHSetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5371C4121ED0080E06F /* SHSetPasswordController.m */; };
+		A5B6E53A1C4121ED0080E06F /* SHSetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5381C4121ED0080E06F /* SHSetPasswordController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +198,9 @@
 		A5B6E5301C4110C00080E06F /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		A5B6E5311C4110C00080E06F /* show.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = show.png; sourceTree = "<group>"; };
 		A5B6E5341C4110DB0080E06F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		A5B6E5361C4121ED0080E06F /* SHSetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSetPasswordController.h; sourceTree = "<group>"; };
+		A5B6E5371C4121ED0080E06F /* SHSetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSetPasswordController.m; sourceTree = "<group>"; };
+		A5B6E5381C4121ED0080E06F /* SHSetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHSetPasswordController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -510,6 +515,9 @@
 				A5B6E50B1C40FDE50080E06F /* SHRegisterController.h */,
 				A5B6E50C1C40FDE50080E06F /* SHRegisterController.m */,
 				A5B6E50D1C40FDE50080E06F /* SHRegisterController.xib */,
+				A5B6E5361C4121ED0080E06F /* SHSetPasswordController.h */,
+				A5B6E5371C4121ED0080E06F /* SHSetPasswordController.m */,
+				A5B6E5381C4121ED0080E06F /* SHSetPasswordController.xib */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -652,6 +660,7 @@
 			files = (
 				0410F9651C3B978C0069991E /* Icon.png in Resources */,
 				0410F9601C3B978C0069991E /* 37x-Checkmark.png in Resources */,
+				A5B6E53A1C4121ED0080E06F /* SHSetPasswordController.xib in Resources */,
 				A5B6E5221C4101220080E06F /* ver_bg.png in Resources */,
 				A5B6E5261C41041A0080E06F /* qiu.png in Resources */,
 				A5B6E5111C40FDE50080E06F /* SHLoginController.xib in Resources */,
@@ -699,6 +708,7 @@
 				0410F9561C3B978C0069991E /* IQKeyboardManager.m in Sources */,
 				0410F97A1C3BA4E60069991E /* SHNavigationController.m in Sources */,
 				0410F9A21C3BB7090069991E /* UIColor+extension.m in Sources */,
+				A5B6E5391C4121ED0080E06F /* SHSetPasswordController.m in Sources */,
 				0410F9521C3B978C0069991E /* AFURLRequestSerialization.m in Sources */,
 				0410F9511C3B978C0069991E /* AFURLConnectionOperation.m in Sources */,
 				0410F95A1C3B978C0069991E /* IQToolbar.m in Sources */,
@@ -873,6 +883,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huajun.SmartHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -890,6 +901,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huajun.SmartHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -9,10 +9,11 @@
 #import "SHRegisterController.h"
 
 @interface SHRegisterController ()
-@property (weak, nonatomic) IBOutlet UITextField *accountTextField;
-@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
-@property (weak, nonatomic) IBOutlet UITextField *ensureTextField;
 
+@property (weak, nonatomic) IBOutlet UITextField        *account;
+@property (weak, nonatomic) IBOutlet UITextField        *phoneNumber;
+@property (weak, nonatomic) IBOutlet UITextField        *verificationCode;
+@property (weak, nonatomic) IBOutlet UIButton           *verificationButton;
 @end
 
 @implementation SHRegisterController
@@ -43,5 +44,8 @@
     }];
 }
 
+- (IBAction)getVerificationCode:(UIButton *)sender {
+    
+}
 
 @end

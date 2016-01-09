@@ -63,6 +63,7 @@
 
 - (IBAction)showPassword:(UIButton *)sender {
     sender.selected = !sender.selected;
+    self.passwordTextField.secureTextEntry = !self.passwordTextField.secureTextEntry;
 }
 
 - (IBAction)registerClick:(UIButton *)sender {
