@@ -8,6 +8,7 @@
 
 #import "SHLoginController.h"
 #import "SHRegisterController.h"
+#import "SHForgetPasswordController.h"
 
 @interface SHLoginController ()<UITextFieldDelegate>
 
@@ -58,7 +59,8 @@
 }
 
 - (IBAction)forgetPassword:(UIButton *)sender {
-    
+    SHForgetPasswordController *controller = [[SHForgetPasswordController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (IBAction)showPassword:(UIButton *)sender {

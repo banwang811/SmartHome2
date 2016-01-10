@@ -7,8 +7,13 @@
 //
 
 #import "SHForgetPasswordController.h"
+#import "SHSetPasswordController.h"
 
 @interface SHForgetPasswordController ()
+
+@property (weak, nonatomic) IBOutlet UITextField        *phoneTextField;
+@property (weak, nonatomic) IBOutlet UIButton           *verificationButton;
+@property (weak, nonatomic) IBOutlet UITextField        *verification;
 
 @end
 
@@ -16,12 +21,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.navigationItem.title = @"找回密码";
+    [self setleftBarItem];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)getVerificationCode:(UIButton *)sender {
+    
+}
+
+- (IBAction)nextStep:(UIButton *)sender {
+    SHSetPasswordController *controller = [[SHSetPasswordController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end
