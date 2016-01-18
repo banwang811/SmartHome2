@@ -48,6 +48,7 @@
 }
 
 - (IBAction)longin:(UIButton *)sender {
+    appDelegate.window.rootViewController = appDelegate.tabbarContoller;
     AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     NSDictionary *parameter=@{};

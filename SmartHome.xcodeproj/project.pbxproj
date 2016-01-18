@@ -39,6 +39,14 @@
 		0410F99C1C3BB6020069991E /* SHMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9961C3BB6020069991E /* SHMineController.m */; };
 		0410F99D1C3BB6020069991E /* SHSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9991C3BB6020069991E /* SHSceneController.m */; };
 		0410F9A21C3BB7090069991E /* UIColor+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9A11C3BB7090069991E /* UIColor+extension.m */; };
+		A559842E1C4D17620091A7FF /* tabbar2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A559842A1C4D17620091A7FF /* tabbar2@2x.png */; };
+		A559842F1C4D17620091A7FF /* tabbar1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A559842B1C4D17620091A7FF /* tabbar1@2x.png */; };
+		A55984301C4D17620091A7FF /* tabbar4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A559842C1C4D17620091A7FF /* tabbar4@2x.png */; };
+		A55984311C4D17620091A7FF /* tabbar3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A559842D1C4D17620091A7FF /* tabbar3@2x.png */; };
+		A55984361C4D17F40091A7FF /* tabbar2_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984321C4D17F40091A7FF /* tabbar2_select@2x.png */; };
+		A55984371C4D17F40091A7FF /* tabbar1_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984331C4D17F40091A7FF /* tabbar1_select@2x.png */; };
+		A55984381C4D17F40091A7FF /* tabbar4_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984341C4D17F40091A7FF /* tabbar4_select@2x.png */; };
+		A55984391C4D17F40091A7FF /* tabbar3_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984351C4D17F40091A7FF /* tabbar3_select@2x.png */; };
 		A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */; };
 		A5B6E50F1C40FDE50080E06F /* SHForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */; };
 		A5B6E5101C40FDE50080E06F /* SHLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5091C40FDE50080E06F /* SHLoginController.m */; };
@@ -47,16 +55,16 @@
 		A5B6E5131C40FDE50080E06F /* SHRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E50D1C40FDE50080E06F /* SHRegisterController.xib */; };
 		A5B6E5171C40FEA30080E06F /* SHAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5161C40FEA30080E06F /* SHAccountManager.m */; };
 		A5B6E51B1C4100EF0080E06F /* CALayer+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E51A1C4100EF0080E06F /* CALayer+Additions.m */; };
-		A5B6E5201C4101220080E06F /* acc_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E51D1C4101220080E06F /* acc_bg.png */; };
-		A5B6E5211C4101220080E06F /* psw_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E51E1C4101220080E06F /* psw_bg.png */; };
-		A5B6E5221C4101220080E06F /* ver_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E51F1C4101220080E06F /* ver_bg.png */; };
-		A5B6E5251C41041A0080E06F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5231C41041A0080E06F /* logo.png */; };
-		A5B6E5261C41041A0080E06F /* qiu.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5241C41041A0080E06F /* qiu.png */; };
+		A5B6E5201C4101220080E06F /* acc_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E51D1C4101220080E06F /* acc_bg@2x.png */; };
+		A5B6E5211C4101220080E06F /* psw_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E51E1C4101220080E06F /* psw_bg@2x.png */; };
+		A5B6E5221C4101220080E06F /* ver_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E51F1C4101220080E06F /* ver_bg@2x.png */; };
+		A5B6E5251C41041A0080E06F /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5231C41041A0080E06F /* logo@2x.png */; };
+		A5B6E5261C41041A0080E06F /* qiu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5241C41041A0080E06F /* qiu@2x.png */; };
 		A5B6E52B1C410B1C0080E06F /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E52A1C410B1C0080E06F /* AppManager.m */; };
 		A5B6E52E1C410EFE0080E06F /* UIViewController+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E52D1C410EFE0080E06F /* UIViewController+extension.m */; };
-		A5B6E5321C4110C00080E06F /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5301C4110C00080E06F /* close.png */; };
-		A5B6E5331C4110C00080E06F /* show.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5311C4110C00080E06F /* show.png */; };
-		A5B6E5351C4110DB0080E06F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5341C4110DB0080E06F /* back.png */; };
+		A5B6E5321C4110C00080E06F /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5301C4110C00080E06F /* close@2x.png */; };
+		A5B6E5331C4110C00080E06F /* show@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5311C4110C00080E06F /* show@2x.png */; };
+		A5B6E5351C4110DB0080E06F /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5341C4110DB0080E06F /* back@2x.png */; };
 		A5B6E5391C4121ED0080E06F /* SHSetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5371C4121ED0080E06F /* SHSetPasswordController.m */; };
 		A5B6E53A1C4121ED0080E06F /* SHSetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5381C4121ED0080E06F /* SHSetPasswordController.xib */; };
 		A5B6E5521C412A4F0080E06F /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E53C1C412A4F0080E06F /* IQKeyboardManager.bundle */; };
@@ -150,6 +158,14 @@
 		0410F9991C3BB6020069991E /* SHSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSceneController.m; sourceTree = "<group>"; };
 		0410F9A01C3BB7090069991E /* UIColor+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+extension.h"; sourceTree = "<group>"; };
 		0410F9A11C3BB7090069991E /* UIColor+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+extension.m"; sourceTree = "<group>"; };
+		A559842A1C4D17620091A7FF /* tabbar2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar2@2x.png"; sourceTree = "<group>"; };
+		A559842B1C4D17620091A7FF /* tabbar1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar1@2x.png"; sourceTree = "<group>"; };
+		A559842C1C4D17620091A7FF /* tabbar4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar4@2x.png"; sourceTree = "<group>"; };
+		A559842D1C4D17620091A7FF /* tabbar3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar3@2x.png"; sourceTree = "<group>"; };
+		A55984321C4D17F40091A7FF /* tabbar2_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar2_select@2x.png"; sourceTree = "<group>"; };
+		A55984331C4D17F40091A7FF /* tabbar1_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar1_select@2x.png"; sourceTree = "<group>"; };
+		A55984341C4D17F40091A7FF /* tabbar4_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar4_select@2x.png"; sourceTree = "<group>"; };
+		A55984351C4D17F40091A7FF /* tabbar3_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar3_select@2x.png"; sourceTree = "<group>"; };
 		A5B6E5051C40FDE50080E06F /* SHForgetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHForgetPasswordController.h; sourceTree = "<group>"; };
 		A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHForgetPasswordController.m; sourceTree = "<group>"; };
 		A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHForgetPasswordController.xib; sourceTree = "<group>"; };
@@ -164,18 +180,18 @@
 		A5B6E5181C40FF430080E06F /* service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = service.h; sourceTree = "<group>"; };
 		A5B6E5191C4100EF0080E06F /* CALayer+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Additions.h"; sourceTree = "<group>"; };
 		A5B6E51A1C4100EF0080E06F /* CALayer+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Additions.m"; sourceTree = "<group>"; };
-		A5B6E51D1C4101220080E06F /* acc_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acc_bg.png; sourceTree = "<group>"; };
-		A5B6E51E1C4101220080E06F /* psw_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = psw_bg.png; sourceTree = "<group>"; };
-		A5B6E51F1C4101220080E06F /* ver_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ver_bg.png; sourceTree = "<group>"; };
-		A5B6E5231C41041A0080E06F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		A5B6E5241C41041A0080E06F /* qiu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qiu.png; sourceTree = "<group>"; };
+		A5B6E51D1C4101220080E06F /* acc_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "acc_bg@2x.png"; sourceTree = "<group>"; };
+		A5B6E51E1C4101220080E06F /* psw_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "psw_bg@2x.png"; sourceTree = "<group>"; };
+		A5B6E51F1C4101220080E06F /* ver_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ver_bg@2x.png"; sourceTree = "<group>"; };
+		A5B6E5231C41041A0080E06F /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		A5B6E5241C41041A0080E06F /* qiu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qiu@2x.png"; sourceTree = "<group>"; };
 		A5B6E5291C410B1C0080E06F /* AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
 		A5B6E52A1C410B1C0080E06F /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
 		A5B6E52C1C410EFE0080E06F /* UIViewController+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+extension.h"; sourceTree = "<group>"; };
 		A5B6E52D1C410EFE0080E06F /* UIViewController+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+extension.m"; sourceTree = "<group>"; };
-		A5B6E5301C4110C00080E06F /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
-		A5B6E5311C4110C00080E06F /* show.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = show.png; sourceTree = "<group>"; };
-		A5B6E5341C4110DB0080E06F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		A5B6E5301C4110C00080E06F /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		A5B6E5311C4110C00080E06F /* show@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show@2x.png"; sourceTree = "<group>"; };
+		A5B6E5341C4110DB0080E06F /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		A5B6E5361C4121ED0080E06F /* SHSetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSetPasswordController.h; sourceTree = "<group>"; };
 		A5B6E5371C4121ED0080E06F /* SHSetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSetPasswordController.m; sourceTree = "<group>"; };
 		A5B6E5381C4121ED0080E06F /* SHSetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHSetPasswordController.xib; sourceTree = "<group>"; };
@@ -507,13 +523,13 @@
 		A5B6E51C1C4101220080E06F /* login */ = {
 			isa = PBXGroup;
 			children = (
-				A5B6E5301C4110C00080E06F /* close.png */,
-				A5B6E5311C4110C00080E06F /* show.png */,
-				A5B6E5231C41041A0080E06F /* logo.png */,
-				A5B6E5241C41041A0080E06F /* qiu.png */,
-				A5B6E51D1C4101220080E06F /* acc_bg.png */,
-				A5B6E51E1C4101220080E06F /* psw_bg.png */,
-				A5B6E51F1C4101220080E06F /* ver_bg.png */,
+				A5B6E5301C4110C00080E06F /* close@2x.png */,
+				A5B6E5311C4110C00080E06F /* show@2x.png */,
+				A5B6E5231C41041A0080E06F /* logo@2x.png */,
+				A5B6E5241C41041A0080E06F /* qiu@2x.png */,
+				A5B6E51D1C4101220080E06F /* acc_bg@2x.png */,
+				A5B6E51E1C4101220080E06F /* psw_bg@2x.png */,
+				A5B6E51F1C4101220080E06F /* ver_bg@2x.png */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -521,7 +537,15 @@
 		A5B6E52F1C4110720080E06F /* bar */ = {
 			isa = PBXGroup;
 			children = (
-				A5B6E5341C4110DB0080E06F /* back.png */,
+				A55984321C4D17F40091A7FF /* tabbar2_select@2x.png */,
+				A55984331C4D17F40091A7FF /* tabbar1_select@2x.png */,
+				A55984341C4D17F40091A7FF /* tabbar4_select@2x.png */,
+				A55984351C4D17F40091A7FF /* tabbar3_select@2x.png */,
+				A559842A1C4D17620091A7FF /* tabbar2@2x.png */,
+				A559842B1C4D17620091A7FF /* tabbar1@2x.png */,
+				A559842C1C4D17620091A7FF /* tabbar4@2x.png */,
+				A559842D1C4D17620091A7FF /* tabbar3@2x.png */,
+				A5B6E5341C4110DB0080E06F /* back@2x.png */,
 			);
 			path = bar;
 			sourceTree = "<group>";
@@ -658,26 +682,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55984391C4D17F40091A7FF /* tabbar3_select@2x.png in Resources */,
 				0410F9651C3B978C0069991E /* Icon.png in Resources */,
+				A559842E1C4D17620091A7FF /* tabbar2@2x.png in Resources */,
+				A55984361C4D17F40091A7FF /* tabbar2_select@2x.png in Resources */,
+				A55984311C4D17620091A7FF /* tabbar3@2x.png in Resources */,
 				0410F9601C3B978C0069991E /* 37x-Checkmark.png in Resources */,
 				A5B6E53A1C4121ED0080E06F /* SHSetPasswordController.xib in Resources */,
-				A5B6E5221C4101220080E06F /* ver_bg.png in Resources */,
-				A5B6E5261C41041A0080E06F /* qiu.png in Resources */,
+				A5B6E5221C4101220080E06F /* ver_bg@2x.png in Resources */,
+				A5B6E5261C41041A0080E06F /* qiu@2x.png in Resources */,
 				A5B6E5111C40FDE50080E06F /* SHLoginController.xib in Resources */,
 				0410F9631C3B978C0069991E /* Icon-Small.png in Resources */,
-				A5B6E5251C41041A0080E06F /* logo.png in Resources */,
+				A55984371C4D17F40091A7FF /* tabbar1_select@2x.png in Resources */,
+				A5B6E5251C41041A0080E06F /* logo@2x.png in Resources */,
 				040B27111C3B9554003D6E47 /* LaunchScreen.storyboard in Resources */,
-				A5B6E5211C4101220080E06F /* psw_bg.png in Resources */,
+				A5B6E5211C4101220080E06F /* psw_bg@2x.png in Resources */,
 				A5B6E50F1C40FDE50080E06F /* SHForgetPasswordController.xib in Resources */,
-				A5B6E5321C4110C00080E06F /* close.png in Resources */,
+				A55984381C4D17F40091A7FF /* tabbar4_select@2x.png in Resources */,
+				A5B6E5321C4110C00080E06F /* close@2x.png in Resources */,
 				A5B6E5521C412A4F0080E06F /* IQKeyboardManager.bundle in Resources */,
-				A5B6E5351C4110DB0080E06F /* back.png in Resources */,
+				A5B6E5351C4110DB0080E06F /* back@2x.png in Resources */,
 				A5B6E5131C40FDE50080E06F /* SHRegisterController.xib in Resources */,
 				040B270E1C3B9554003D6E47 /* Assets.xcassets in Resources */,
-				A5B6E5201C4101220080E06F /* acc_bg.png in Resources */,
+				A5B6E5201C4101220080E06F /* acc_bg@2x.png in Resources */,
 				0410F9621C3B978C0069991E /* Icon-iOS7@2x.png in Resources */,
 				0410F9641C3B978C0069991E /* Icon-Small@2x.png in Resources */,
-				A5B6E5331C4110C00080E06F /* show.png in Resources */,
+				A559842F1C4D17620091A7FF /* tabbar1@2x.png in Resources */,
+				A55984301C4D17620091A7FF /* tabbar4@2x.png in Resources */,
+				A5B6E5331C4110C00080E06F /* show@2x.png in Resources */,
 				0410F9611C3B978C0069991E /* 37x-Checkmark@2x.png in Resources */,
 				0410F9661C3B978C0069991E /* Icon@2x.png in Resources */,
 			);

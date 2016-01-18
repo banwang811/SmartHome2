@@ -38,13 +38,13 @@
     for (int i = 0; i < 4; i++) {
         UITabBarItem *item = [self.tabBar.items objectAtIndex:i];
         item.title = titles[i];
-        UIImage *selectedImage= [UIImage imageNamed:[NSString stringWithFormat:@"nav_%db.png",i+1]];
-        UIImage *unselectedImage= [UIImage imageNamed:[NSString stringWithFormat:@"nav_%da.png",i+1]];//
+        UIImage *unselectedImage= [UIImage imageNamed:[NSString stringWithFormat:@"tabbar%d.png",i+1]];
+        UIImage *selectedImage= [UIImage imageNamed:[NSString stringWithFormat:@"tabbar%d_select.png",i+1]];//
         [item setFinishedSelectedImage:[selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
            withFinishedUnselectedImage:[unselectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-        [item setTitleTextAttributes:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[UIColor whiteColor], nil]
+        [item setTitleTextAttributes:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:RGB(126, 124, 124, 1), nil]
                                                                  forKeys:[NSArray arrayWithObjects:UITextAttributeTextColor, nil]] forState:UIControlStateNormal];
-        [item setTitleTextAttributes:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[UIColor redColor], nil]
+        [item setTitleTextAttributes:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:RGB(69, 150, 206, 1), nil]
                                                                  forKeys:[NSArray arrayWithObjects:UITextAttributeTextColor, nil]] forState:UIControlStateSelected];
     }
 }
