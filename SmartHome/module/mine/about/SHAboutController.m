@@ -25,6 +25,7 @@
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
     self.tableView.scrollEnabled = NO;
+    self.navigationItem.title = @"官方互动";
     [self setleftBarItem];
 }
 
@@ -68,9 +69,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    SHAboutCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SHCellType_normal"];
+    SHAboutCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SHAboutCell"];
     if (cell == nil) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"SHMineCell" owner:self options:0] firstObject];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"SHAboutCell" owner:self options:0] firstObject];
     }
     cell.iconImage.image = [UIImage imageNamed:[self.headImages objectAtIndex:[self getIndexWithIndexPath:indexPath]]];
     cell.nameLabel.text = [self.nameTitles objectAtIndex:[self getIndexWithIndexPath:indexPath]];
