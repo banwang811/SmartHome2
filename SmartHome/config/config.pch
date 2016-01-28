@@ -28,4 +28,6 @@
 
 #import "service.h"
 
+#import "customDefs.h"
+
 #endif

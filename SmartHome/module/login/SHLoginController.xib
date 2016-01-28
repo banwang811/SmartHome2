@@ -239,11 +239,11 @@
         </view>
     </objects>
     <resources>
-        <image name="acc_bg.png" width="44" height="57"/>
-        <image name="close.png" width="35" height="15"/>
-        <image name="logo.png" width="265" height="30"/>
-        <image name="psw_bg.png" width="44" height="57"/>
-        <image name="qiu.png" width="132" height="131"/>
-        <image name="show.png" width="31" height="19"/>
+        <image name="acc_bg.png" width="22" height="28"/>
+        <image name="close.png" width="17" height="7"/>
+        <image name="logo.png" width="132" height="15"/>
+        <image name="psw_bg.png" width="22" height="28"/>
+        <image name="qiu.png" width="66" height="65"/>
+        <image name="show.png" width="15" height="9"/>
     </resources>
 </document>

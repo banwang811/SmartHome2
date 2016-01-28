@@ -47,6 +47,26 @@
 		A55984371C4D17F40091A7FF /* tabbar1_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984331C4D17F40091A7FF /* tabbar1_select@2x.png */; };
 		A55984381C4D17F40091A7FF /* tabbar4_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984341C4D17F40091A7FF /* tabbar4_select@2x.png */; };
 		A55984391C4D17F40091A7FF /* tabbar3_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984351C4D17F40091A7FF /* tabbar3_select@2x.png */; };
+		A55984411C5A65160091A7FF /* SHMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A559843F1C5A65160091A7FF /* SHMineCell.m */; };
+		A55984421C5A65160091A7FF /* SHMineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55984401C5A65160091A7FF /* SHMineCell.xib */; };
+		A559844B1C5A66FF0091A7FF /* about@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984441C5A66FF0091A7FF /* about@2x.png */; };
+		A559844C1C5A66FF0091A7FF /* control@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984451C5A66FF0091A7FF /* control@2x.png */; };
+		A559844D1C5A66FF0091A7FF /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984461C5A66FF0091A7FF /* default@2x.png */; };
+		A559844E1C5A66FF0091A7FF /* device@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984471C5A66FF0091A7FF /* device@2x.png */; };
+		A559844F1C5A66FF0091A7FF /* jiantou@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984481C5A66FF0091A7FF /* jiantou@2x.png */; };
+		A55984501C5A66FF0091A7FF /* seting_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984491C5A66FF0091A7FF /* seting_select@2x.png */; };
+		A55984511C5A66FF0091A7FF /* seting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A559844A1C5A66FF0091A7FF /* seting@2x.png */; };
+		A55984571C5A76EA0091A7FF /* SHSetingController.m in Sources */ = {isa = PBXBuildFile; fileRef = A55984561C5A76EA0091A7FF /* SHSetingController.m */; };
+		A559845A1C5A77C40091A7FF /* account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984581C5A77C40091A7FF /* account@2x.png */; };
+		A559845B1C5A77C40091A7FF /* update@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984591C5A77C40091A7FF /* update@2x.png */; };
+		A559845D1C5A77FB0091A7FF /* password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A559845C1C5A77FB0091A7FF /* password@2x.png */; };
+		A55984601C5A7CA00091A7FF /* SHAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = A559845F1C5A7CA00091A7FF /* SHAboutController.m */; };
+		A55984641C5A7D900091A7FF /* SHAboutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A55984621C5A7D900091A7FF /* SHAboutCell.m */; };
+		A55984651C5A7D900091A7FF /* SHAboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55984631C5A7D900091A7FF /* SHAboutCell.xib */; };
+		A559846A1C5A7F830091A7FF /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984661C5A7F830091A7FF /* phone@2x.png */; };
+		A559846B1C5A7F830091A7FF /* qq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984671C5A7F830091A7FF /* qq@2x.png */; };
+		A559846C1C5A7F830091A7FF /* website@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984681C5A7F830091A7FF /* website@2x.png */; };
+		A559846D1C5A7F830091A7FF /* wechat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984691C5A7F830091A7FF /* wechat@2x.png */; };
 		A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */; };
 		A5B6E50F1C40FDE50080E06F /* SHForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */; };
 		A5B6E5101C40FDE50080E06F /* SHLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5091C40FDE50080E06F /* SHLoginController.m */; };
@@ -166,6 +186,31 @@
 		A55984331C4D17F40091A7FF /* tabbar1_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar1_select@2x.png"; sourceTree = "<group>"; };
 		A55984341C4D17F40091A7FF /* tabbar4_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar4_select@2x.png"; sourceTree = "<group>"; };
 		A55984351C4D17F40091A7FF /* tabbar3_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar3_select@2x.png"; sourceTree = "<group>"; };
+		A559843E1C5A65160091A7FF /* SHMineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHMineCell.h; sourceTree = "<group>"; };
+		A559843F1C5A65160091A7FF /* SHMineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHMineCell.m; sourceTree = "<group>"; };
+		A55984401C5A65160091A7FF /* SHMineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHMineCell.xib; sourceTree = "<group>"; };
+		A55984441C5A66FF0091A7FF /* about@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about@2x.png"; sourceTree = "<group>"; };
+		A55984451C5A66FF0091A7FF /* control@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "control@2x.png"; sourceTree = "<group>"; };
+		A55984461C5A66FF0091A7FF /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
+		A55984471C5A66FF0091A7FF /* device@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device@2x.png"; sourceTree = "<group>"; };
+		A55984481C5A66FF0091A7FF /* jiantou@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jiantou@2x.png"; sourceTree = "<group>"; };
+		A55984491C5A66FF0091A7FF /* seting_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seting_select@2x.png"; sourceTree = "<group>"; };
+		A559844A1C5A66FF0091A7FF /* seting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seting@2x.png"; sourceTree = "<group>"; };
+		A55984521C5A6C930091A7FF /* customDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = customDefs.h; sourceTree = "<group>"; };
+		A55984551C5A76EA0091A7FF /* SHSetingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSetingController.h; sourceTree = "<group>"; };
+		A55984561C5A76EA0091A7FF /* SHSetingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSetingController.m; sourceTree = "<group>"; };
+		A55984581C5A77C40091A7FF /* account@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "account@2x.png"; sourceTree = "<group>"; };
+		A55984591C5A77C40091A7FF /* update@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "update@2x.png"; sourceTree = "<group>"; };
+		A559845C1C5A77FB0091A7FF /* password@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "password@2x.png"; sourceTree = "<group>"; };
+		A559845E1C5A7CA00091A7FF /* SHAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAboutController.h; sourceTree = "<group>"; };
+		A559845F1C5A7CA00091A7FF /* SHAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAboutController.m; sourceTree = "<group>"; };
+		A55984611C5A7D900091A7FF /* SHAboutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAboutCell.h; sourceTree = "<group>"; };
+		A55984621C5A7D900091A7FF /* SHAboutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAboutCell.m; sourceTree = "<group>"; };
+		A55984631C5A7D900091A7FF /* SHAboutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHAboutCell.xib; sourceTree = "<group>"; };
+		A55984661C5A7F830091A7FF /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@2x.png"; sourceTree = "<group>"; };
+		A55984671C5A7F830091A7FF /* qq@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qq@2x.png"; sourceTree = "<group>"; };
+		A55984681C5A7F830091A7FF /* website@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "website@2x.png"; sourceTree = "<group>"; };
+		A55984691C5A7F830091A7FF /* wechat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wechat@2x.png"; sourceTree = "<group>"; };
 		A5B6E5051C40FDE50080E06F /* SHForgetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHForgetPasswordController.h; sourceTree = "<group>"; };
 		A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHForgetPasswordController.m; sourceTree = "<group>"; };
 		A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHForgetPasswordController.xib; sourceTree = "<group>"; };
@@ -409,6 +454,7 @@
 				0410F97B1C3BA87D0069991E /* config.pch */,
 				0410F97C1C3BAB970069991E /* MacroDefine.h */,
 				A5B6E5181C40FF430080E06F /* service.h */,
+				A55984521C5A6C930091A7FF /* customDefs.h */,
 			);
 			path = config;
 			sourceTree = "<group>";
@@ -459,8 +505,13 @@
 		0410F9941C3BB6020069991E /* mine */ = {
 			isa = PBXGroup;
 			children = (
+				A55984541C5A767C0091A7FF /* about */,
+				A55984531C5A766A0091A7FF /* seting */,
 				0410F9951C3BB6020069991E /* SHMineController.h */,
 				0410F9961C3BB6020069991E /* SHMineController.m */,
+				A559843E1C5A65160091A7FF /* SHMineCell.h */,
+				A559843F1C5A65160091A7FF /* SHMineCell.m */,
+				A55984401C5A65160091A7FF /* SHMineCell.xib */,
 			);
 			path = mine;
 			sourceTree = "<group>";
@@ -474,6 +525,48 @@
 			path = scene;
 			sourceTree = "<group>";
 		};
+		A55984431C5A66EE0091A7FF /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				A55984661C5A7F830091A7FF /* phone@2x.png */,
+				A55984671C5A7F830091A7FF /* qq@2x.png */,
+				A55984681C5A7F830091A7FF /* website@2x.png */,
+				A55984691C5A7F830091A7FF /* wechat@2x.png */,
+				A559845C1C5A77FB0091A7FF /* password@2x.png */,
+				A55984581C5A77C40091A7FF /* account@2x.png */,
+				A55984591C5A77C40091A7FF /* update@2x.png */,
+				A55984441C5A66FF0091A7FF /* about@2x.png */,
+				A55984451C5A66FF0091A7FF /* control@2x.png */,
+				A55984461C5A66FF0091A7FF /* default@2x.png */,
+				A55984471C5A66FF0091A7FF /* device@2x.png */,
+				A55984481C5A66FF0091A7FF /* jiantou@2x.png */,
+				A55984491C5A66FF0091A7FF /* seting_select@2x.png */,
+				A559844A1C5A66FF0091A7FF /* seting@2x.png */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		A55984531C5A766A0091A7FF /* seting */ = {
+			isa = PBXGroup;
+			children = (
+				A55984551C5A76EA0091A7FF /* SHSetingController.h */,
+				A55984561C5A76EA0091A7FF /* SHSetingController.m */,
+			);
+			path = seting;
+			sourceTree = "<group>";
+		};
+		A55984541C5A767C0091A7FF /* about */ = {
+			isa = PBXGroup;
+			children = (
+				A559845E1C5A7CA00091A7FF /* SHAboutController.h */,
+				A559845F1C5A7CA00091A7FF /* SHAboutController.m */,
+				A55984611C5A7D900091A7FF /* SHAboutCell.h */,
+				A55984621C5A7D900091A7FF /* SHAboutCell.m */,
+				A55984631C5A7D900091A7FF /* SHAboutCell.xib */,
+			);
+			path = about;
+			sourceTree = "<group>";
+		};
 		A5B6E5021C40F9480080E06F /* iPad_image */ = {
 			isa = PBXGroup;
 			children = (
@@ -484,6 +577,7 @@
 		A5B6E5031C40F95A0080E06F /* iPhone_image */ = {
 			isa = PBXGroup;
 			children = (
+				A55984431C5A66EE0091A7FF /* mine */,
 				A5B6E52F1C4110720080E06F /* bar */,
 				A5B6E51C1C4101220080E06F /* login */,
 			);
@@ -682,16 +776,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A559845D1C5A77FB0091A7FF /* password@2x.png in Resources */,
 				A55984391C4D17F40091A7FF /* tabbar3_select@2x.png in Resources */,
 				0410F9651C3B978C0069991E /* Icon.png in Resources */,
 				A559842E1C4D17620091A7FF /* tabbar2@2x.png in Resources */,
+				A559844C1C5A66FF0091A7FF /* control@2x.png in Resources */,
 				A55984361C4D17F40091A7FF /* tabbar2_select@2x.png in Resources */,
+				A559844B1C5A66FF0091A7FF /* about@2x.png in Resources */,
 				A55984311C4D17620091A7FF /* tabbar3@2x.png in Resources */,
 				0410F9601C3B978C0069991E /* 37x-Checkmark.png in Resources */,
 				A5B6E53A1C4121ED0080E06F /* SHSetPasswordController.xib in Resources */,
+				A559846D1C5A7F830091A7FF /* wechat@2x.png in Resources */,
+				A559844E1C5A66FF0091A7FF /* device@2x.png in Resources */,
 				A5B6E5221C4101220080E06F /* ver_bg@2x.png in Resources */,
+				A559846C1C5A7F830091A7FF /* website@2x.png in Resources */,
+				A559846B1C5A7F830091A7FF /* qq@2x.png in Resources */,
 				A5B6E5261C41041A0080E06F /* qiu@2x.png in Resources */,
 				A5B6E5111C40FDE50080E06F /* SHLoginController.xib in Resources */,
+				A559845A1C5A77C40091A7FF /* account@2x.png in Resources */,
 				0410F9631C3B978C0069991E /* Icon-Small.png in Resources */,
 				A55984371C4D17F40091A7FF /* tabbar1_select@2x.png in Resources */,
 				A5B6E5251C41041A0080E06F /* logo@2x.png in Resources */,
@@ -699,17 +801,25 @@
 				A5B6E5211C4101220080E06F /* psw_bg@2x.png in Resources */,
 				A5B6E50F1C40FDE50080E06F /* SHForgetPasswordController.xib in Resources */,
 				A55984381C4D17F40091A7FF /* tabbar4_select@2x.png in Resources */,
+				A559845B1C5A77C40091A7FF /* update@2x.png in Resources */,
+				A55984511C5A66FF0091A7FF /* seting@2x.png in Resources */,
 				A5B6E5321C4110C00080E06F /* close@2x.png in Resources */,
+				A559846A1C5A7F830091A7FF /* phone@2x.png in Resources */,
 				A5B6E5521C412A4F0080E06F /* IQKeyboardManager.bundle in Resources */,
 				A5B6E5351C4110DB0080E06F /* back@2x.png in Resources */,
 				A5B6E5131C40FDE50080E06F /* SHRegisterController.xib in Resources */,
 				040B270E1C3B9554003D6E47 /* Assets.xcassets in Resources */,
+				A55984501C5A66FF0091A7FF /* seting_select@2x.png in Resources */,
 				A5B6E5201C4101220080E06F /* acc_bg@2x.png in Resources */,
 				0410F9621C3B978C0069991E /* Icon-iOS7@2x.png in Resources */,
+				A55984651C5A7D900091A7FF /* SHAboutCell.xib in Resources */,
 				0410F9641C3B978C0069991E /* Icon-Small@2x.png in Resources */,
+				A55984421C5A65160091A7FF /* SHMineCell.xib in Resources */,
+				A559844F1C5A66FF0091A7FF /* jiantou@2x.png in Resources */,
 				A559842F1C4D17620091A7FF /* tabbar1@2x.png in Resources */,
 				A55984301C4D17620091A7FF /* tabbar4@2x.png in Resources */,
 				A5B6E5331C4110C00080E06F /* show@2x.png in Resources */,
+				A559844D1C5A66FF0091A7FF /* default@2x.png in Resources */,
 				0410F9611C3B978C0069991E /* 37x-Checkmark@2x.png in Resources */,
 				0410F9661C3B978C0069991E /* Icon@2x.png in Resources */,
 			);
@@ -745,6 +855,7 @@
 				A5B6E51B1C4100EF0080E06F /* CALayer+Additions.m in Sources */,
 				0410F9771C3BA4BC0069991E /* SHBaseViewController.m in Sources */,
 				A5B6E5541C412A4F0080E06F /* IQSegmentedNextPrevious.m in Sources */,
+				A55984411C5A65160091A7FF /* SHMineCell.m in Sources */,
 				0410F99A1C3BB6020069991E /* SHControlController.m in Sources */,
 				0410F99C1C3BB6020069991E /* SHMineController.m in Sources */,
 				A5B6E5551C412A4F0080E06F /* IQTextView.m in Sources */,
@@ -755,7 +866,9 @@
 				A5B6E5571C412A4F0080E06F /* IQToolbar.m in Sources */,
 				0410F94C1C3B978C0069991E /* AFHTTPRequestOperation.m in Sources */,
 				0410F9541C3B978C0069991E /* AFURLSessionManager.m in Sources */,
+				A55984641C5A7D900091A7FF /* SHAboutCell.m in Sources */,
 				0410F9531C3B978C0069991E /* AFURLResponseSerialization.m in Sources */,
+				A55984571C5A76EA0091A7FF /* SHSetingController.m in Sources */,
 				040B27061C3B9554003D6E47 /* AppDelegate.m in Sources */,
 				A5B6E52B1C410B1C0080E06F /* AppManager.m in Sources */,
 				A5B6E5101C40FDE50080E06F /* SHLoginController.m in Sources */,
@@ -766,6 +879,7 @@
 				0410F9671C3B978C0069991E /* MBProgressHUD.m in Sources */,
 				A5B6E55A1C412A4F0080E06F /* UIView+IQKeyboardToolbar.m in Sources */,
 				A5B6E5171C40FEA30080E06F /* SHAccountManager.m in Sources */,
+				A55984601C5A7CA00091A7FF /* SHAboutController.m in Sources */,
 				A5B6E5531C412A4F0080E06F /* IQKeyboardManager.m in Sources */,
 				A5B6E5591C412A4F0080E06F /* UIView+Hierarchy.m in Sources */,
 				0410F94E1C3B978C0069991E /* AFHTTPSessionManager.m in Sources */,

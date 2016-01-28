@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SHBaseViewController : UIViewController
+@interface SHBaseViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic, strong) UITableView              *tableView;
 
 - (void)setleftBarItem;
 
