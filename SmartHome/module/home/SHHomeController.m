@@ -53,9 +53,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-
     SHHomeCell *cell = [SHHomeCell creatCell:(SHHomeCellType)indexPath.section];
-    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
