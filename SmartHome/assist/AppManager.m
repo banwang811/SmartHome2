@@ -27,4 +27,11 @@
     return YES;
 }
 
+- (BOOL)smallScreen{
+    if (SCREEN_WIDTH <= 320) {
+        return YES;
+    }
+    return NO;
+}
+
 @end

@@ -10,10 +10,9 @@
 #import "SHNormalCell.h"
 #import "SHMenuCell.h"
 #import "SHLightCell.h"
+#import "SHAirconditionerCell.h"
 
 #define menuNumber  10
-
-#define width1 60
 
 @interface SHModelController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -25,21 +24,45 @@
 
 @property (nonatomic, strong) NSIndexPath               *selectIndxPath2;
 
+@property (nonatomic, assign) CGFloat                   width1;
+
+@property (nonatomic, strong) UIButton                  *startButton;
+
 @end
 
 @implementation SHModelController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if ([[AppManager shareManager] smallScreen]) {
+        self.width1 = 60;
+    }else{
+        self.width1 = 80;
+    }
+    [self setleftBarItem];
     [self.view addSubview:self.menuTableView];
     [self.view addSubview:self.goodsTableView];
+    [self.view addSubview:self.startButton];
     self.selectIndxPath1 = [NSIndexPath indexPathForRow:0 inSection:0];
+}
 
+
+- (UIButton *)startButton{
+    if (_startButton == nil) {
+        _startButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _startButton.frame = CGRectMake(28, SCREEN_HEIGHT - 40 - 20, SCREEN_WIDTH - 28 * 2, 40);
+        _startButton.layer.cornerRadius = 5;
+        [_startButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_startButton setBackgroundColor:[UIColor themeCoclor]];
+        [_startButton setTitle:@"执行场景" forState:UIControlStateNormal];
+        [_startButton addTarget:self action:@selector(startScene) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _startButton;
 }
 
 - (UITableView *)menuTableView{
     if (_menuTableView == nil) {
-        _menuTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, width1, SCREEN_HEIGHT) style:UITableViewStylePlain];
+        _menuTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, _width1, SCREEN_HEIGHT - 80) style:UITableViewStylePlain];
         _menuTableView.delegate = self;
         _menuTableView.dataSource = self;
         _menuTableView.showsVerticalScrollIndicator = NO;
@@ -50,7 +73,7 @@
 
 - (UITableView *)goodsTableView{
     if (_goodsTableView == nil) {
-        _goodsTableView = [[UITableView alloc] initWithFrame:CGRectMake(width1, 0,SCREEN_WIDTH - width1, SCREEN_HEIGHT) style:UITableViewStylePlain];
+        _goodsTableView = [[UITableView alloc] initWithFrame:CGRectMake(_width1, 64,SCREEN_WIDTH - _width1, SCREEN_HEIGHT -64 - 80) style:UITableViewStylePlain];
         _goodsTableView.delegate = self;
         _goodsTableView.dataSource = self;
         _goodsTableView.separatorStyle  = UITableViewCellSeparatorStyleNone;
@@ -77,6 +100,9 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row % 4 == 3 && tableView == self.goodsTableView) {
+        return 130;
+    }
     return 100;
 }
 
@@ -90,15 +116,23 @@
         if (indexPath == self.selectIndxPath1) {
             cell.backgroundColor = [UIColor whiteColor];
         }else{
-            cell.backgroundColor = [UIColor lightGrayColor];
+            cell.backgroundColor = RGB(220, 230, 233, 1);
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }else{
         static NSString *cellid2 = @"goodsTableViewIdentifier";
-        SHLightCell *cell = [tableView dequeueReusableCellWithIdentifier:cellid2];
+        SHBaseDeviceCell *cell = [tableView dequeueReusableCellWithIdentifier:cellid2];
         if (cell == nil) {
-            cell = [[SHLightCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellid2];
+            if (indexPath.row%4 ==0 ) {
+                cell = [[SHNormalCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellid2];
+            }else if (indexPath.row%4 == 1){
+                cell = [[SHLightCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellid2];
+            }else if (indexPath.row%4 == 2){
+                cell = [[SHLightCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellid2];
+            }else{
+                cell = [[SHAirconditionerCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellid2];
+            }
         }
         if (indexPath == self.selectIndxPath2) {
             cell.backgroundColor = [UIColor yellowColor];
@@ -128,6 +162,10 @@
     }
     [_goodsTableView reloadData];
     [_menuTableView reloadData];
+}
+
+- (void)startScene{
+
 }
 
 - (void)didReceiveMemoryWarning {

@@ -89,6 +89,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     SHModelController *controller = [[SHModelController alloc] init];
     controller.hidesBottomBarWhenPushed = YES;
+    controller.navigationItem.title = self.titles[indexPath.row];
     [self.navigationController pushViewController:controller animated:YES];
 }
 

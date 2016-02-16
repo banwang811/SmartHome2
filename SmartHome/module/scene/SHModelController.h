@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SHModelController : UIViewController
+@interface SHModelController : SHBaseViewController
 
 
 @end

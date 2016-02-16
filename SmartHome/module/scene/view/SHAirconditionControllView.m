@@ -1,20 +1,20 @@
 //
-//  SHDeviceHeadView.m
-//  Select
+//  SHAirconditionControllView.m
+//  SmartHome
 //
-//  Created by mac on 16/2/16.
+//  Created by banwang on 16/2/16.
 //  Copyright © 2016年 huajun. All rights reserved.
 //
 
-#import "SHDeviceHeadView.h"
+#import "SHAirconditionControllView.h"
 
-@interface SHDeviceHeadView ()
+@interface SHAirconditionControllView ()
 
-@property (nonatomic, strong) UIImageView                                   *imageView;
+@property (nonatomic, strong) UIButton                                      *imageButton;
 
 @property (nonatomic, strong) UILabel                                       *titleLable;
 
-@property (nonatomic, assign) SHDeviceHeadViewModel                         type;
+@property (nonatomic, assign) SHAirconditionControllType                    type;
 
 @property (nonatomic, assign) CGFloat                         headImageWidth;
 @property (nonatomic, assign) CGFloat                         headImageHight;
@@ -26,38 +26,33 @@
 
 @end
 
-@implementation SHDeviceHeadView
+@implementation SHAirconditionControllView
 
 - (instancetype)initWithFrame:(CGRect)frame
-                         type:(SHDeviceHeadViewModel)type{
+                         type:(SHAirconditionControllType)type{
     if (self = [super initWithFrame:frame]) {
         self.type = type;
-        if (type == SHDeviceHeadView_Normal) {
-        }else{
-        }
-        self.headImageHight = 30;
-        self.headImageWidth = 30;
-        self.speace_hight = 5;
-        self.titleLableWidth = 50;
-        self.titleLableHight = 25;
+        self.headImageHight = 23;
+        self.headImageWidth = 23;
+        self.speace_hight = 2;
+        self.titleLableWidth = 23;
+        self.titleLableHight = 23;
         self.hight = (self.frame.size.height - self.headImageHight - self.titleLableHight - self.speace_hight)/2;
-        [self addSubview:self.imageView];
+        [self addSubview:self.imageButton];
         [self addSubview:self.titleLable];
     }
     return self;
 }
 
-- (void)setTitle:(NSString *)title image:(NSString *)imageName{
-    self.imageView.image = [UIImage imageNamed:imageName];
-    self.titleLable.text = title;
-}
-
-- (UIImageView *)imageView{
-    if (_imageView == nil) {
+- (UIButton *)imageButton{
+    if (_imageButton == nil) {
+        _imageButton = [UIButton buttonWithType:UIButtonTypeCustom];
         CGFloat width = (self.frame.size.width - self.headImageWidth)/2;
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(width, self.hight, self.headImageWidth, self.headImageHight)];
+        _imageButton.frame = CGRectMake(width, self.hight, self.headImageWidth, self.headImageHight);
+        [_imageButton setImage:[UIImage imageNamed:@"refrigeration"] forState:UIControlStateNormal];
+        [_imageButton setImage:[UIImage imageNamed:@"refrigeration_select"] forState:UIControlStateSelected];
     }
-    return _imageView;
+    return _imageButton;
 }
 
 - (UILabel *)titleLable{
@@ -65,6 +60,8 @@
     if (_titleLable == nil) {
         _titleLable = [[UILabel alloc] initWithFrame:CGRectMake(width, self.frame.size.height - self.titleLableHight - self.hight, self.titleLableWidth, self.titleLableHight)];
         _titleLable.textAlignment = NSTextAlignmentCenter;
+        _titleLable.text = @"制冷";
+        _titleLable.font = [UIFont systemFontOfSize:10];
     }
     return _titleLable;
 }

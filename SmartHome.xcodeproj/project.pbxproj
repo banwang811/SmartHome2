@@ -148,6 +148,15 @@
 		A5E3B8D51C735CA500136A9C /* SHMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8CF1C735CA500136A9C /* SHMenuCell.m */; };
 		A5E3B8D61C735CA500136A9C /* SHNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8D11C735CA500136A9C /* SHNormalCell.m */; };
 		A5E3B8D81C735CE700136A9C /* tv@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8D71C735CE700136A9C /* tv@2x.png */; };
+		A5E3B8DB1C736DC700136A9C /* SHAirconditionControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8DA1C736DC700136A9C /* SHAirconditionControllView.m */; };
+		A5E3B8E41C73846E00136A9C /* health_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8DC1C73846E00136A9C /* health_select@2x.png */; };
+		A5E3B8E51C73846E00136A9C /* health@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8DD1C73846E00136A9C /* health@2x.png */; };
+		A5E3B8E61C73846E00136A9C /* heating_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8DE1C73846E00136A9C /* heating_select@2x.png */; };
+		A5E3B8E71C73846E00136A9C /* heating@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8DF1C73846E00136A9C /* heating@2x.png */; };
+		A5E3B8E81C73846E00136A9C /* refrigeration_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8E01C73846E00136A9C /* refrigeration_select@2x.png */; };
+		A5E3B8E91C73846E00136A9C /* refrigeration@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8E11C73846E00136A9C /* refrigeration@2x.png */; };
+		A5E3B8EA1C73846E00136A9C /* sleep_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8E21C73846E00136A9C /* sleep_select@2x.png */; };
+		A5E3B8EB1C73846E00136A9C /* sleep@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8E31C73846E00136A9C /* sleep@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -374,6 +383,16 @@
 		A5E3B8D01C735CA500136A9C /* SHNormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNormalCell.h; sourceTree = "<group>"; };
 		A5E3B8D11C735CA500136A9C /* SHNormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNormalCell.m; sourceTree = "<group>"; };
 		A5E3B8D71C735CE700136A9C /* tv@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tv@2x.png"; sourceTree = "<group>"; };
+		A5E3B8D91C736DC700136A9C /* SHAirconditionControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAirconditionControllView.h; sourceTree = "<group>"; };
+		A5E3B8DA1C736DC700136A9C /* SHAirconditionControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAirconditionControllView.m; sourceTree = "<group>"; };
+		A5E3B8DC1C73846E00136A9C /* health_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health_select@2x.png"; sourceTree = "<group>"; };
+		A5E3B8DD1C73846E00136A9C /* health@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health@2x.png"; sourceTree = "<group>"; };
+		A5E3B8DE1C73846E00136A9C /* heating_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heating_select@2x.png"; sourceTree = "<group>"; };
+		A5E3B8DF1C73846E00136A9C /* heating@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heating@2x.png"; sourceTree = "<group>"; };
+		A5E3B8E01C73846E00136A9C /* refrigeration_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refrigeration_select@2x.png"; sourceTree = "<group>"; };
+		A5E3B8E11C73846E00136A9C /* refrigeration@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refrigeration@2x.png"; sourceTree = "<group>"; };
+		A5E3B8E21C73846E00136A9C /* sleep_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep_select@2x.png"; sourceTree = "<group>"; };
+		A5E3B8E31C73846E00136A9C /* sleep@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -872,6 +891,8 @@
 				A5E3B8BE1C735C5100136A9C /* GQSegmentedControl.m */,
 				A5E3B8BF1C735C5100136A9C /* SHDeviceHeadView.h */,
 				A5E3B8C01C735C5100136A9C /* SHDeviceHeadView.m */,
+				A5E3B8D91C736DC700136A9C /* SHAirconditionControllView.h */,
+				A5E3B8DA1C736DC700136A9C /* SHAirconditionControllView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -879,6 +900,14 @@
 		A5E3B8C31C735C7000136A9C /* model */ = {
 			isa = PBXGroup;
 			children = (
+				A5E3B8DC1C73846E00136A9C /* health_select@2x.png */,
+				A5E3B8DD1C73846E00136A9C /* health@2x.png */,
+				A5E3B8DE1C73846E00136A9C /* heating_select@2x.png */,
+				A5E3B8DF1C73846E00136A9C /* heating@2x.png */,
+				A5E3B8E01C73846E00136A9C /* refrigeration_select@2x.png */,
+				A5E3B8E11C73846E00136A9C /* refrigeration@2x.png */,
+				A5E3B8E21C73846E00136A9C /* sleep_select@2x.png */,
+				A5E3B8E31C73846E00136A9C /* sleep@2x.png */,
 				A5E3B8D71C735CE700136A9C /* tv@2x.png */,
 				A5E3B8C41C735C8B00136A9C /* close@2x.png */,
 				A5E3B8C51C735C8B00136A9C /* open@2x.png */,
@@ -995,15 +1024,18 @@
 				0410F9651C3B978C0069991E /* Icon.png in Resources */,
 				A559842E1C4D17620091A7FF /* tabbar2@2x.png in Resources */,
 				A5E3B8D81C735CE700136A9C /* tv@2x.png in Resources */,
+				A5E3B8E41C73846E00136A9C /* health_select@2x.png in Resources */,
 				A559844C1C5A66FF0091A7FF /* control@2x.png in Resources */,
 				A55984DD1C5A8AD60091A7FF /* switch_yuan@2x.png in Resources */,
 				A55984D51C5A8AD60091A7FF /* eat_s@2x.png in Resources */,
+				A5E3B8E91C73846E00136A9C /* refrigeration@2x.png in Resources */,
 				A5E3B8C71C735C8B00136A9C /* open@2x.png in Resources */,
 				A55984361C4D17F40091A7FF /* tabbar2_select@2x.png in Resources */,
 				A559844B1C5A66FF0091A7FF /* about@2x.png in Resources */,
 				A55984311C4D17620091A7FF /* tabbar3@2x.png in Resources */,
 				A55984D11C5A8AD60091A7FF /* anquan@2x.png in Resources */,
 				0410F9601C3B978C0069991E /* 37x-Checkmark.png in Resources */,
+				A5E3B8E81C73846E00136A9C /* refrigeration_select@2x.png in Resources */,
 				A5E3B8B01C5D2C1100136A9C /* xiuxian@2x.png in Resources */,
 				A5B6E53A1C4121ED0080E06F /* SHSetPasswordController.xib in Resources */,
 				A55984D61C5A8AD60091A7FF /* eat@2x.png in Resources */,
@@ -1021,12 +1053,14 @@
 				A5E3B8A81C5D2B6800136A9C /* zidingyi@2x.png in Resources */,
 				A5B6E5261C41041A0080E06F /* qiu@2x.png in Resources */,
 				A55984D01C5A8AD60091A7FF /* anquan_s@2x.png in Resources */,
+				A5E3B8E51C73846E00136A9C /* health@2x.png in Resources */,
 				A55984DE1C5A8AD60091A7FF /* switch@2x.png in Resources */,
 				A5B6E5111C40FDE50080E06F /* SHLoginController.xib in Resources */,
 				A5E3B8B41C5D322400136A9C /* tianjia@2x.png in Resources */,
 				A55984E21C5A8AD60091A7FF /* turnoff_s@2x.png in Resources */,
 				A559845A1C5A77C40091A7FF /* account@2x.png in Resources */,
 				0410F9631C3B978C0069991E /* Icon-Small.png in Resources */,
+				A5E3B8E71C73846E00136A9C /* heating@2x.png in Resources */,
 				A55984DA1C5A8AD60091A7FF /* leave_s@2x.png in Resources */,
 				A55984371C4D17F40091A7FF /* tabbar1_select@2x.png in Resources */,
 				A5B6E5251C41041A0080E06F /* logo@2x.png in Resources */,
@@ -1038,6 +1072,7 @@
 				A559845B1C5A77C40091A7FF /* update@2x.png in Resources */,
 				A55984511C5A66FF0091A7FF /* seting@2x.png in Resources */,
 				A5E3B8A61C5D2B3000136A9C /* scene_bg@2x.png in Resources */,
+				A5E3B8EA1C73846E00136A9C /* sleep_select@2x.png in Resources */,
 				A5B6E5321C4110C00080E06F /* close@2x.png in Resources */,
 				A559846A1C5A7F830091A7FF /* phone@2x.png in Resources */,
 				A55984D81C5A8AD60091A7FF /* huanjin_bg@2x.png in Resources */,
@@ -1060,6 +1095,7 @@
 				A5E3B8AE1C5D2C1100136A9C /* gongzuo@2x.png in Resources */,
 				A559844F1C5A66FF0091A7FF /* jiantou@2x.png in Resources */,
 				A55984D91C5A8AD60091A7FF /* humidity@2x.png in Resources */,
+				A5E3B8E61C73846E00136A9C /* heating_select@2x.png in Resources */,
 				A5E3B8AF1C5D2C1100136A9C /* suimian@2x.png in Resources */,
 				A5E3B8B11C5D2C1100136A9C /* xiyu@2x.png in Resources */,
 				A559842F1C4D17620091A7FF /* tabbar1@2x.png in Resources */,
@@ -1067,6 +1103,7 @@
 				A55984301C4D17620091A7FF /* tabbar4@2x.png in Resources */,
 				A55984DB1C5A8AD60091A7FF /* leave@2x.png in Resources */,
 				A55984CC1C5A8AD60091A7FF /* bj3.png in Resources */,
+				A5E3B8EB1C73846E00136A9C /* sleep@2x.png in Resources */,
 				A5B6E5331C4110C00080E06F /* show@2x.png in Resources */,
 				A55984CD1C5A8AD60091A7FF /* bj1.png in Resources */,
 				A559844D1C5A66FF0091A7FF /* default@2x.png in Resources */,
@@ -1137,6 +1174,7 @@
 				0410F99B1C3BB6020069991E /* SHHomeController.m in Sources */,
 				A5B6E5121C40FDE50080E06F /* SHRegisterController.m in Sources */,
 				A5B6E52E1C410EFE0080E06F /* UIViewController+extension.m in Sources */,
+				A5E3B8DB1C736DC700136A9C /* SHAirconditionControllView.m in Sources */,
 				A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */,
 				0410F9671C3B978C0069991E /* MBProgressHUD.m in Sources */,
 				A5B6E55A1C412A4F0080E06F /* UIView+IQKeyboardToolbar.m in Sources */,

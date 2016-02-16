@@ -12,4 +12,6 @@
 
 + (AppManager *)shareManager;
 
+- (BOOL)smallScreen;
+
 @end
