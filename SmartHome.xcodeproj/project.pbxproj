@@ -128,6 +128,26 @@
 		A5B6E5591C412A4F0080E06F /* UIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E54D1C412A4F0080E06F /* UIView+Hierarchy.m */; };
 		A5B6E55A1C412A4F0080E06F /* UIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E54F1C412A4F0080E06F /* UIView+IQKeyboardToolbar.m */; };
 		A5B6E55B1C412A4F0080E06F /* UIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5511C412A4F0080E06F /* UIWindow+Hierarchy.m */; };
+		A5E3B8A31C5D28AD00136A9C /* SHSceneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8A21C5D28AD00136A9C /* SHSceneCell.m */; };
+		A5E3B8A61C5D2B3000136A9C /* scene_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8A51C5D2B3000136A9C /* scene_bg@2x.png */; };
+		A5E3B8A81C5D2B6800136A9C /* zidingyi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8A71C5D2B6800136A9C /* zidingyi@2x.png */; };
+		A5E3B8AE1C5D2C1100136A9C /* gongzuo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8A91C5D2C1100136A9C /* gongzuo@2x.png */; };
+		A5E3B8AF1C5D2C1100136A9C /* suimian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8AA1C5D2C1100136A9C /* suimian@2x.png */; };
+		A5E3B8B01C5D2C1100136A9C /* xiuxian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8AB1C5D2C1100136A9C /* xiuxian@2x.png */; };
+		A5E3B8B11C5D2C1100136A9C /* xiyu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8AC1C5D2C1100136A9C /* xiyu@2x.png */; };
+		A5E3B8B21C5D2C1100136A9C /* yingyuan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8AD1C5D2C1100136A9C /* yingyuan@2x.png */; };
+		A5E3B8B41C5D322400136A9C /* tianjia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8B31C5D322400136A9C /* tianjia@2x.png */; };
+		A5E3B8BA1C735B9A00136A9C /* SHModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8B91C735B9A00136A9C /* SHModelController.m */; };
+		A5E3B8C11C735C5100136A9C /* GQSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8BE1C735C5100136A9C /* GQSegmentedControl.m */; };
+		A5E3B8C21C735C5100136A9C /* SHDeviceHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8C01C735C5100136A9C /* SHDeviceHeadView.m */; };
+		A5E3B8C61C735C8B00136A9C /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8C41C735C8B00136A9C /* close@2x.png */; };
+		A5E3B8C71C735C8B00136A9C /* open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8C51C735C8B00136A9C /* open@2x.png */; };
+		A5E3B8D21C735CA500136A9C /* SHAirconditionerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8C91C735CA500136A9C /* SHAirconditionerCell.m */; };
+		A5E3B8D31C735CA500136A9C /* SHBaseDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8CB1C735CA500136A9C /* SHBaseDeviceCell.m */; };
+		A5E3B8D41C735CA500136A9C /* SHLightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8CD1C735CA500136A9C /* SHLightCell.m */; };
+		A5E3B8D51C735CA500136A9C /* SHMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8CF1C735CA500136A9C /* SHMenuCell.m */; };
+		A5E3B8D61C735CA500136A9C /* SHNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8D11C735CA500136A9C /* SHNormalCell.m */; };
+		A5E3B8D81C735CE700136A9C /* tv@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8D71C735CE700136A9C /* tv@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -325,6 +345,35 @@
 		A5B6E54F1C412A4F0080E06F /* UIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		A5B6E5501C412A4F0080E06F /* UIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Hierarchy.h"; sourceTree = "<group>"; };
 		A5B6E5511C412A4F0080E06F /* UIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		A5E3B8A11C5D28AD00136A9C /* SHSceneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSceneCell.h; sourceTree = "<group>"; };
+		A5E3B8A21C5D28AD00136A9C /* SHSceneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSceneCell.m; sourceTree = "<group>"; };
+		A5E3B8A51C5D2B3000136A9C /* scene_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scene_bg@2x.png"; sourceTree = "<group>"; };
+		A5E3B8A71C5D2B6800136A9C /* zidingyi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zidingyi@2x.png"; sourceTree = "<group>"; };
+		A5E3B8A91C5D2C1100136A9C /* gongzuo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gongzuo@2x.png"; sourceTree = "<group>"; };
+		A5E3B8AA1C5D2C1100136A9C /* suimian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "suimian@2x.png"; sourceTree = "<group>"; };
+		A5E3B8AB1C5D2C1100136A9C /* xiuxian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xiuxian@2x.png"; sourceTree = "<group>"; };
+		A5E3B8AC1C5D2C1100136A9C /* xiyu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xiyu@2x.png"; sourceTree = "<group>"; };
+		A5E3B8AD1C5D2C1100136A9C /* yingyuan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yingyuan@2x.png"; sourceTree = "<group>"; };
+		A5E3B8B31C5D322400136A9C /* tianjia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tianjia@2x.png"; sourceTree = "<group>"; };
+		A5E3B8B81C735B9A00136A9C /* SHModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHModelController.h; sourceTree = "<group>"; };
+		A5E3B8B91C735B9A00136A9C /* SHModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHModelController.m; sourceTree = "<group>"; };
+		A5E3B8BD1C735C5100136A9C /* GQSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQSegmentedControl.h; sourceTree = "<group>"; };
+		A5E3B8BE1C735C5100136A9C /* GQSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQSegmentedControl.m; sourceTree = "<group>"; };
+		A5E3B8BF1C735C5100136A9C /* SHDeviceHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDeviceHeadView.h; sourceTree = "<group>"; };
+		A5E3B8C01C735C5100136A9C /* SHDeviceHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDeviceHeadView.m; sourceTree = "<group>"; };
+		A5E3B8C41C735C8B00136A9C /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		A5E3B8C51C735C8B00136A9C /* open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open@2x.png"; sourceTree = "<group>"; };
+		A5E3B8C81C735CA500136A9C /* SHAirconditionerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAirconditionerCell.h; sourceTree = "<group>"; };
+		A5E3B8C91C735CA500136A9C /* SHAirconditionerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAirconditionerCell.m; sourceTree = "<group>"; };
+		A5E3B8CA1C735CA500136A9C /* SHBaseDeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBaseDeviceCell.h; sourceTree = "<group>"; };
+		A5E3B8CB1C735CA500136A9C /* SHBaseDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseDeviceCell.m; sourceTree = "<group>"; };
+		A5E3B8CC1C735CA500136A9C /* SHLightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLightCell.h; sourceTree = "<group>"; };
+		A5E3B8CD1C735CA500136A9C /* SHLightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLightCell.m; sourceTree = "<group>"; };
+		A5E3B8CE1C735CA500136A9C /* SHMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHMenuCell.h; sourceTree = "<group>"; };
+		A5E3B8CF1C735CA500136A9C /* SHMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHMenuCell.m; sourceTree = "<group>"; };
+		A5E3B8D01C735CA500136A9C /* SHNormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNormalCell.h; sourceTree = "<group>"; };
+		A5E3B8D11C735CA500136A9C /* SHNormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNormalCell.m; sourceTree = "<group>"; };
+		A5E3B8D71C735CE700136A9C /* tv@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tv@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -585,8 +634,14 @@
 		0410F9971C3BB6020069991E /* scene */ = {
 			isa = PBXGroup;
 			children = (
+				A5E3B8BC1C735C3100136A9C /* view */,
+				A5E3B8BB1C735BEA00136A9C /* cell */,
+				A5E3B8B81C735B9A00136A9C /* SHModelController.h */,
+				A5E3B8B91C735B9A00136A9C /* SHModelController.m */,
 				0410F9981C3BB6020069991E /* SHSceneController.h */,
 				0410F9991C3BB6020069991E /* SHSceneController.m */,
+				A5E3B8A11C5D28AD00136A9C /* SHSceneCell.h */,
+				A5E3B8A21C5D28AD00136A9C /* SHSceneCell.m */,
 			);
 			path = scene;
 			sourceTree = "<group>";
@@ -679,6 +734,8 @@
 		A5B6E5031C40F95A0080E06F /* iPhone_image */ = {
 			isa = PBXGroup;
 			children = (
+				A5E3B8C31C735C7000136A9C /* model */,
+				A5E3B8A41C5D2B2A00136A9C /* scene */,
 				A559846E1C5A88990091A7FF /* home */,
 				A55984431C5A66EE0091A7FF /* mine */,
 				A5B6E52F1C4110720080E06F /* bar */,
@@ -774,6 +831,59 @@
 				A5B6E5511C412A4F0080E06F /* UIWindow+Hierarchy.m */,
 			);
 			path = IQKeyBoardManager;
+			sourceTree = "<group>";
+		};
+		A5E3B8A41C5D2B2A00136A9C /* scene */ = {
+			isa = PBXGroup;
+			children = (
+				A5E3B8A71C5D2B6800136A9C /* zidingyi@2x.png */,
+				A5E3B8A51C5D2B3000136A9C /* scene_bg@2x.png */,
+				A5E3B8A91C5D2C1100136A9C /* gongzuo@2x.png */,
+				A5E3B8AA1C5D2C1100136A9C /* suimian@2x.png */,
+				A5E3B8AB1C5D2C1100136A9C /* xiuxian@2x.png */,
+				A5E3B8AC1C5D2C1100136A9C /* xiyu@2x.png */,
+				A5E3B8AD1C5D2C1100136A9C /* yingyuan@2x.png */,
+				A5E3B8B31C5D322400136A9C /* tianjia@2x.png */,
+			);
+			path = scene;
+			sourceTree = "<group>";
+		};
+		A5E3B8BB1C735BEA00136A9C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				A5E3B8C81C735CA500136A9C /* SHAirconditionerCell.h */,
+				A5E3B8C91C735CA500136A9C /* SHAirconditionerCell.m */,
+				A5E3B8CA1C735CA500136A9C /* SHBaseDeviceCell.h */,
+				A5E3B8CB1C735CA500136A9C /* SHBaseDeviceCell.m */,
+				A5E3B8CC1C735CA500136A9C /* SHLightCell.h */,
+				A5E3B8CD1C735CA500136A9C /* SHLightCell.m */,
+				A5E3B8CE1C735CA500136A9C /* SHMenuCell.h */,
+				A5E3B8CF1C735CA500136A9C /* SHMenuCell.m */,
+				A5E3B8D01C735CA500136A9C /* SHNormalCell.h */,
+				A5E3B8D11C735CA500136A9C /* SHNormalCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		A5E3B8BC1C735C3100136A9C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A5E3B8BD1C735C5100136A9C /* GQSegmentedControl.h */,
+				A5E3B8BE1C735C5100136A9C /* GQSegmentedControl.m */,
+				A5E3B8BF1C735C5100136A9C /* SHDeviceHeadView.h */,
+				A5E3B8C01C735C5100136A9C /* SHDeviceHeadView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A5E3B8C31C735C7000136A9C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A5E3B8D71C735CE700136A9C /* tv@2x.png */,
+				A5E3B8C41C735C8B00136A9C /* close@2x.png */,
+				A5E3B8C51C735C8B00136A9C /* open@2x.png */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -879,18 +989,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E3B8C61C735C8B00136A9C /* close@2x.png in Resources */,
 				A559845D1C5A77FB0091A7FF /* password@2x.png in Resources */,
 				A55984391C4D17F40091A7FF /* tabbar3_select@2x.png in Resources */,
 				0410F9651C3B978C0069991E /* Icon.png in Resources */,
 				A559842E1C4D17620091A7FF /* tabbar2@2x.png in Resources */,
+				A5E3B8D81C735CE700136A9C /* tv@2x.png in Resources */,
 				A559844C1C5A66FF0091A7FF /* control@2x.png in Resources */,
 				A55984DD1C5A8AD60091A7FF /* switch_yuan@2x.png in Resources */,
 				A55984D51C5A8AD60091A7FF /* eat_s@2x.png in Resources */,
+				A5E3B8C71C735C8B00136A9C /* open@2x.png in Resources */,
 				A55984361C4D17F40091A7FF /* tabbar2_select@2x.png in Resources */,
 				A559844B1C5A66FF0091A7FF /* about@2x.png in Resources */,
 				A55984311C4D17620091A7FF /* tabbar3@2x.png in Resources */,
 				A55984D11C5A8AD60091A7FF /* anquan@2x.png in Resources */,
 				0410F9601C3B978C0069991E /* 37x-Checkmark.png in Resources */,
+				A5E3B8B01C5D2C1100136A9C /* xiuxian@2x.png in Resources */,
 				A5B6E53A1C4121ED0080E06F /* SHSetPasswordController.xib in Resources */,
 				A55984D61C5A8AD60091A7FF /* eat@2x.png in Resources */,
 				A55984DC1C5A8AD60091A7FF /* message@2x.png in Resources */,
@@ -904,10 +1018,12 @@
 				A5B6E5221C4101220080E06F /* ver_bg@2x.png in Resources */,
 				A559846C1C5A7F830091A7FF /* website@2x.png in Resources */,
 				A559846B1C5A7F830091A7FF /* qq@2x.png in Resources */,
+				A5E3B8A81C5D2B6800136A9C /* zidingyi@2x.png in Resources */,
 				A5B6E5261C41041A0080E06F /* qiu@2x.png in Resources */,
 				A55984D01C5A8AD60091A7FF /* anquan_s@2x.png in Resources */,
 				A55984DE1C5A8AD60091A7FF /* switch@2x.png in Resources */,
 				A5B6E5111C40FDE50080E06F /* SHLoginController.xib in Resources */,
+				A5E3B8B41C5D322400136A9C /* tianjia@2x.png in Resources */,
 				A55984E21C5A8AD60091A7FF /* turnoff_s@2x.png in Resources */,
 				A559845A1C5A77C40091A7FF /* account@2x.png in Resources */,
 				0410F9631C3B978C0069991E /* Icon-Small.png in Resources */,
@@ -921,6 +1037,7 @@
 				A55984381C4D17F40091A7FF /* tabbar4_select@2x.png in Resources */,
 				A559845B1C5A77C40091A7FF /* update@2x.png in Resources */,
 				A55984511C5A66FF0091A7FF /* seting@2x.png in Resources */,
+				A5E3B8A61C5D2B3000136A9C /* scene_bg@2x.png in Resources */,
 				A5B6E5321C4110C00080E06F /* close@2x.png in Resources */,
 				A559846A1C5A7F830091A7FF /* phone@2x.png in Resources */,
 				A55984D81C5A8AD60091A7FF /* huanjin_bg@2x.png in Resources */,
@@ -928,6 +1045,7 @@
 				A55984E51C5A8AD60091A7FF /* turnon@2x.png in Resources */,
 				A55984CE1C5A8AD60091A7FF /* bj2.png in Resources */,
 				A55984E61C5A8AD60091A7FF /* warn_su@2x.png in Resources */,
+				A5E3B8B21C5D2C1100136A9C /* yingyuan@2x.png in Resources */,
 				A5B6E5351C4110DB0080E06F /* back@2x.png in Resources */,
 				A5B6E5131C40FDE50080E06F /* SHRegisterController.xib in Resources */,
 				040B270E1C3B9554003D6E47 /* Assets.xcassets in Resources */,
@@ -939,8 +1057,11 @@
 				0410F9641C3B978C0069991E /* Icon-Small@2x.png in Resources */,
 				A55984E41C5A8AD60091A7FF /* turnon_s@2x.png in Resources */,
 				A55984421C5A65160091A7FF /* SHMineCell.xib in Resources */,
+				A5E3B8AE1C5D2C1100136A9C /* gongzuo@2x.png in Resources */,
 				A559844F1C5A66FF0091A7FF /* jiantou@2x.png in Resources */,
 				A55984D91C5A8AD60091A7FF /* humidity@2x.png in Resources */,
+				A5E3B8AF1C5D2C1100136A9C /* suimian@2x.png in Resources */,
+				A5E3B8B11C5D2C1100136A9C /* xiyu@2x.png in Resources */,
 				A559842F1C4D17620091A7FF /* tabbar1@2x.png in Resources */,
 				A55984CF1C5A8AD60091A7FF /* 无污染.png in Resources */,
 				A55984301C4D17620091A7FF /* tabbar4@2x.png in Resources */,
@@ -982,26 +1103,33 @@
 				0410F9741C3BA4A10069991E /* SHTabBarController.m in Sources */,
 				0410F97A1C3BA4E60069991E /* SHNavigationController.m in Sources */,
 				0410F9A21C3BB7090069991E /* UIColor+extension.m in Sources */,
+				A5E3B8D31C735CA500136A9C /* SHBaseDeviceCell.m in Sources */,
 				A5B6E5391C4121ED0080E06F /* SHSetPasswordController.m in Sources */,
 				0410F9521C3B978C0069991E /* AFURLRequestSerialization.m in Sources */,
 				0410F9511C3B978C0069991E /* AFURLConnectionOperation.m in Sources */,
 				A5B6E51B1C4100EF0080E06F /* CALayer+Additions.m in Sources */,
+				A5E3B8D21C735CA500136A9C /* SHAirconditionerCell.m in Sources */,
+				A5E3B8D51C735CA500136A9C /* SHMenuCell.m in Sources */,
 				A55984AC1C5A895B0091A7FF /* SHHomeCell.m in Sources */,
 				0410F9771C3BA4BC0069991E /* SHBaseViewController.m in Sources */,
 				A5B6E5541C412A4F0080E06F /* IQSegmentedNextPrevious.m in Sources */,
 				A55984411C5A65160091A7FF /* SHMineCell.m in Sources */,
+				A5E3B8C11C735C5100136A9C /* GQSegmentedControl.m in Sources */,
 				0410F99A1C3BB6020069991E /* SHControlController.m in Sources */,
+				A5E3B8C21C735C5100136A9C /* SHDeviceHeadView.m in Sources */,
 				0410F99C1C3BB6020069991E /* SHMineController.m in Sources */,
 				A5B6E5551C412A4F0080E06F /* IQTextView.m in Sources */,
 				A5B6E5581C412A4F0080E06F /* NSArray+Sort.m in Sources */,
 				A5B6E55B1C412A4F0080E06F /* UIWindow+Hierarchy.m in Sources */,
 				0410F9501C3B978C0069991E /* AFSecurityPolicy.m in Sources */,
 				A5B6E5561C412A4F0080E06F /* IQTitleBarButtonItem.m in Sources */,
+				A5E3B8A31C5D28AD00136A9C /* SHSceneCell.m in Sources */,
 				A5B6E5571C412A4F0080E06F /* IQToolbar.m in Sources */,
 				0410F94C1C3B978C0069991E /* AFHTTPRequestOperation.m in Sources */,
 				0410F9541C3B978C0069991E /* AFURLSessionManager.m in Sources */,
 				A55984641C5A7D900091A7FF /* SHAboutCell.m in Sources */,
 				0410F9531C3B978C0069991E /* AFURLResponseSerialization.m in Sources */,
+				A5E3B8D41C735CA500136A9C /* SHLightCell.m in Sources */,
 				A55984571C5A76EA0091A7FF /* SHSetingController.m in Sources */,
 				040B27061C3B9554003D6E47 /* AppDelegate.m in Sources */,
 				A5B6E52B1C410B1C0080E06F /* AppManager.m in Sources */,
@@ -1016,6 +1144,8 @@
 				A55984601C5A7CA00091A7FF /* SHAboutController.m in Sources */,
 				A5B6E5531C412A4F0080E06F /* IQKeyboardManager.m in Sources */,
 				A5B6E5591C412A4F0080E06F /* UIView+Hierarchy.m in Sources */,
+				A5E3B8BA1C735B9A00136A9C /* SHModelController.m in Sources */,
+				A5E3B8D61C735CA500136A9C /* SHNormalCell.m in Sources */,
 				0410F94E1C3B978C0069991E /* AFHTTPSessionManager.m in Sources */,
 				0410F99D1C3BB6020069991E /* SHSceneController.m in Sources */,
 				0410F94D1C3B978C0069991E /* AFHTTPRequestOperationManager.m in Sources */,
