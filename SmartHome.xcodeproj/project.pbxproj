@@ -129,6 +129,7 @@
 		A5B6E55B1C412A4F0080E06F /* UIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5511C412A4F0080E06F /* UIWindow+Hierarchy.m */; };
 		A5D6CE091C7F3B87008BDF4C /* BWButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D6CE061C7F3B87008BDF4C /* BWButton.m */; };
 		A5D6CE0A1C7F3B87008BDF4C /* SHControllController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D6CE081C7F3B87008BDF4C /* SHControllController.m */; };
+		A5D6CE0D1C7F8269008BDF4C /* light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5D6CE0C1C7F8269008BDF4C /* light@2x.png */; };
 		A5E3B8A31C5D28AD00136A9C /* SHSceneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8A21C5D28AD00136A9C /* SHSceneCell.m */; };
 		A5E3B8A61C5D2B3000136A9C /* scene_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8A51C5D2B3000136A9C /* scene_bg@2x.png */; };
 		A5E3B8A81C5D2B6800136A9C /* zidingyi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8A71C5D2B6800136A9C /* zidingyi@2x.png */; };
@@ -362,6 +363,7 @@
 		A5D6CE061C7F3B87008BDF4C /* BWButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWButton.m; sourceTree = "<group>"; };
 		A5D6CE071C7F3B87008BDF4C /* SHControllController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHControllController.h; sourceTree = "<group>"; };
 		A5D6CE081C7F3B87008BDF4C /* SHControllController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHControllController.m; sourceTree = "<group>"; };
+		A5D6CE0C1C7F8269008BDF4C /* light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "light@2x.png"; sourceTree = "<group>"; };
 		A5E3B8A11C5D28AD00136A9C /* SHSceneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSceneCell.h; sourceTree = "<group>"; };
 		A5E3B8A21C5D28AD00136A9C /* SHSceneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSceneCell.m; sourceTree = "<group>"; };
 		A5E3B8A51C5D2B3000136A9C /* scene_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scene_bg@2x.png"; sourceTree = "<group>"; };
@@ -768,6 +770,7 @@
 		A5B6E5031C40F95A0080E06F /* iPhone_image */ = {
 			isa = PBXGroup;
 			children = (
+				A5D6CE0B1C7F8263008BDF4C /* controll */,
 				A5E3B8C31C735C7000136A9C /* model */,
 				A5E3B8A41C5D2B2A00136A9C /* scene */,
 				A559846E1C5A88990091A7FF /* home */,
@@ -865,6 +868,14 @@
 				A5B6E5511C412A4F0080E06F /* UIWindow+Hierarchy.m */,
 			);
 			path = IQKeyBoardManager;
+			sourceTree = "<group>";
+		};
+		A5D6CE0B1C7F8263008BDF4C /* controll */ = {
+			isa = PBXGroup;
+			children = (
+				A5D6CE0C1C7F8269008BDF4C /* light@2x.png */,
+			);
+			path = controll;
 			sourceTree = "<group>";
 		};
 		A5E3B8A41C5D2B2A00136A9C /* scene */ = {
@@ -1107,6 +1118,7 @@
 				A5E3B8B21C5D2C1100136A9C /* yingyuan@2x.png in Resources */,
 				A5B6E5351C4110DB0080E06F /* back@2x.png in Resources */,
 				A5E3B8F31C738C5D00136A9C /* icebox@2x.png in Resources */,
+				A5D6CE0D1C7F8269008BDF4C /* light@2x.png in Resources */,
 				A5B6E5131C40FDE50080E06F /* SHRegisterController.xib in Resources */,
 				040B270E1C3B9554003D6E47 /* Assets.xcassets in Resources */,
 				A55984D21C5A8AD60091A7FF /* backhome_s@2x.png in Resources */,

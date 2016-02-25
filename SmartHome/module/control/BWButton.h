@@ -26,6 +26,8 @@ typedef NS_ENUM(NSInteger,BWButtonType) {
 
 @property (nonatomic, assign) float             endAngle;
 
+@property (nonatomic, assign) float             rotationAngle;
+
 @property (nonatomic, assign) BWButtonType      type;
 
 @property (nonatomic, copy) void(^block)(BWButton *button);

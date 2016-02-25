@@ -8,8 +8,8 @@
 
 #import "BWButton.h"
 
-#define button_width  40
-#define button_higth  40
+#define button_width  30
+#define button_higth  30
 
 @interface BWButton()
 
