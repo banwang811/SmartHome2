@@ -11,13 +11,13 @@
 #import "SHHomeController.h"
 #import "SHSceneController.h"
 #import "SHMineController.h"
-#import "SHControlController.h"
+#import "SHControllController.h"
 
 @interface SHTabBarController : UITabBarController
 
 @property (nonatomic, strong) SHHomeController                  *homeController;
 
-@property (nonatomic, strong) SHControlController               *controlController;
+@property (nonatomic, strong) SHControllController               *controlController;
 
 @property (nonatomic, strong) SHSceneController                 *sceneController;
 

@@ -20,7 +20,7 @@
     self.homeController = [[SHHomeController alloc]init];
     SHNavigationController *home = [[SHNavigationController alloc] initWithRootViewController:self.homeController];
     
-    self.controlController = [[SHControlController alloc] init];
+    self.controlController = [[SHControllController alloc] init];
     SHNavigationController *control = [[SHNavigationController alloc] initWithRootViewController:self.controlController];
     
     self.sceneController = [[SHSceneController alloc] init];

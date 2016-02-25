@@ -34,7 +34,6 @@
 		0410F9741C3BA4A10069991E /* SHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9731C3BA4A10069991E /* SHTabBarController.m */; };
 		0410F9771C3BA4BC0069991E /* SHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9761C3BA4BC0069991E /* SHBaseViewController.m */; };
 		0410F97A1C3BA4E60069991E /* SHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9791C3BA4E60069991E /* SHNavigationController.m */; };
-		0410F99A1C3BB6020069991E /* SHControlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9901C3BB6020069991E /* SHControlController.m */; };
 		0410F99B1C3BB6020069991E /* SHHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9931C3BB6020069991E /* SHHomeController.m */; };
 		0410F99C1C3BB6020069991E /* SHMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9961C3BB6020069991E /* SHMineController.m */; };
 		0410F99D1C3BB6020069991E /* SHSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9991C3BB6020069991E /* SHSceneController.m */; };
@@ -128,6 +127,8 @@
 		A5B6E5591C412A4F0080E06F /* UIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E54D1C412A4F0080E06F /* UIView+Hierarchy.m */; };
 		A5B6E55A1C412A4F0080E06F /* UIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E54F1C412A4F0080E06F /* UIView+IQKeyboardToolbar.m */; };
 		A5B6E55B1C412A4F0080E06F /* UIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5511C412A4F0080E06F /* UIWindow+Hierarchy.m */; };
+		A5D6CE091C7F3B87008BDF4C /* BWButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D6CE061C7F3B87008BDF4C /* BWButton.m */; };
+		A5D6CE0A1C7F3B87008BDF4C /* SHControllController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D6CE081C7F3B87008BDF4C /* SHControllController.m */; };
 		A5E3B8A31C5D28AD00136A9C /* SHSceneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8A21C5D28AD00136A9C /* SHSceneCell.m */; };
 		A5E3B8A61C5D2B3000136A9C /* scene_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8A51C5D2B3000136A9C /* scene_bg@2x.png */; };
 		A5E3B8A81C5D2B6800136A9C /* zidingyi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8A71C5D2B6800136A9C /* zidingyi@2x.png */; };
@@ -233,8 +234,6 @@
 		0410F9791C3BA4E60069991E /* SHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNavigationController.m; sourceTree = "<group>"; };
 		0410F97B1C3BA87D0069991E /* config.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.pch; sourceTree = "<group>"; };
 		0410F97C1C3BAB970069991E /* MacroDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefine.h; sourceTree = "<group>"; };
-		0410F98F1C3BB6020069991E /* SHControlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHControlController.h; sourceTree = "<group>"; };
-		0410F9901C3BB6020069991E /* SHControlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHControlController.m; sourceTree = "<group>"; };
 		0410F9921C3BB6020069991E /* SHHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHHomeController.h; sourceTree = "<group>"; };
 		0410F9931C3BB6020069991E /* SHHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHHomeController.m; sourceTree = "<group>"; };
 		0410F9951C3BB6020069991E /* SHMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHMineController.h; sourceTree = "<group>"; };
@@ -359,6 +358,10 @@
 		A5B6E54F1C412A4F0080E06F /* UIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		A5B6E5501C412A4F0080E06F /* UIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Hierarchy.h"; sourceTree = "<group>"; };
 		A5B6E5511C412A4F0080E06F /* UIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		A5D6CE051C7F3B87008BDF4C /* BWButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWButton.h; sourceTree = "<group>"; };
+		A5D6CE061C7F3B87008BDF4C /* BWButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWButton.m; sourceTree = "<group>"; };
+		A5D6CE071C7F3B87008BDF4C /* SHControllController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHControllController.h; sourceTree = "<group>"; };
+		A5D6CE081C7F3B87008BDF4C /* SHControllController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHControllController.m; sourceTree = "<group>"; };
 		A5E3B8A11C5D28AD00136A9C /* SHSceneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSceneCell.h; sourceTree = "<group>"; };
 		A5E3B8A21C5D28AD00136A9C /* SHSceneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSceneCell.m; sourceTree = "<group>"; };
 		A5E3B8A51C5D2B3000136A9C /* scene_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scene_bg@2x.png"; sourceTree = "<group>"; };
@@ -628,8 +631,10 @@
 		0410F98E1C3BB6020069991E /* control */ = {
 			isa = PBXGroup;
 			children = (
-				0410F98F1C3BB6020069991E /* SHControlController.h */,
-				0410F9901C3BB6020069991E /* SHControlController.m */,
+				A5D6CE051C7F3B87008BDF4C /* BWButton.h */,
+				A5D6CE061C7F3B87008BDF4C /* BWButton.m */,
+				A5D6CE071C7F3B87008BDF4C /* SHControllController.h */,
+				A5D6CE081C7F3B87008BDF4C /* SHControllController.m */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -1172,7 +1177,6 @@
 				A5B6E5541C412A4F0080E06F /* IQSegmentedNextPrevious.m in Sources */,
 				A55984411C5A65160091A7FF /* SHMineCell.m in Sources */,
 				A5E3B8C11C735C5100136A9C /* GQSegmentedControl.m in Sources */,
-				0410F99A1C3BB6020069991E /* SHControlController.m in Sources */,
 				A5E3B8C21C735C5100136A9C /* SHDeviceHeadView.m in Sources */,
 				0410F99C1C3BB6020069991E /* SHMineController.m in Sources */,
 				A5B6E5551C412A4F0080E06F /* IQTextView.m in Sources */,
@@ -1191,11 +1195,13 @@
 				040B27061C3B9554003D6E47 /* AppDelegate.m in Sources */,
 				A5B6E52B1C410B1C0080E06F /* AppManager.m in Sources */,
 				A5B6E5101C40FDE50080E06F /* SHLoginController.m in Sources */,
+				A5D6CE0A1C7F3B87008BDF4C /* SHControllController.m in Sources */,
 				0410F99B1C3BB6020069991E /* SHHomeController.m in Sources */,
 				A5B6E5121C40FDE50080E06F /* SHRegisterController.m in Sources */,
 				A5B6E52E1C410EFE0080E06F /* UIViewController+extension.m in Sources */,
 				A5E3B8DB1C736DC700136A9C /* SHAirconditionControllView.m in Sources */,
 				A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */,
+				A5D6CE091C7F3B87008BDF4C /* BWButton.m in Sources */,
 				0410F9671C3B978C0069991E /* MBProgressHUD.m in Sources */,
 				A5B6E55A1C412A4F0080E06F /* UIView+IQKeyboardToolbar.m in Sources */,
 				A5B6E5171C40FEA30080E06F /* SHAccountManager.m in Sources */,
