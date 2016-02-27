@@ -97,6 +97,11 @@
 		A55984E61C5A8AD60091A7FF /* warn_su@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984C91C5A8AD60091A7FF /* warn_su@2x.png */; };
 		A55984E71C5A8AD60091A7FF /* warn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984CA1C5A8AD60091A7FF /* warn@2x.png */; };
 		A55984E91C5A8E990091A7FF /* youxiu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984E81C5A8E990091A7FF /* youxiu@2x.png */; };
+		A5690D8F1C81F4E80045DCDE /* contoll_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5690D8D1C81F4E80045DCDE /* contoll_close@2x.png */; };
+		A5690D901C81F4E80045DCDE /* contoll_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5690D8E1C81F4E80045DCDE /* contoll_open@2x.png */; };
+		A5690D931C81F5800045DCDE /* SHControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690D921C81F5800045DCDE /* SHControllView.m */; };
+		A5690D961C81F5A50045DCDE /* SHLightControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690D951C81F5A50045DCDE /* SHLightControllView.m */; };
+		A5690D991C81FAE80045DCDE /* SHContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690D981C81FAE80045DCDE /* SHContentView.m */; };
 		A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */; };
 		A5B6E50F1C40FDE50080E06F /* SHForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */; };
 		A5B6E5101C40FDE50080E06F /* SHLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5091C40FDE50080E06F /* SHLoginController.m */; };
@@ -308,6 +313,14 @@
 		A55984C91C5A8AD60091A7FF /* warn_su@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warn_su@2x.png"; sourceTree = "<group>"; };
 		A55984CA1C5A8AD60091A7FF /* warn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warn@2x.png"; sourceTree = "<group>"; };
 		A55984E81C5A8E990091A7FF /* youxiu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youxiu@2x.png"; sourceTree = "<group>"; };
+		A5690D8D1C81F4E80045DCDE /* contoll_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contoll_close@2x.png"; sourceTree = "<group>"; };
+		A5690D8E1C81F4E80045DCDE /* contoll_open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contoll_open@2x.png"; sourceTree = "<group>"; };
+		A5690D911C81F5800045DCDE /* SHControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHControllView.h; sourceTree = "<group>"; };
+		A5690D921C81F5800045DCDE /* SHControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHControllView.m; sourceTree = "<group>"; };
+		A5690D941C81F5A50045DCDE /* SHLightControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLightControllView.h; sourceTree = "<group>"; };
+		A5690D951C81F5A50045DCDE /* SHLightControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLightControllView.m; sourceTree = "<group>"; };
+		A5690D971C81FAE80045DCDE /* SHContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHContentView.h; sourceTree = "<group>"; };
+		A5690D981C81FAE80045DCDE /* SHContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHContentView.m; sourceTree = "<group>"; };
 		A5B6E5051C40FDE50080E06F /* SHForgetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHForgetPasswordController.h; sourceTree = "<group>"; };
 		A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHForgetPasswordController.m; sourceTree = "<group>"; };
 		A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHForgetPasswordController.xib; sourceTree = "<group>"; };
@@ -637,6 +650,12 @@
 				A5D6CE061C7F3B87008BDF4C /* BWButton.m */,
 				A5D6CE071C7F3B87008BDF4C /* SHControllController.h */,
 				A5D6CE081C7F3B87008BDF4C /* SHControllController.m */,
+				A5690D911C81F5800045DCDE /* SHControllView.h */,
+				A5690D921C81F5800045DCDE /* SHControllView.m */,
+				A5690D941C81F5A50045DCDE /* SHLightControllView.h */,
+				A5690D951C81F5A50045DCDE /* SHLightControllView.m */,
+				A5690D971C81FAE80045DCDE /* SHContentView.h */,
+				A5690D981C81FAE80045DCDE /* SHContentView.m */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -873,6 +892,8 @@
 		A5D6CE0B1C7F8263008BDF4C /* controll */ = {
 			isa = PBXGroup;
 			children = (
+				A5690D8D1C81F4E80045DCDE /* contoll_close@2x.png */,
+				A5690D8E1C81F4E80045DCDE /* contoll_open@2x.png */,
 				A5D6CE0C1C7F8269008BDF4C /* light@2x.png */,
 			);
 			path = controll;
@@ -1072,6 +1093,7 @@
 				A5B6E53A1C4121ED0080E06F /* SHSetPasswordController.xib in Resources */,
 				A55984D61C5A8AD60091A7FF /* eat@2x.png in Resources */,
 				A55984DC1C5A8AD60091A7FF /* message@2x.png in Resources */,
+				A5690D8F1C81F4E80045DCDE /* contoll_close@2x.png in Resources */,
 				A55984D41C5A8AD60091A7FF /* cloud@2x.png in Resources */,
 				A55984E71C5A8AD60091A7FF /* warn@2x.png in Resources */,
 				A55984E91C5A8E990091A7FF /* youxiu@2x.png in Resources */,
@@ -1096,6 +1118,7 @@
 				A5E3B8F21C738C5D00136A9C /* blind@2x.png in Resources */,
 				A5E3B8E71C73846E00136A9C /* heating@2x.png in Resources */,
 				A55984DA1C5A8AD60091A7FF /* leave_s@2x.png in Resources */,
+				A5690D901C81F4E80045DCDE /* contoll_open@2x.png in Resources */,
 				A55984371C4D17F40091A7FF /* tabbar1_select@2x.png in Resources */,
 				A5B6E5251C41041A0080E06F /* logo@2x.png in Resources */,
 				040B27111C3B9554003D6E47 /* LaunchScreen.storyboard in Resources */,
@@ -1182,6 +1205,8 @@
 				0410F9521C3B978C0069991E /* AFURLRequestSerialization.m in Sources */,
 				0410F9511C3B978C0069991E /* AFURLConnectionOperation.m in Sources */,
 				A5B6E51B1C4100EF0080E06F /* CALayer+Additions.m in Sources */,
+				A5690D961C81F5A50045DCDE /* SHLightControllView.m in Sources */,
+				A5690D931C81F5800045DCDE /* SHControllView.m in Sources */,
 				A5E3B8D21C735CA500136A9C /* SHAirconditionerCell.m in Sources */,
 				A5E3B8D51C735CA500136A9C /* SHMenuCell.m in Sources */,
 				A55984AC1C5A895B0091A7FF /* SHHomeCell.m in Sources */,
@@ -1207,6 +1232,7 @@
 				040B27061C3B9554003D6E47 /* AppDelegate.m in Sources */,
 				A5B6E52B1C410B1C0080E06F /* AppManager.m in Sources */,
 				A5B6E5101C40FDE50080E06F /* SHLoginController.m in Sources */,
+				A5690D991C81FAE80045DCDE /* SHContentView.m in Sources */,
 				A5D6CE0A1C7F3B87008BDF4C /* SHControllController.m in Sources */,
 				0410F99B1C3BB6020069991E /* SHHomeController.m in Sources */,
 				A5B6E5121C40FDE50080E06F /* SHRegisterController.m in Sources */,
