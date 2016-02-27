@@ -12,6 +12,11 @@ typedef NS_ENUM(NSInteger,BWDeviceType) {
     BWDeviceType_light,
     BWDeviceType_airconditioner,
     BWDeviceType_window,
+    BWDeviceType_tv,
+    BWDeviceType_music,
+    BWDeviceType_gas,
+    BWDeviceType_refrigerator,
+    BWDeviceType_socket
 };
 
 @interface SHDeviceControllView : UIView

@@ -100,7 +100,6 @@
 		A5690D8F1C81F4E80045DCDE /* contoll_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5690D8D1C81F4E80045DCDE /* contoll_close@2x.png */; };
 		A5690D901C81F4E80045DCDE /* contoll_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5690D8E1C81F4E80045DCDE /* contoll_open@2x.png */; };
 		A5690D991C81FAE80045DCDE /* SHContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690D981C81FAE80045DCDE /* SHContentView.m */; };
-		A5690D9C1C820DC00045DCDE /* SHDeviceControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690D9B1C820DC00045DCDE /* SHDeviceControllView.m */; };
 		A5690DA21C8211350045DCDE /* SHControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690D9F1C8211350045DCDE /* SHControllView.m */; };
 		A5690DA31C8211350045DCDE /* SHLightControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DA11C8211350045DCDE /* SHLightControllView.m */; };
 		A5690DA61C821C8B0045DCDE /* SHWindowControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DA51C821C8B0045DCDE /* SHWindowControllView.m */; };
@@ -108,6 +107,13 @@
 		A5690DAC1C821EEC0045DCDE /* controll_widindow_change.png in Resources */ = {isa = PBXBuildFile; fileRef = A5690DA81C821EEC0045DCDE /* controll_widindow_change.png */; };
 		A5690DAD1C821EEC0045DCDE /* controll_window_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5690DA91C821EEC0045DCDE /* controll_window_close@2x.png */; };
 		A5690DAE1C821EEC0045DCDE /* controll_window_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5690DAA1C821EEC0045DCDE /* controll_window_open@2x.png */; };
+		A5690DB11C8224F80045DCDE /* SHTVControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DB01C8224F80045DCDE /* SHTVControllView.m */; };
+		A5690DB41C82251E0045DCDE /* SHMusicControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DB31C82251E0045DCDE /* SHMusicControllView.m */; };
+		A5690DB71C8225480045DCDE /* SHGasControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DB61C8225480045DCDE /* SHGasControllView.m */; };
+		A5690DBA1C82256E0045DCDE /* SHRefrigeratorControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DB91C82256E0045DCDE /* SHRefrigeratorControllView.m */; };
+		A5690DBD1C8225A60045DCDE /* SHSocketControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DBC1C8225A60045DCDE /* SHSocketControllView.m */; };
+		A5690DC31C8226400045DCDE /* SHDeviceControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DC21C8226400045DCDE /* SHDeviceControllView.m */; };
+		A5690DC61C8226A50045DCDE /* SHAirControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DC51C8226A50045DCDE /* SHAirControllView.m */; };
 		A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */; };
 		A5B6E50F1C40FDE50080E06F /* SHForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */; };
 		A5B6E5101C40FDE50080E06F /* SHLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5091C40FDE50080E06F /* SHLoginController.m */; };
@@ -323,8 +329,6 @@
 		A5690D8E1C81F4E80045DCDE /* contoll_open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contoll_open@2x.png"; sourceTree = "<group>"; };
 		A5690D971C81FAE80045DCDE /* SHContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHContentView.h; sourceTree = "<group>"; };
 		A5690D981C81FAE80045DCDE /* SHContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHContentView.m; sourceTree = "<group>"; };
-		A5690D9A1C820DC00045DCDE /* SHDeviceControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDeviceControllView.h; sourceTree = "<group>"; };
-		A5690D9B1C820DC00045DCDE /* SHDeviceControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDeviceControllView.m; sourceTree = "<group>"; };
 		A5690D9E1C8211350045DCDE /* SHControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHControllView.h; sourceTree = "<group>"; };
 		A5690D9F1C8211350045DCDE /* SHControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHControllView.m; sourceTree = "<group>"; };
 		A5690DA01C8211350045DCDE /* SHLightControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLightControllView.h; sourceTree = "<group>"; };
@@ -335,6 +339,20 @@
 		A5690DA81C821EEC0045DCDE /* controll_widindow_change.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = controll_widindow_change.png; sourceTree = "<group>"; };
 		A5690DA91C821EEC0045DCDE /* controll_window_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "controll_window_close@2x.png"; sourceTree = "<group>"; };
 		A5690DAA1C821EEC0045DCDE /* controll_window_open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "controll_window_open@2x.png"; sourceTree = "<group>"; };
+		A5690DAF1C8224F80045DCDE /* SHTVControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTVControllView.h; sourceTree = "<group>"; };
+		A5690DB01C8224F80045DCDE /* SHTVControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTVControllView.m; sourceTree = "<group>"; };
+		A5690DB21C82251E0045DCDE /* SHMusicControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHMusicControllView.h; sourceTree = "<group>"; };
+		A5690DB31C82251E0045DCDE /* SHMusicControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHMusicControllView.m; sourceTree = "<group>"; };
+		A5690DB51C8225480045DCDE /* SHGasControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHGasControllView.h; sourceTree = "<group>"; };
+		A5690DB61C8225480045DCDE /* SHGasControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHGasControllView.m; sourceTree = "<group>"; };
+		A5690DB81C82256E0045DCDE /* SHRefrigeratorControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRefrigeratorControllView.h; sourceTree = "<group>"; };
+		A5690DB91C82256E0045DCDE /* SHRefrigeratorControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRefrigeratorControllView.m; sourceTree = "<group>"; };
+		A5690DBB1C8225A60045DCDE /* SHSocketControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSocketControllView.h; sourceTree = "<group>"; };
+		A5690DBC1C8225A60045DCDE /* SHSocketControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSocketControllView.m; sourceTree = "<group>"; };
+		A5690DC11C8226400045DCDE /* SHDeviceControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDeviceControllView.h; sourceTree = "<group>"; };
+		A5690DC21C8226400045DCDE /* SHDeviceControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDeviceControllView.m; sourceTree = "<group>"; };
+		A5690DC41C8226A50045DCDE /* SHAirControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAirControllView.h; sourceTree = "<group>"; };
+		A5690DC51C8226A50045DCDE /* SHAirControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAirControllView.m; sourceTree = "<group>"; };
 		A5B6E5051C40FDE50080E06F /* SHForgetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHForgetPasswordController.h; sourceTree = "<group>"; };
 		A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHForgetPasswordController.m; sourceTree = "<group>"; };
 		A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHForgetPasswordController.xib; sourceTree = "<group>"; };
@@ -667,8 +685,6 @@
 				A5D6CE081C7F3B87008BDF4C /* SHControllController.m */,
 				A5690D971C81FAE80045DCDE /* SHContentView.h */,
 				A5690D981C81FAE80045DCDE /* SHContentView.m */,
-				A5690D9A1C820DC00045DCDE /* SHDeviceControllView.h */,
-				A5690D9B1C820DC00045DCDE /* SHDeviceControllView.m */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -795,12 +811,26 @@
 		A5690D9D1C8211070045DCDE /* view */ = {
 			isa = PBXGroup;
 			children = (
+				A5690DC11C8226400045DCDE /* SHDeviceControllView.h */,
+				A5690DC21C8226400045DCDE /* SHDeviceControllView.m */,
 				A5690D9E1C8211350045DCDE /* SHControllView.h */,
 				A5690D9F1C8211350045DCDE /* SHControllView.m */,
 				A5690DA01C8211350045DCDE /* SHLightControllView.h */,
 				A5690DA11C8211350045DCDE /* SHLightControllView.m */,
 				A5690DA41C821C8B0045DCDE /* SHWindowControllView.h */,
 				A5690DA51C821C8B0045DCDE /* SHWindowControllView.m */,
+				A5690DAF1C8224F80045DCDE /* SHTVControllView.h */,
+				A5690DB01C8224F80045DCDE /* SHTVControllView.m */,
+				A5690DB21C82251E0045DCDE /* SHMusicControllView.h */,
+				A5690DB31C82251E0045DCDE /* SHMusicControllView.m */,
+				A5690DB51C8225480045DCDE /* SHGasControllView.h */,
+				A5690DB61C8225480045DCDE /* SHGasControllView.m */,
+				A5690DB81C82256E0045DCDE /* SHRefrigeratorControllView.h */,
+				A5690DB91C82256E0045DCDE /* SHRefrigeratorControllView.m */,
+				A5690DBB1C8225A60045DCDE /* SHSocketControllView.h */,
+				A5690DBC1C8225A60045DCDE /* SHSocketControllView.m */,
+				A5690DC41C8226A50045DCDE /* SHAirControllView.h */,
+				A5690DC51C8226A50045DCDE /* SHAirControllView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1237,16 +1267,19 @@
 				A5E3B8D31C735CA500136A9C /* SHBaseDeviceCell.m in Sources */,
 				A5B6E5391C4121ED0080E06F /* SHSetPasswordController.m in Sources */,
 				0410F9521C3B978C0069991E /* AFURLRequestSerialization.m in Sources */,
+				A5690DBA1C82256E0045DCDE /* SHRefrigeratorControllView.m in Sources */,
 				0410F9511C3B978C0069991E /* AFURLConnectionOperation.m in Sources */,
 				A5B6E51B1C4100EF0080E06F /* CALayer+Additions.m in Sources */,
 				A5E3B8D21C735CA500136A9C /* SHAirconditionerCell.m in Sources */,
 				A5E3B8D51C735CA500136A9C /* SHMenuCell.m in Sources */,
 				A55984AC1C5A895B0091A7FF /* SHHomeCell.m in Sources */,
 				A5690DA31C8211350045DCDE /* SHLightControllView.m in Sources */,
+				A5690DC61C8226A50045DCDE /* SHAirControllView.m in Sources */,
+				A5690DB41C82251E0045DCDE /* SHMusicControllView.m in Sources */,
 				0410F9771C3BA4BC0069991E /* SHBaseViewController.m in Sources */,
 				A5B6E5541C412A4F0080E06F /* IQSegmentedNextPrevious.m in Sources */,
 				A55984411C5A65160091A7FF /* SHMineCell.m in Sources */,
-				A5690D9C1C820DC00045DCDE /* SHDeviceControllView.m in Sources */,
+				A5690DBD1C8225A60045DCDE /* SHSocketControllView.m in Sources */,
 				A5E3B8C11C735C5100136A9C /* GQSegmentedControl.m in Sources */,
 				A5E3B8C21C735C5100136A9C /* SHDeviceHeadView.m in Sources */,
 				0410F99C1C3BB6020069991E /* SHMineController.m in Sources */,
@@ -1257,6 +1290,7 @@
 				A5B6E5561C412A4F0080E06F /* IQTitleBarButtonItem.m in Sources */,
 				A5E3B8A31C5D28AD00136A9C /* SHSceneCell.m in Sources */,
 				A5B6E5571C412A4F0080E06F /* IQToolbar.m in Sources */,
+				A5690DC31C8226400045DCDE /* SHDeviceControllView.m in Sources */,
 				0410F94C1C3B978C0069991E /* AFHTTPRequestOperation.m in Sources */,
 				0410F9541C3B978C0069991E /* AFURLSessionManager.m in Sources */,
 				A55984641C5A7D900091A7FF /* SHAboutCell.m in Sources */,
@@ -1275,6 +1309,7 @@
 				A5E3B8DB1C736DC700136A9C /* SHAirconditionControllView.m in Sources */,
 				A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */,
 				A5D6CE091C7F3B87008BDF4C /* BWButton.m in Sources */,
+				A5690DB11C8224F80045DCDE /* SHTVControllView.m in Sources */,
 				A5690DA61C821C8B0045DCDE /* SHWindowControllView.m in Sources */,
 				0410F9671C3B978C0069991E /* MBProgressHUD.m in Sources */,
 				A5B6E55A1C412A4F0080E06F /* UIView+IQKeyboardToolbar.m in Sources */,
@@ -1287,6 +1322,7 @@
 				0410F94E1C3B978C0069991E /* AFHTTPSessionManager.m in Sources */,
 				0410F99D1C3BB6020069991E /* SHSceneController.m in Sources */,
 				0410F94D1C3B978C0069991E /* AFHTTPRequestOperationManager.m in Sources */,
+				A5690DB71C8225480045DCDE /* SHGasControllView.m in Sources */,
 				0410F94F1C3B978C0069991E /* AFNetworkReachabilityManager.m in Sources */,
 				040B27031C3B9554003D6E47 /* main.m in Sources */,
 			);
