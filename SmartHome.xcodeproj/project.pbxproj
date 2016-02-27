@@ -99,9 +99,10 @@
 		A55984E91C5A8E990091A7FF /* youxiu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55984E81C5A8E990091A7FF /* youxiu@2x.png */; };
 		A5690D8F1C81F4E80045DCDE /* contoll_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5690D8D1C81F4E80045DCDE /* contoll_close@2x.png */; };
 		A5690D901C81F4E80045DCDE /* contoll_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5690D8E1C81F4E80045DCDE /* contoll_open@2x.png */; };
-		A5690D931C81F5800045DCDE /* SHControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690D921C81F5800045DCDE /* SHControllView.m */; };
-		A5690D961C81F5A50045DCDE /* SHLightControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690D951C81F5A50045DCDE /* SHLightControllView.m */; };
 		A5690D991C81FAE80045DCDE /* SHContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690D981C81FAE80045DCDE /* SHContentView.m */; };
+		A5690D9C1C820DC00045DCDE /* SHDeviceControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690D9B1C820DC00045DCDE /* SHDeviceControllView.m */; };
+		A5690DA21C8211350045DCDE /* SHControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690D9F1C8211350045DCDE /* SHControllView.m */; };
+		A5690DA31C8211350045DCDE /* SHLightControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DA11C8211350045DCDE /* SHLightControllView.m */; };
 		A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */; };
 		A5B6E50F1C40FDE50080E06F /* SHForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */; };
 		A5B6E5101C40FDE50080E06F /* SHLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5091C40FDE50080E06F /* SHLoginController.m */; };
@@ -315,12 +316,14 @@
 		A55984E81C5A8E990091A7FF /* youxiu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youxiu@2x.png"; sourceTree = "<group>"; };
 		A5690D8D1C81F4E80045DCDE /* contoll_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contoll_close@2x.png"; sourceTree = "<group>"; };
 		A5690D8E1C81F4E80045DCDE /* contoll_open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contoll_open@2x.png"; sourceTree = "<group>"; };
-		A5690D911C81F5800045DCDE /* SHControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHControllView.h; sourceTree = "<group>"; };
-		A5690D921C81F5800045DCDE /* SHControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHControllView.m; sourceTree = "<group>"; };
-		A5690D941C81F5A50045DCDE /* SHLightControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLightControllView.h; sourceTree = "<group>"; };
-		A5690D951C81F5A50045DCDE /* SHLightControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLightControllView.m; sourceTree = "<group>"; };
 		A5690D971C81FAE80045DCDE /* SHContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHContentView.h; sourceTree = "<group>"; };
 		A5690D981C81FAE80045DCDE /* SHContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHContentView.m; sourceTree = "<group>"; };
+		A5690D9A1C820DC00045DCDE /* SHDeviceControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDeviceControllView.h; sourceTree = "<group>"; };
+		A5690D9B1C820DC00045DCDE /* SHDeviceControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDeviceControllView.m; sourceTree = "<group>"; };
+		A5690D9E1C8211350045DCDE /* SHControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHControllView.h; sourceTree = "<group>"; };
+		A5690D9F1C8211350045DCDE /* SHControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHControllView.m; sourceTree = "<group>"; };
+		A5690DA01C8211350045DCDE /* SHLightControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLightControllView.h; sourceTree = "<group>"; };
+		A5690DA11C8211350045DCDE /* SHLightControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLightControllView.m; sourceTree = "<group>"; };
 		A5B6E5051C40FDE50080E06F /* SHForgetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHForgetPasswordController.h; sourceTree = "<group>"; };
 		A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHForgetPasswordController.m; sourceTree = "<group>"; };
 		A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHForgetPasswordController.xib; sourceTree = "<group>"; };
@@ -646,16 +649,15 @@
 		0410F98E1C3BB6020069991E /* control */ = {
 			isa = PBXGroup;
 			children = (
+				A5690D9D1C8211070045DCDE /* view */,
 				A5D6CE051C7F3B87008BDF4C /* BWButton.h */,
 				A5D6CE061C7F3B87008BDF4C /* BWButton.m */,
 				A5D6CE071C7F3B87008BDF4C /* SHControllController.h */,
 				A5D6CE081C7F3B87008BDF4C /* SHControllController.m */,
-				A5690D911C81F5800045DCDE /* SHControllView.h */,
-				A5690D921C81F5800045DCDE /* SHControllView.m */,
-				A5690D941C81F5A50045DCDE /* SHLightControllView.h */,
-				A5690D951C81F5A50045DCDE /* SHLightControllView.m */,
 				A5690D971C81FAE80045DCDE /* SHContentView.h */,
 				A5690D981C81FAE80045DCDE /* SHContentView.m */,
+				A5690D9A1C820DC00045DCDE /* SHDeviceControllView.h */,
+				A5690D9B1C820DC00045DCDE /* SHDeviceControllView.m */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -777,6 +779,17 @@
 				A55984CA1C5A8AD60091A7FF /* warn@2x.png */,
 			);
 			path = home;
+			sourceTree = "<group>";
+		};
+		A5690D9D1C8211070045DCDE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A5690D9E1C8211350045DCDE /* SHControllView.h */,
+				A5690D9F1C8211350045DCDE /* SHControllView.m */,
+				A5690DA01C8211350045DCDE /* SHLightControllView.h */,
+				A5690DA11C8211350045DCDE /* SHLightControllView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		A5B6E5021C40F9480080E06F /* iPad_image */ = {
@@ -1205,14 +1218,14 @@
 				0410F9521C3B978C0069991E /* AFURLRequestSerialization.m in Sources */,
 				0410F9511C3B978C0069991E /* AFURLConnectionOperation.m in Sources */,
 				A5B6E51B1C4100EF0080E06F /* CALayer+Additions.m in Sources */,
-				A5690D961C81F5A50045DCDE /* SHLightControllView.m in Sources */,
-				A5690D931C81F5800045DCDE /* SHControllView.m in Sources */,
 				A5E3B8D21C735CA500136A9C /* SHAirconditionerCell.m in Sources */,
 				A5E3B8D51C735CA500136A9C /* SHMenuCell.m in Sources */,
 				A55984AC1C5A895B0091A7FF /* SHHomeCell.m in Sources */,
+				A5690DA31C8211350045DCDE /* SHLightControllView.m in Sources */,
 				0410F9771C3BA4BC0069991E /* SHBaseViewController.m in Sources */,
 				A5B6E5541C412A4F0080E06F /* IQSegmentedNextPrevious.m in Sources */,
 				A55984411C5A65160091A7FF /* SHMineCell.m in Sources */,
+				A5690D9C1C820DC00045DCDE /* SHDeviceControllView.m in Sources */,
 				A5E3B8C11C735C5100136A9C /* GQSegmentedControl.m in Sources */,
 				A5E3B8C21C735C5100136A9C /* SHDeviceHeadView.m in Sources */,
 				0410F99C1C3BB6020069991E /* SHMineController.m in Sources */,
@@ -1236,6 +1249,7 @@
 				A5D6CE0A1C7F3B87008BDF4C /* SHControllController.m in Sources */,
 				0410F99B1C3BB6020069991E /* SHHomeController.m in Sources */,
 				A5B6E5121C40FDE50080E06F /* SHRegisterController.m in Sources */,
+				A5690DA21C8211350045DCDE /* SHControllView.m in Sources */,
 				A5B6E52E1C410EFE0080E06F /* UIViewController+extension.m in Sources */,
 				A5E3B8DB1C736DC700136A9C /* SHAirconditionControllView.m in Sources */,
 				A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */,

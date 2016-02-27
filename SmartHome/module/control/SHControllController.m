@@ -8,8 +8,8 @@
 
 #import "SHControllController.h"
 #import "BWButton.h"
-#import "SHControllView.h"
 #import "SHContentView.h"
+#import "SHDeviceControllView.h"
 
 #define gScreenheight [UIScreen mainScreen].bounds.size.height
 
@@ -19,7 +19,7 @@
 
 @property (nonatomic, assign) CGFloat                   buttonRadius;
 
-@property (nonatomic, strong) SHControllView            *controllView;
+@property (nonatomic, strong) SHDeviceControllView      *deviceControllView;
 
 @property (nonatomic, strong) SHContentView             *selectView;
 
@@ -36,8 +36,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = RGB(90, 200, 230, 1);
     self.navigationItem.title = @"控制面板";
     [self.view addSubview:self.selectView];
+    [self.view addSubview:self.deviceControllView];
 }
 
 - (SHContentView *)selectView{
@@ -45,6 +47,13 @@
         _selectView = [[SHContentView alloc] initWithFrame:CGRectMake(0, gScreenheight - 49 - gScreenwidth/2 - self.buttonRadius, gScreenwidth,gScreenwidth)];
     }
     return _selectView;
+}
+
+- (SHDeviceControllView *)deviceControllView{
+    if (_deviceControllView == nil) {
+        _deviceControllView = [[SHDeviceControllView alloc] initWithFrame:CGRectMake(0, 64, gScreenwidth , gScreenheight   - 64 - 49 - gScreenwidth/2 - self.buttonRadius) viewType:BWDeviceType_light];
+    }
+    return _deviceControllView;
 }
 
 

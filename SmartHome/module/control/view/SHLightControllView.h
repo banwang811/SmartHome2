@@ -10,8 +10,8 @@
 
 @interface SHLightControllView : SHControllView
 
-@property (nonatomic, strong) UIProgressView            *progressView1;
+@property (nonatomic, strong) UISlider            *progressView1;
 
-@property (nonatomic, strong) UIProgressView            *progressView2;
+@property (nonatomic, strong) UISlider            *progressView2;
 
 @end
