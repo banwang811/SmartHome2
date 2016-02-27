@@ -18,4 +18,6 @@ typedef NS_ENUM(NSInteger,BWDeviceType) {
 
 - (instancetype)initWithFrame:(CGRect)frame viewType:(BWDeviceType)type;
 
+- (void)layoutContentView:(BWDeviceType)type;
+
 @end

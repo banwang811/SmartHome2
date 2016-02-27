@@ -40,6 +40,7 @@
     self.navigationItem.title = @"控制面板";
     [self.view addSubview:self.selectView];
     [self.view addSubview:self.deviceControllView];
+    [self.deviceControllView layoutContentView:BWDeviceType_window];
 }
 
 - (SHContentView *)selectView{

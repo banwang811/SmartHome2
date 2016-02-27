@@ -9,6 +9,7 @@
 #import "SHDeviceControllView.h"
 #import "SHControllView.h"
 #import "SHLightControllView.h"
+#import "SHWindowControllView.h"
 
 @interface SHDeviceControllView ()
 
@@ -34,8 +35,8 @@
         case BWDeviceType_light:
             self.controllView = [[SHLightControllView alloc] initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH,self.frame.size.height)];
             break;
-        case BWDeviceType_airconditioner:
-            
+        case BWDeviceType_window:
+            self.controllView = [[SHWindowControllView alloc] initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH,self.frame.size.height)];
             break;
         default:
             break;

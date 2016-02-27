@@ -16,10 +16,6 @@
 
 @property (nonatomic, strong) UILabel               *label3;
 
-@property (nonatomic, assign) CGFloat               space_width;
-
-@property (nonatomic, assign) CGFloat               space_higth;
-
 @end
 
 @implementation SHLightControllView
@@ -40,21 +36,21 @@
 
 - (UISlider *)progressView1{
     if (_progressView1 == nil) {
-        _progressView1 = [[UISlider alloc] initWithFrame:CGRectMake(_space_width, _space_higth,SCREEN_WIDTH - 2*_space_width, 44)];
+        _progressView1 = [[UISlider alloc] initWithFrame:CGRectMake(self.space_width, self.space_higth,SCREEN_WIDTH - 2*self.space_width, 44)];
     }
     return _progressView1;
 }
 
 - (UISlider *)progressView2{
     if (_progressView2 == nil) {
-        _progressView2 = [[UISlider alloc] initWithFrame:CGRectMake(_space_width, _space_higth *2 + 44,SCREEN_WIDTH - 2*_space_width, 44)];
+        _progressView2 = [[UISlider alloc] initWithFrame:CGRectMake(self.space_width, self.space_higth *2 + 44,SCREEN_WIDTH - 2*self.space_width, 44)];
     }
     return _progressView2;
 }
 
 - (UILabel *)label1{
     if (_label1 == nil) {
-        _label1 = [[UILabel alloc] initWithFrame:CGRectMake(_space_width + 5, _space_higth - 15, 20, 12)];
+        _label1 = [[UILabel alloc] initWithFrame:CGRectMake(self.space_width + 5, self.space_higth - 15, 20, 12)];
         _label1.textColor = [UIColor whiteColor];
         _label1.text = @"强";
         _label1.font = [UIFont systemFontOfSize:12];
@@ -64,7 +60,7 @@
 
 - (UILabel *)label2{
     if (_label2 == nil) {
-        _label2 = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - _space_width - 20 - 5, _space_higth - 15, 20, 12)];
+        _label2 = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - self.space_width - 20 - 5, self.space_higth - 15, 20, 12)];
         _label2.textColor = [UIColor whiteColor];
         _label2.textAlignment = NSTextAlignmentRight;
         _label2.text = @"弱";
@@ -75,7 +71,7 @@
 
 - (UILabel *)label3{
     if (_label3 == nil) {
-        _label3 = [[UILabel alloc] initWithFrame:CGRectMake(_space_width + 5, _space_higth *2 + 44 - 15, 40, 12)];
+        _label3 = [[UILabel alloc] initWithFrame:CGRectMake(self.space_width + 5, self.space_higth *2 + 44 - 15, 40, 12)];
         _label3.textColor = [UIColor whiteColor];
         _label3.text = @"色温";
         _label3.font = [UIFont systemFontOfSize:12];

@@ -10,4 +10,8 @@
 
 @interface SHControllView : UIView
 
+@property (nonatomic, assign) CGFloat               space_width;
+
+@property (nonatomic, assign) CGFloat               space_higth;
+
 @end
