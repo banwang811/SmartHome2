@@ -84,19 +84,6 @@
 }
 
 
-//获取设备
-- (void)requestDevicePasswordWithParas:(NSDictionary *)paras
-                               success:(void (^)(id responseObject))success
-                               failure:(void (^)(NSError *error))failure{
-    NSString *requestUrl = nil;
-    if (paras == nil) {
-        requestUrl = [NSString stringWithFormat:@"%@%@",serverAddress,device];
-    }else{
-        requestUrl = [NSString stringWithFormat:@"%@%@",serverAddress,device];
-    }
-    [self getWithURL:requestUrl parameters:paras success:success failure:failure];
-}
-
 //http请求
 - (void)requestWithURL:(NSString *)url
             parameters:(NSDictionary *)paras

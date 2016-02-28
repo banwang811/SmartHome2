@@ -46,8 +46,15 @@
 - (void)requestResetPasswordWithParas:(NSDictionary *)paras
                               success:(void (^)(id responseObject))success
                               failure:(void (^)(NSError *error))failure;
-//获取设备
-- (void)requestDevicePasswordWithParas:(NSDictionary *)paras
-                               success:(void (^)(id responseObject))success
-                               failure:(void (^)(NSError *error))failure;
+
+- (void)requestWithURL:(NSString *)url
+            parameters:(NSDictionary *)paras
+               success:(void (^)(id responseObject))success
+               failure:(void (^)(NSError *error))failure;
+
+//http请求
+- (void)getWithURL:(NSString *)url
+        parameters:(NSDictionary *)paras
+           success:(void (^)(id responseObject))success
+           failure:(void (^)(NSError *error))failure;
 @end

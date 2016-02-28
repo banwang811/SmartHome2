@@ -18,7 +18,9 @@
 #define modifyname              @"modifyname"
 #define verifypassword          @"verifypassword"
 #define device                  @"device"
-#define modifyname              @"modifyname"
+#define room                    @"room"
+#define scene                   @"scene"
+
 #define modifyname              @"modifyname"
 #define modifyname              @"modifyname"
 #define modifyname              @"modifyname"
