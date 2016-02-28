@@ -18,8 +18,10 @@
 @property (nonatomic, strong) NSString      *email;
 @property (nonatomic, strong) NSString      *phone;
 @property (nonatomic, strong) NSString      *role;
+@property (nonatomic, strong) NSString      *sex;
 @property (nonatomic, strong) NSString      *created_at;
 @property (nonatomic, strong) NSString      *updated_at;
+@property (nonatomic, strong) NSString      *verificationCode;
 
 + (SHAccountManager *)shareManager;
 

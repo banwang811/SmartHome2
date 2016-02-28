@@ -9,9 +9,11 @@
 #ifndef service_h
 #define service_h
 
-#define serverAddress           @"http://example.com/api/"
+#define serverAddress           @"http://121.40.30.197/api/"
 #define login                   @"login"
 #define shregister              @"register"
+#define apply                   @"sms/apply"
+#define verify                  @"sms/verify"
 #define setpassword             @"setpassword"
 #define modifyname              @"modifyname"
 #define verifypassword          @"verifypassword"

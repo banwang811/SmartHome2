@@ -48,14 +48,26 @@
 }
 
 - (IBAction)longin:(UIButton *)sender {
-    appDelegate.window.rootViewController = appDelegate.tabbarContoller;
-    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    NSDictionary *parameter=@{};
-    [manager POST:serverAddress parameters:parameter success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
+    NSDictionary *paras = @{@"phone":[SHAccountManager shareManager].account,
+                            @"password":self.passwordTextField.text};
+    [[SHHTTPManager shareManager] requestLoginWithParas:paras success:^(id responseObject) {
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
+        if ([[dict objectForKey:@"error"] intValue] == 0) {
+            [SHAccountManager shareManager].userId = [dict objectForKey:@"id"];
+            [SHAccountManager shareManager].name = [dict objectForKey:@"name"];
+            [SHAccountManager shareManager].email = [dict objectForKey:@"email"];
+            [SHAccountManager shareManager].phone = [dict objectForKey:@"phone"];
+            [SHAccountManager shareManager].role = [dict objectForKey:@"role"];
+            [SHAccountManager shareManager].password = self.passwordTextField.text;
+            [SHAccountManager shareManager].created_at = [dict objectForKey:@"created_at"];
+            [SHAccountManager shareManager].updated_at = [dict objectForKey:@"updated_at"];
+            appDelegate.window.rootViewController = appDelegate.tabbarContoller;
+        }else{
+            SHError *error = [SHError errorWithCode:[[dict objectForKey:@"error"] intValue]];
+            showAlert(error.desString);
+        }
+    } failure:^(NSError *error) {
+        showAlert(@"请求失败");
     }];
 }
 

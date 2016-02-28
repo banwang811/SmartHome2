@@ -51,10 +51,12 @@
             [SHAccountManager shareManager].name = [dict objectForKey:@"name"];
             [SHAccountManager shareManager].email = [dict objectForKey:@"email"];
             [SHAccountManager shareManager].phone = [dict objectForKey:@"phone"];
+            [SHAccountManager shareManager].sex = [dict objectForKey:@"sex"];
             [SHAccountManager shareManager].role = [dict objectForKey:@"role"];
             [SHAccountManager shareManager].created_at = [dict objectForKey:@"created_at"];
             [SHAccountManager shareManager].updated_at = [dict objectForKey:@"updated_at"];
             [SHAccountManager shareManager].password = self.passwordTextField.text;
+            appDelegate.window.rootViewController = appDelegate.tabbarContoller;
         }else{
             SHError *error = [SHError errorWithCode:[[dict objectForKey:@"error"] intValue]];
             showAlert(error.desString);

@@ -118,6 +118,7 @@
 		A5690DCC1C822A2C0045DCDE /* SHDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DCB1C822A2C0045DCDE /* SHDeviceModel.m */; };
 		A5690DCF1C822B030045DCDE /* SHHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DCE1C822B030045DCDE /* SHHTTPManager.m */; };
 		A5690DD21C82B48E0045DCDE /* SHError.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DD11C82B48E0045DCDE /* SHError.m */; };
+		A5690DD51C82CCEF0045DCDE /* SHSceneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DD41C82CCEF0045DCDE /* SHSceneModel.m */; };
 		A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */; };
 		A5B6E50F1C40FDE50080E06F /* SHForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */; };
 		A5B6E5101C40FDE50080E06F /* SHLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5091C40FDE50080E06F /* SHLoginController.m */; };
@@ -365,6 +366,8 @@
 		A5690DCE1C822B030045DCDE /* SHHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHHTTPManager.m; sourceTree = "<group>"; };
 		A5690DD01C82B48E0045DCDE /* SHError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHError.h; path = SmartHome/assist/SHError.h; sourceTree = SOURCE_ROOT; };
 		A5690DD11C82B48E0045DCDE /* SHError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHError.m; path = SmartHome/assist/SHError.m; sourceTree = SOURCE_ROOT; };
+		A5690DD31C82CCEF0045DCDE /* SHSceneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHSceneModel.h; path = SmartHome/assist/SHSceneModel.h; sourceTree = SOURCE_ROOT; };
+		A5690DD41C82CCEF0045DCDE /* SHSceneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHSceneModel.m; path = SmartHome/assist/SHSceneModel.m; sourceTree = SOURCE_ROOT; };
 		A5B6E5051C40FDE50080E06F /* SHForgetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHForgetPasswordController.h; sourceTree = "<group>"; };
 		A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHForgetPasswordController.m; sourceTree = "<group>"; };
 		A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHForgetPasswordController.xib; sourceTree = "<group>"; };
@@ -653,6 +656,8 @@
 				A5690DCB1C822A2C0045DCDE /* SHDeviceModel.m */,
 				A5690DD01C82B48E0045DCDE /* SHError.h */,
 				A5690DD11C82B48E0045DCDE /* SHError.m */,
+				A5690DD31C82CCEF0045DCDE /* SHSceneModel.h */,
+				A5690DD41C82CCEF0045DCDE /* SHSceneModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -1349,6 +1354,7 @@
 				A5690DB71C8225480045DCDE /* SHGasControllView.m in Sources */,
 				0410F94F1C3B978C0069991E /* AFNetworkReachabilityManager.m in Sources */,
 				040B27031C3B9554003D6E47 /* main.m in Sources */,
+				A5690DD51C82CCEF0045DCDE /* SHSceneModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

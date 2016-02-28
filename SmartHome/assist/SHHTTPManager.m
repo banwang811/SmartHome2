@@ -19,6 +19,22 @@
     return shareManager;
 }
 
+//获取验证码
+- (void)requestSecuritycodeWithParas:(NSDictionary *)paras
+                      success:(void (^)(id responseObject))success
+                      failure:(void (^)(NSError *error))failure{
+    NSString *requestUrl = [NSString stringWithFormat:@"%@%@",serverAddress,apply];
+    [self requestWithURL:requestUrl parameters:paras success:success failure:failure];
+}
+
+//验证验证吗
+- (void)requestCheckSecuritycodeWithParas:(NSDictionary *)paras
+                      success:(void (^)(id responseObject))success
+                      failure:(void (^)(NSError *error))failure{
+    NSString *requestUrl = [NSString stringWithFormat:@"%@%@",serverAddress,verify];
+    [self requestWithURL:requestUrl parameters:paras success:success failure:failure];
+}
+
 //登录
 - (void)requestLoginWithParas:(NSDictionary *)paras
                       success:(void (^)(id responseObject))success
