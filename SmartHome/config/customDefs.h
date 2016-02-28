@@ -45,5 +45,29 @@ typedef NS_ENUM(NSInteger, SHErrorType){
     SHError_registerdphone,
 };
 
+public static final Map<String, DeviceProperty> DEVICE_TYPE_MAP = new HashMap<String, DeviceProperty>(){
+    {
+        put("灯",            new DeviceProperty(false, DEVICE_LIGHT));
+        put("插座",           new DeviceProperty(false, DEVICE_SOCKET));
+        put("机顶盒",        new DeviceProperty(true, DEVICE_STB));
+        put("电视",          new DeviceProperty(true, DEVICE_TV));
+        put("空调",          new DeviceProperty(true, DEVICE_AC));
+        put("摄像头",        new DeviceProperty(false, DEVICE_CAMERA));
+        put("门铃对讲",      new DeviceProperty(false, DEVICE_TALKBACK));
+        put("窗帘",          new DeviceProperty(false, DEVICE_CURTAIN));
+        put("窗户",          new DeviceProperty(false, DEVICE_WINDOW));
+        put("地暖",          new DeviceProperty(false, DEVICE_FH));
+        put("DVD",          new DeviceProperty(true, DEVICE_DVD));
+        put("投影",          new DeviceProperty(false, DEVICE_PROJECTOR));
+        put("幕布",          new DeviceProperty(false, DEVICE_SCREEN));
+        put("温控",          new DeviceProperty(false, DEVICE_TC));
+        put("一氧化碳传感器",  new DeviceProperty(false, DEVICE_CM));
+        put("二氧化碳传感器",  new DeviceProperty(false, DEVICE_CD));
+        put("新风",           new DeviceProperty(false, DEVICE_NT));
+        put("紧急按钮",       new DeviceProperty(false, DEVICE_EMERGENCY));
+        put("冰箱",           new DeviceProperty(false, DEVICE_FREEZER));
+        put("音乐",           new DeviceProperty(false, DEVICE_MUSIC));
+    }
+};
 
 #endif /* customDefs_h */

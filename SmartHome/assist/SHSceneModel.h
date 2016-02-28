@@ -10,4 +10,13 @@
 
 @interface SHSceneModel : NSObject
 
+@property (nonatomic, strong) NSString                  *sceneID;
+@property (nonatomic, strong) NSString                  *user_id;
+@property (nonatomic, strong) NSString                  *name;
+@property (nonatomic, strong) NSString                  *group;
+@property (nonatomic, assign) BOOL                      is_default;
+@property (nonatomic, strong) NSString                  *created_at;
+@property (nonatomic, strong) NSString                  *updated_at;
+@property (nonatomic, strong) NSMutableArray            *mDevices;
+
 @end
