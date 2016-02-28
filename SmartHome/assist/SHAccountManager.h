@@ -11,8 +11,15 @@
 @interface SHAccountManager : NSObject
 
 @property (nonatomic, strong) NSString      *account;
-
 @property (nonatomic, strong) NSString      *password;
+@property (nonatomic, strong) NSString      *name;
+@property (nonatomic, strong) NSString      *nickname;
+@property (nonatomic, strong) NSString      *userId;
+@property (nonatomic, strong) NSString      *email;
+@property (nonatomic, strong) NSString      *phone;
+@property (nonatomic, strong) NSString      *role;
+@property (nonatomic, strong) NSString      *created_at;
+@property (nonatomic, strong) NSString      *updated_at;
 
 + (SHAccountManager *)shareManager;
 

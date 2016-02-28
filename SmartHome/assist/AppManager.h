@@ -14,4 +14,6 @@
 
 - (BOOL)smallScreen;
 
+void showAlert(NSString *message);
+
 @end

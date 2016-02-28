@@ -35,17 +35,11 @@
 }
 
 - (IBAction)registerClick:(UIButton *)sender {
+    [SHAccountManager shareManager].nickname = self.account.text;
+    [SHAccountManager shareManager].account = self.phoneNumber.text;
     SHSetPasswordController *controller = [[SHSetPasswordController alloc] init];
     controller.isRegister = YES;
     [self.navigationController pushViewController:controller animated:YES];
-//    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
-//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-//    NSDictionary *parameter=@{};
-//    [manager POST:serverAddress parameters:parameter success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//        
-//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//        
-//    }];
 }
 
 - (IBAction)getVerificationCode:(UIButton *)sender {

@@ -114,6 +114,10 @@
 		A5690DBD1C8225A60045DCDE /* SHSocketControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DBC1C8225A60045DCDE /* SHSocketControllView.m */; };
 		A5690DC31C8226400045DCDE /* SHDeviceControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DC21C8226400045DCDE /* SHDeviceControllView.m */; };
 		A5690DC61C8226A50045DCDE /* SHAirControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DC51C8226A50045DCDE /* SHAirControllView.m */; };
+		A5690DC91C822A1A0045DCDE /* SHRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DC81C822A1A0045DCDE /* SHRoomModel.m */; };
+		A5690DCC1C822A2C0045DCDE /* SHDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DCB1C822A2C0045DCDE /* SHDeviceModel.m */; };
+		A5690DCF1C822B030045DCDE /* SHHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DCE1C822B030045DCDE /* SHHTTPManager.m */; };
+		A5690DD21C82B48E0045DCDE /* SHError.m in Sources */ = {isa = PBXBuildFile; fileRef = A5690DD11C82B48E0045DCDE /* SHError.m */; };
 		A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */; };
 		A5B6E50F1C40FDE50080E06F /* SHForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */; };
 		A5B6E5101C40FDE50080E06F /* SHLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5091C40FDE50080E06F /* SHLoginController.m */; };
@@ -353,6 +357,14 @@
 		A5690DC21C8226400045DCDE /* SHDeviceControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDeviceControllView.m; sourceTree = "<group>"; };
 		A5690DC41C8226A50045DCDE /* SHAirControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAirControllView.h; sourceTree = "<group>"; };
 		A5690DC51C8226A50045DCDE /* SHAirControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAirControllView.m; sourceTree = "<group>"; };
+		A5690DC71C822A1A0045DCDE /* SHRoomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHRoomModel.h; path = SmartHome/module/control/view/SHRoomModel.h; sourceTree = SOURCE_ROOT; };
+		A5690DC81C822A1A0045DCDE /* SHRoomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHRoomModel.m; path = SmartHome/module/control/view/SHRoomModel.m; sourceTree = SOURCE_ROOT; };
+		A5690DCA1C822A2C0045DCDE /* SHDeviceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHDeviceModel.h; path = SmartHome/module/control/view/SHDeviceModel.h; sourceTree = SOURCE_ROOT; };
+		A5690DCB1C822A2C0045DCDE /* SHDeviceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHDeviceModel.m; path = SmartHome/module/control/view/SHDeviceModel.m; sourceTree = SOURCE_ROOT; };
+		A5690DCD1C822B030045DCDE /* SHHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHHTTPManager.h; sourceTree = "<group>"; };
+		A5690DCE1C822B030045DCDE /* SHHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHHTTPManager.m; sourceTree = "<group>"; };
+		A5690DD01C82B48E0045DCDE /* SHError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHError.h; path = SmartHome/assist/SHError.h; sourceTree = SOURCE_ROOT; };
+		A5690DD11C82B48E0045DCDE /* SHError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHError.m; path = SmartHome/assist/SHError.m; sourceTree = SOURCE_ROOT; };
 		A5B6E5051C40FDE50080E06F /* SHForgetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHForgetPasswordController.h; sourceTree = "<group>"; };
 		A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHForgetPasswordController.m; sourceTree = "<group>"; };
 		A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHForgetPasswordController.xib; sourceTree = "<group>"; };
@@ -635,6 +647,12 @@
 		0410F96C1C3B98080069991E /* model */ = {
 			isa = PBXGroup;
 			children = (
+				A5690DC71C822A1A0045DCDE /* SHRoomModel.h */,
+				A5690DC81C822A1A0045DCDE /* SHRoomModel.m */,
+				A5690DCA1C822A2C0045DCDE /* SHDeviceModel.h */,
+				A5690DCB1C822A2C0045DCDE /* SHDeviceModel.m */,
+				A5690DD01C82B48E0045DCDE /* SHError.h */,
+				A5690DD11C82B48E0045DCDE /* SHError.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -882,6 +900,8 @@
 				A5B6E5161C40FEA30080E06F /* SHAccountManager.m */,
 				A5B6E5291C410B1C0080E06F /* AppManager.h */,
 				A5B6E52A1C410B1C0080E06F /* AppManager.m */,
+				A5690DCD1C822B030045DCDE /* SHHTTPManager.h */,
+				A5690DCE1C822B030045DCDE /* SHHTTPManager.m */,
 			);
 			path = assist;
 			sourceTree = "<group>";
@@ -1267,8 +1287,10 @@
 				A5E3B8D31C735CA500136A9C /* SHBaseDeviceCell.m in Sources */,
 				A5B6E5391C4121ED0080E06F /* SHSetPasswordController.m in Sources */,
 				0410F9521C3B978C0069991E /* AFURLRequestSerialization.m in Sources */,
+				A5690DCC1C822A2C0045DCDE /* SHDeviceModel.m in Sources */,
 				A5690DBA1C82256E0045DCDE /* SHRefrigeratorControllView.m in Sources */,
 				0410F9511C3B978C0069991E /* AFURLConnectionOperation.m in Sources */,
+				A5690DC91C822A1A0045DCDE /* SHRoomModel.m in Sources */,
 				A5B6E51B1C4100EF0080E06F /* CALayer+Additions.m in Sources */,
 				A5E3B8D21C735CA500136A9C /* SHAirconditionerCell.m in Sources */,
 				A5E3B8D51C735CA500136A9C /* SHMenuCell.m in Sources */,
@@ -1276,6 +1298,7 @@
 				A5690DA31C8211350045DCDE /* SHLightControllView.m in Sources */,
 				A5690DC61C8226A50045DCDE /* SHAirControllView.m in Sources */,
 				A5690DB41C82251E0045DCDE /* SHMusicControllView.m in Sources */,
+				A5690DD21C82B48E0045DCDE /* SHError.m in Sources */,
 				0410F9771C3BA4BC0069991E /* SHBaseViewController.m in Sources */,
 				A5B6E5541C412A4F0080E06F /* IQSegmentedNextPrevious.m in Sources */,
 				A55984411C5A65160091A7FF /* SHMineCell.m in Sources */,
@@ -1316,6 +1339,7 @@
 				A5B6E5171C40FEA30080E06F /* SHAccountManager.m in Sources */,
 				A55984601C5A7CA00091A7FF /* SHAboutController.m in Sources */,
 				A5B6E5531C412A4F0080E06F /* IQKeyboardManager.m in Sources */,
+				A5690DCF1C822B030045DCDE /* SHHTTPManager.m in Sources */,
 				A5B6E5591C412A4F0080E06F /* UIView+Hierarchy.m in Sources */,
 				A5E3B8BA1C735B9A00136A9C /* SHModelController.m in Sources */,
 				A5E3B8D61C735CA500136A9C /* SHNormalCell.m in Sources */,

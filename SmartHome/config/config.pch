@@ -30,4 +30,12 @@
 
 #import "customDefs.h"
 
+#import "SHHTTPManager.h"
+
+#import "SHDeviceModel.h"
+
+#import "SHRoomModel.h"
+
+#import "SHError.h"
+
 #endif
