@@ -195,6 +195,9 @@
 		A5E3B8F31C738C5D00136A9C /* icebox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8EE1C738C5D00136A9C /* icebox@2x.png */; };
 		A5E3B8F41C738C5D00136A9C /* light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8EF1C738C5D00136A9C /* light@2x.png */; };
 		A5E3B8F51C738C5D00136A9C /* music@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8F01C738C5D00136A9C /* music@2x.png */; };
+		A5F5DB971C85CDDE00581EEB /* SHRoomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F5DB951C85CDDE00581EEB /* SHRoomCell.m */; };
+		A5F5DB981C85CDDE00581EEB /* SHRoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F5DB961C85CDDE00581EEB /* SHRoomCell.xib */; };
+		A5F5DB9B1C85D98700581EEB /* SHPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F5DB9A1C85D98700581EEB /* SHPickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -492,6 +495,11 @@
 		A5E3B8EE1C738C5D00136A9C /* icebox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icebox@2x.png"; sourceTree = "<group>"; };
 		A5E3B8EF1C738C5D00136A9C /* light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "light@2x.png"; sourceTree = "<group>"; };
 		A5E3B8F01C738C5D00136A9C /* music@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music@2x.png"; sourceTree = "<group>"; };
+		A5F5DB941C85CDDE00581EEB /* SHRoomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRoomCell.h; sourceTree = "<group>"; };
+		A5F5DB951C85CDDE00581EEB /* SHRoomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRoomCell.m; sourceTree = "<group>"; };
+		A5F5DB961C85CDDE00581EEB /* SHRoomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHRoomCell.xib; sourceTree = "<group>"; };
+		A5F5DB991C85D98700581EEB /* SHPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPickerView.h; sourceTree = "<group>"; };
+		A5F5DB9A1C85D98700581EEB /* SHPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -727,12 +735,12 @@
 			children = (
 				04562C5E1C85826E000269A7 /* room */,
 				04562C5D1C858265000269A7 /* device */,
-				A5690D9D1C8211070045DCDE /* view */,
 				A5D6CE051C7F3B87008BDF4C /* BWButton.h */,
 				A5D6CE061C7F3B87008BDF4C /* BWButton.m */,
 				A5D6CE071C7F3B87008BDF4C /* SHControllController.h */,
 				A5D6CE081C7F3B87008BDF4C /* SHControllController.m */,
 				A5690D971C81FAE80045DCDE /* SHContentView.h */,
+				A5690D9D1C8211070045DCDE /* view */,
 				A5690D981C81FAE80045DCDE /* SHContentView.m */,
 				04562C541C857701000269A7 /* SHNoteView.h */,
 				04562C551C857701000269A7 /* SHNoteView.m */,
@@ -793,8 +801,13 @@
 		04562C5E1C85826E000269A7 /* room */ = {
 			isa = PBXGroup;
 			children = (
+				A5F5DB991C85D98700581EEB /* SHPickerView.h */,
+				A5F5DB9A1C85D98700581EEB /* SHPickerView.m */,
 				04562C621C8582DC000269A7 /* SHAddRoomController.h */,
 				04562C631C8582DC000269A7 /* SHAddRoomController.m */,
+				A5F5DB941C85CDDE00581EEB /* SHRoomCell.h */,
+				A5F5DB951C85CDDE00581EEB /* SHRoomCell.m */,
+				A5F5DB961C85CDDE00581EEB /* SHRoomCell.xib */,
 			);
 			path = room;
 			sourceTree = "<group>";
@@ -1301,6 +1314,7 @@
 				04562C661C8588D0000269A7 /* controll_view_add@2x.png in Resources */,
 				A55984D91C5A8AD60091A7FF /* humidity@2x.png in Resources */,
 				A5E3B8E61C73846E00136A9C /* heating_select@2x.png in Resources */,
+				A5F5DB981C85CDDE00581EEB /* SHRoomCell.xib in Resources */,
 				04562C5A1C857790000269A7 /* controll_jiantou@2x.png in Resources */,
 				A5E3B8AF1C5D2C1100136A9C /* suimian@2x.png in Resources */,
 				A5690DAC1C821EEC0045DCDE /* controll_widindow_change.png in Resources */,
@@ -1379,10 +1393,12 @@
 				04562C611C8582CA000269A7 /* SHAddDeviceController.m in Sources */,
 				A5B6E5571C412A4F0080E06F /* IQToolbar.m in Sources */,
 				A5690DC31C8226400045DCDE /* SHDeviceControllView.m in Sources */,
+				A5F5DB9B1C85D98700581EEB /* SHPickerView.m in Sources */,
 				0410F94C1C3B978C0069991E /* AFHTTPRequestOperation.m in Sources */,
 				0410F9541C3B978C0069991E /* AFURLSessionManager.m in Sources */,
 				A55984641C5A7D900091A7FF /* SHAboutCell.m in Sources */,
 				0410F9531C3B978C0069991E /* AFURLResponseSerialization.m in Sources */,
+				A5F5DB971C85CDDE00581EEB /* SHRoomCell.m in Sources */,
 				A5E3B8D41C735CA500136A9C /* SHLightCell.m in Sources */,
 				A55984571C5A76EA0091A7FF /* SHSetingController.m in Sources */,
 				040B27061C3B9554003D6E47 /* AppDelegate.m in Sources */,

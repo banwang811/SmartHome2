@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SHRoomCellType_info" id="KGk-i7-Jjw" customClass="SHRoomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="楼层数：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJZ-zh-huV">
+                        <rect key="frame" x="20" y="46" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="1NU-zJ-EYe"/>
+                            <constraint firstAttribute="height" constant="21" id="Q2r-Ow-LqV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入房间名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7m6-o0-SR7">
+                        <rect key="frame" x="85" y="8" width="172" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="172" id="Jz4-bG-R3W"/>
+                            <constraint firstAttribute="height" constant="21" id="hmF-Xs-MiR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入楼层" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ff2-hi-JCS">
+                        <rect key="frame" x="85" y="46" width="172" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Jf5-DR-bbz"/>
+                            <constraint firstAttribute="width" constant="172" id="uIF-aU-rAM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房间名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ob-kP-oRf">
+                        <rect key="frame" x="20" y="8" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="3pC-uQ-Imx"/>
+                            <constraint firstAttribute="width" constant="60" id="zzQ-WD-Ed5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vJZ-zh-huV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="1aH-cU-WT9"/>
+                    <constraint firstItem="1Ob-kP-oRf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JTI-Cu-7QQ"/>
+                    <constraint firstItem="Ff2-hi-JCS" firstAttribute="top" secondItem="7m6-o0-SR7" secondAttribute="bottom" constant="17" id="JZg-q6-WbM"/>
+                    <constraint firstItem="vJZ-zh-huV" firstAttribute="top" secondItem="1Ob-kP-oRf" secondAttribute="bottom" constant="17" id="L4I-SM-cuF"/>
+                    <constraint firstItem="7m6-o0-SR7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="MjZ-p6-4Da"/>
+                    <constraint firstItem="7m6-o0-SR7" firstAttribute="leading" secondItem="1Ob-kP-oRf" secondAttribute="trailing" constant="5" id="efW-3o-bNW"/>
+                    <constraint firstItem="1Ob-kP-oRf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jNJ-Yr-KWr"/>
+                    <constraint firstItem="Ff2-hi-JCS" firstAttribute="leading" secondItem="vJZ-zh-huV" secondAttribute="trailing" constant="5" id="zwf-Cb-y79"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="levelcount" destination="Ff2-hi-JCS" id="mEV-oY-QNT"/>
+                <outlet property="roomName" destination="7m6-o0-SR7" id="Orz-eb-VZA"/>
+            </connections>
+            <point key="canvasLocation" x="244" y="337"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SHRoomCellType_level" id="Pxj-iH-sqX" customClass="SHRoomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pxj-iH-sqX" id="xUK-GT-l8s">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房间类型：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="em7-MC-qA5">
+                        <rect key="frame" x="20" y="9" width="72" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="YQp-q8-sHs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请选择房间类型" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S5p-ce-Ohs">
+                        <rect key="frame" x="102" y="9" width="172" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="172" id="oDo-fU-10f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="em7-MC-qA5" firstAttribute="top" secondItem="xUK-GT-l8s" secondAttribute="top" constant="9" id="TfV-EU-XZJ"/>
+                    <constraint firstAttribute="bottom" secondItem="em7-MC-qA5" secondAttribute="bottom" constant="9.5" id="XT2-SP-dbY"/>
+                    <constraint firstItem="S5p-ce-Ohs" firstAttribute="top" secondItem="xUK-GT-l8s" secondAttribute="top" constant="9" id="hEa-3Q-Lm2"/>
+                    <constraint firstItem="em7-MC-qA5" firstAttribute="leading" secondItem="xUK-GT-l8s" secondAttribute="leading" constant="20" id="hsJ-47-ItC"/>
+                    <constraint firstAttribute="bottom" secondItem="S5p-ce-Ohs" secondAttribute="bottom" constant="9.5" id="lzM-N9-hwE"/>
+                    <constraint firstItem="S5p-ce-Ohs" firstAttribute="leading" secondItem="em7-MC-qA5" secondAttribute="trailing" constant="10" id="sky-Mi-saI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="roomType" destination="S5p-ce-Ohs" id="Dgk-yb-bVq"/>
+            </connections>
+            <point key="canvasLocation" x="231" y="464"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SHRoomCellType_save" id="LIt-A0-aca" customClass="SHRoomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LIt-A0-aca" id="Hib-QN-iBI">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWa-Lo-Rfj">
+                        <rect key="frame" x="20" y="24" width="280" height="30"/>
+                        <color key="backgroundColor" red="0.85882352939999995" green="0.30588235289999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="vkx-TT-N1Z"/>
+                        </constraints>
+                        <state key="normal" title="保存房间">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="saveRoom:" destination="LIt-A0-aca" eventType="touchUpInside" id="Fw4-Rv-PNf"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wWa-Lo-Rfj" firstAttribute="top" secondItem="Hib-QN-iBI" secondAttribute="top" constant="24" id="4OI-Z1-IdF"/>
+                    <constraint firstItem="wWa-Lo-Rfj" firstAttribute="leading" secondItem="Hib-QN-iBI" secondAttribute="leading" constant="20" id="9zX-tW-8gg"/>
+                    <constraint firstAttribute="trailing" secondItem="wWa-Lo-Rfj" secondAttribute="trailing" constant="20" id="qJ9-9e-CPA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="231" y="571"/>
+        </tableViewCell>
+    </objects>
+</document>

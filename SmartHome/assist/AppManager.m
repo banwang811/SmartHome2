@@ -43,4 +43,12 @@ void showAlert(NSString *message){
     [alert show];
 }
 
+
+BOOL checkString(NSString *string){
+    if (string != nil && ![string isEqualToString:@""]) {
+        return YES;
+    }
+    return NO;
+}
+
 @end

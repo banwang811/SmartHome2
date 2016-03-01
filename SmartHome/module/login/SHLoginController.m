@@ -26,6 +26,8 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
+    self.accountTextField.text = @"13691495062";
+    self.passwordTextField.text = @"banwang811";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,9 +50,7 @@
 }
 
 - (IBAction)longin:(UIButton *)sender {
-    appDelegate.window.rootViewController = appDelegate.tabbarContoller;
-    return;
-    NSDictionary *paras = @{@"phone":[SHAccountManager shareManager].account,
+    NSDictionary *paras = @{@"phone":self.accountTextField.text,
                             @"password":self.passwordTextField.text};
     [[SHHTTPManager shareManager] requestLoginWithParas:paras success:^(id responseObject) {
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];

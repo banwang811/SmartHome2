@@ -16,4 +16,6 @@
 
 void showAlert(NSString *message);
 
+BOOL checkString(NSString *string);
+
 @end
