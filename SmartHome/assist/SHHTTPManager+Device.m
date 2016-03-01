@@ -11,7 +11,7 @@
 @implementation SHHTTPManager (Device)
 
 //获取设备
-- (void)requestDevicePasswordWithParas:(NSDictionary *)paras
+- (void)requestDeviceWithParas:(NSDictionary *)paras
                                success:(void (^)(id responseObject))success
                                failure:(void (^)(NSError *error))failure{
     NSString *deviceID = [paras objectForKey:@"deviceID"];

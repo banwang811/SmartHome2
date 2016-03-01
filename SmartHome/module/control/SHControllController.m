@@ -47,6 +47,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self getAllDevices];
     self.view.backgroundColor = RGB(90, 200, 230, 1);
     self.navigationItem.title = @"控制面板";
     [self.view addSubview:self.selectView];
@@ -108,6 +109,19 @@
     return _deviceControllView;
 }
 
+
+- (void)getAllDevices{
+    [[SHHTTPManager shareManager] requestDeviceWithParas:nil success:^(id responseObject) {
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
+        if ([[dict objectForKey:@"error"] intValue] == 0) {
+        }else{
+            SHError *error = [SHError errorWithCode:[[dict objectForKey:@"error"] intValue]];
+            showAlert(error.desString);
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

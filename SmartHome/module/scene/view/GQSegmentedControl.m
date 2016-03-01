@@ -56,7 +56,7 @@
         _leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _leftButton.frame = CGRectMake(_speaceWidth, _speaceHeight, ButtonWidth, ButtonHeight);
         _leftButton.titleLabel.font = [UIFont systemFontOfSize:18];
-        [_leftButton setBackgroundImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
+        [_leftButton setBackgroundImage:[UIImage imageNamed:@"model_close"] forState:UIControlStateNormal];
         [_leftButton setBackgroundImage:[UIImage imageNamed:@"open"] forState:UIControlStateSelected];
         [_leftButton addTarget:self action:@selector(buttonSelect:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -68,7 +68,7 @@
         _rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _rightButton.frame = CGRectMake(_speaceWidth+ ButtonWidth , _speaceHeight, ButtonWidth, ButtonHeight);
         _rightButton.titleLabel.font = [UIFont systemFontOfSize:18];
-        [_rightButton setBackgroundImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
+        [_rightButton setBackgroundImage:[UIImage imageNamed:@"model_close"] forState:UIControlStateNormal];
         [_rightButton setBackgroundImage:[UIImage imageNamed:@"open"] forState:UIControlStateSelected];
         [_rightButton addTarget:self action:@selector(buttonSelect:) forControlEvents:UIControlEventTouchUpInside];
     }

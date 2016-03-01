@@ -173,7 +173,7 @@
 		A5E3B8BA1C735B9A00136A9C /* SHModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8B91C735B9A00136A9C /* SHModelController.m */; };
 		A5E3B8C11C735C5100136A9C /* GQSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8BE1C735C5100136A9C /* GQSegmentedControl.m */; };
 		A5E3B8C21C735C5100136A9C /* SHDeviceHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8C01C735C5100136A9C /* SHDeviceHeadView.m */; };
-		A5E3B8C61C735C8B00136A9C /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8C41C735C8B00136A9C /* close@2x.png */; };
+		A5E3B8C61C735C8B00136A9C /* model_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8C41C735C8B00136A9C /* model_close@2x.png */; };
 		A5E3B8C71C735C8B00136A9C /* open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E3B8C51C735C8B00136A9C /* open@2x.png */; };
 		A5E3B8D21C735CA500136A9C /* SHAirconditionerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8C91C735CA500136A9C /* SHAirconditionerCell.m */; };
 		A5E3B8D31C735CA500136A9C /* SHBaseDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B8CB1C735CA500136A9C /* SHBaseDeviceCell.m */; };
@@ -467,7 +467,7 @@
 		A5E3B8BE1C735C5100136A9C /* GQSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQSegmentedControl.m; sourceTree = "<group>"; };
 		A5E3B8BF1C735C5100136A9C /* SHDeviceHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDeviceHeadView.h; sourceTree = "<group>"; };
 		A5E3B8C01C735C5100136A9C /* SHDeviceHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDeviceHeadView.m; sourceTree = "<group>"; };
-		A5E3B8C41C735C8B00136A9C /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		A5E3B8C41C735C8B00136A9C /* model_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "model_close@2x.png"; sourceTree = "<group>"; };
 		A5E3B8C51C735C8B00136A9C /* open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open@2x.png"; sourceTree = "<group>"; };
 		A5E3B8C81C735CA500136A9C /* SHAirconditionerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAirconditionerCell.h; sourceTree = "<group>"; };
 		A5E3B8C91C735CA500136A9C /* SHAirconditionerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAirconditionerCell.m; sourceTree = "<group>"; };
@@ -735,12 +735,12 @@
 			children = (
 				04562C5E1C85826E000269A7 /* room */,
 				04562C5D1C858265000269A7 /* device */,
+				A5690D9D1C8211070045DCDE /* view */,
 				A5D6CE051C7F3B87008BDF4C /* BWButton.h */,
 				A5D6CE061C7F3B87008BDF4C /* BWButton.m */,
 				A5D6CE071C7F3B87008BDF4C /* SHControllController.h */,
 				A5D6CE081C7F3B87008BDF4C /* SHControllController.m */,
 				A5690D971C81FAE80045DCDE /* SHContentView.h */,
-				A5690D9D1C8211070045DCDE /* view */,
 				A5690D981C81FAE80045DCDE /* SHContentView.m */,
 				04562C541C857701000269A7 /* SHNoteView.h */,
 				04562C551C857701000269A7 /* SHNoteView.m */,
@@ -1114,7 +1114,7 @@
 				A5E3B8EE1C738C5D00136A9C /* icebox@2x.png */,
 				A5E3B8EF1C738C5D00136A9C /* light@2x.png */,
 				A5E3B8F01C738C5D00136A9C /* music@2x.png */,
-				A5E3B8C41C735C8B00136A9C /* close@2x.png */,
+				A5E3B8C41C735C8B00136A9C /* model_close@2x.png */,
 				A5E3B8C51C735C8B00136A9C /* open@2x.png */,
 			);
 			path = model;
@@ -1223,7 +1223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5E3B8C61C735C8B00136A9C /* close@2x.png in Resources */,
+				A5E3B8C61C735C8B00136A9C /* model_close@2x.png in Resources */,
 				A559845D1C5A77FB0091A7FF /* password@2x.png in Resources */,
 				A55984391C4D17F40091A7FF /* tabbar3_select@2x.png in Resources */,
 				0410F9651C3B978C0069991E /* Icon.png in Resources */,

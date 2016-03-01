@@ -161,7 +161,7 @@
     self.roomModel.name = cell.roomName.text;
     if (!checkString(self.roomModel.name)) {
         showAlert(@"请输入房间名");
-    }else if (checkString(self.roomModel.floor)){
+    }else if (!checkString(self.roomModel.floor)){
         showAlert(@"请输入楼层数");
     }
     self.roomModel.floor = cell.levelcount.text;
@@ -171,7 +171,7 @@
     [[SHHTTPManager shareManager] requestAddRoomDevicesWithParas:paras success:^(id responseObject) {
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
         if ([[dict objectForKey:@"error"] intValue] == 0) {
-            [self.navigationController popViewControllerAnimated:YES];
+//            [self.navigationController popViewControllerAnimated:YES];
         }else{
             SHError *error = [SHError errorWithCode:[[dict objectForKey:@"error"] intValue]];
             showAlert(error.desString);
