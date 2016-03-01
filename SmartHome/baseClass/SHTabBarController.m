@@ -24,11 +24,11 @@
     SHNavigationController *control = [[SHNavigationController alloc] initWithRootViewController:self.controlController];
     
     self.sceneController = [[SHSceneController alloc] init];
-    SHNavigationController *scene = [[SHNavigationController alloc] initWithRootViewController:self.sceneController];
+    SHNavigationController *sceneController = [[SHNavigationController alloc] initWithRootViewController:self.sceneController];
     
     self.mineController = [[SHMineController alloc] init];
     SHNavigationController *mine = [[SHNavigationController alloc] initWithRootViewController:self.mineController];
-    self.viewControllers = [NSArray arrayWithObjects:home,control,scene,mine, nil];
+    self.viewControllers = [NSArray arrayWithObjects:home,control,sceneController,mine, nil];
     
     [self setItems];
 }

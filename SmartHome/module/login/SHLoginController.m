@@ -48,6 +48,8 @@
 }
 
 - (IBAction)longin:(UIButton *)sender {
+    appDelegate.window.rootViewController = appDelegate.tabbarContoller;
+    return;
     NSDictionary *paras = @{@"phone":[SHAccountManager shareManager].account,
                             @"password":self.passwordTextField.text};
     [[SHHTTPManager shareManager] requestLoginWithParas:paras success:^(id responseObject) {

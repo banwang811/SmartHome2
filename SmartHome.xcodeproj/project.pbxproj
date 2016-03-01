@@ -38,6 +38,12 @@
 		0410F99C1C3BB6020069991E /* SHMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9961C3BB6020069991E /* SHMineController.m */; };
 		0410F99D1C3BB6020069991E /* SHSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9991C3BB6020069991E /* SHSceneController.m */; };
 		0410F9A21C3BB7090069991E /* UIColor+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410F9A11C3BB7090069991E /* UIColor+extension.m */; };
+		04562C531C8576A2000269A7 /* controll_bar_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04562C521C8576A2000269A7 /* controll_bar_add@2x.png */; };
+		04562C561C857701000269A7 /* SHNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04562C551C857701000269A7 /* SHNoteView.m */; };
+		04562C5A1C857790000269A7 /* controll_jiantou@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04562C571C857790000269A7 /* controll_jiantou@2x.png */; };
+		04562C5B1C857790000269A7 /* controll_add@x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04562C581C857790000269A7 /* controll_add@x.png */; };
+		04562C611C8582CA000269A7 /* SHAddDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04562C601C8582CA000269A7 /* SHAddDeviceController.m */; };
+		04562C641C8582DC000269A7 /* SHAddRoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04562C631C8582DC000269A7 /* SHAddRoomController.m */; };
 		A559842E1C4D17620091A7FF /* tabbar2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A559842A1C4D17620091A7FF /* tabbar2@2x.png */; };
 		A559842F1C4D17620091A7FF /* tabbar1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A559842B1C4D17620091A7FF /* tabbar1@2x.png */; };
 		A55984301C4D17620091A7FF /* tabbar4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A559842C1C4D17620091A7FF /* tabbar4@2x.png */; };
@@ -268,6 +274,15 @@
 		0410F9991C3BB6020069991E /* SHSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSceneController.m; sourceTree = "<group>"; };
 		0410F9A01C3BB7090069991E /* UIColor+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+extension.h"; sourceTree = "<group>"; };
 		0410F9A11C3BB7090069991E /* UIColor+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+extension.m"; sourceTree = "<group>"; };
+		04562C521C8576A2000269A7 /* controll_bar_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "controll_bar_add@2x.png"; sourceTree = "<group>"; };
+		04562C541C857701000269A7 /* SHNoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNoteView.h; sourceTree = "<group>"; };
+		04562C551C857701000269A7 /* SHNoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNoteView.m; sourceTree = "<group>"; };
+		04562C571C857790000269A7 /* controll_jiantou@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "controll_jiantou@2x.png"; sourceTree = "<group>"; };
+		04562C581C857790000269A7 /* controll_add@x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "controll_add@x.png"; sourceTree = "<group>"; };
+		04562C5F1C8582CA000269A7 /* SHAddDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAddDeviceController.h; sourceTree = "<group>"; };
+		04562C601C8582CA000269A7 /* SHAddDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAddDeviceController.m; sourceTree = "<group>"; };
+		04562C621C8582DC000269A7 /* SHAddRoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAddRoomController.h; sourceTree = "<group>"; };
+		04562C631C8582DC000269A7 /* SHAddRoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAddRoomController.m; sourceTree = "<group>"; };
 		A559842A1C4D17620091A7FF /* tabbar2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar2@2x.png"; sourceTree = "<group>"; };
 		A559842B1C4D17620091A7FF /* tabbar1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar1@2x.png"; sourceTree = "<group>"; };
 		A559842C1C4D17620091A7FF /* tabbar4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar4@2x.png"; sourceTree = "<group>"; };
@@ -710,6 +725,8 @@
 		0410F98E1C3BB6020069991E /* control */ = {
 			isa = PBXGroup;
 			children = (
+				04562C5E1C85826E000269A7 /* room */,
+				04562C5D1C858265000269A7 /* device */,
 				A5690D9D1C8211070045DCDE /* view */,
 				A5D6CE051C7F3B87008BDF4C /* BWButton.h */,
 				A5D6CE061C7F3B87008BDF4C /* BWButton.m */,
@@ -717,6 +734,8 @@
 				A5D6CE081C7F3B87008BDF4C /* SHControllController.m */,
 				A5690D971C81FAE80045DCDE /* SHContentView.h */,
 				A5690D981C81FAE80045DCDE /* SHContentView.m */,
+				04562C541C857701000269A7 /* SHNoteView.h */,
+				04562C551C857701000269A7 /* SHNoteView.m */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -760,6 +779,24 @@
 				A5E3B8A21C5D28AD00136A9C /* SHSceneCell.m */,
 			);
 			path = scene;
+			sourceTree = "<group>";
+		};
+		04562C5D1C858265000269A7 /* device */ = {
+			isa = PBXGroup;
+			children = (
+				04562C5F1C8582CA000269A7 /* SHAddDeviceController.h */,
+				04562C601C8582CA000269A7 /* SHAddDeviceController.m */,
+			);
+			path = device;
+			sourceTree = "<group>";
+		};
+		04562C5E1C85826E000269A7 /* room */ = {
+			isa = PBXGroup;
+			children = (
+				04562C621C8582DC000269A7 /* SHAddRoomController.h */,
+				04562C631C8582DC000269A7 /* SHAddRoomController.m */,
+			);
+			path = room;
 			sourceTree = "<group>";
 		};
 		A55984431C5A66EE0091A7FF /* mine */ = {
@@ -988,6 +1025,9 @@
 		A5D6CE0B1C7F8263008BDF4C /* controll */ = {
 			isa = PBXGroup;
 			children = (
+				04562C571C857790000269A7 /* controll_jiantou@2x.png */,
+				04562C581C857790000269A7 /* controll_add@x.png */,
+				04562C521C8576A2000269A7 /* controll_bar_add@2x.png */,
 				A5690DA71C821EEC0045DCDE /* controll_device_tv@2x.png */,
 				A5690DA81C821EEC0045DCDE /* controll_widindow_change.png */,
 				A5690DA91C821EEC0045DCDE /* controll_window_close@2x.png */,
@@ -1226,6 +1266,7 @@
 				A5B6E5211C4101220080E06F /* psw_bg@2x.png in Resources */,
 				A55984D31C5A8AD60091A7FF /* backhome@2x.png in Resources */,
 				A5B6E50F1C40FDE50080E06F /* SHForgetPasswordController.xib in Resources */,
+				04562C531C8576A2000269A7 /* controll_bar_add@2x.png in Resources */,
 				A55984381C4D17F40091A7FF /* tabbar4_select@2x.png in Resources */,
 				A559845B1C5A77C40091A7FF /* update@2x.png in Resources */,
 				A55984511C5A66FF0091A7FF /* seting@2x.png in Resources */,
@@ -1259,6 +1300,7 @@
 				A559844F1C5A66FF0091A7FF /* jiantou@2x.png in Resources */,
 				A55984D91C5A8AD60091A7FF /* humidity@2x.png in Resources */,
 				A5E3B8E61C73846E00136A9C /* heating_select@2x.png in Resources */,
+				04562C5A1C857790000269A7 /* controll_jiantou@2x.png in Resources */,
 				A5E3B8AF1C5D2C1100136A9C /* suimian@2x.png in Resources */,
 				A5690DAC1C821EEC0045DCDE /* controll_widindow_change.png in Resources */,
 				A5E3B8B11C5D2C1100136A9C /* xiyu@2x.png in Resources */,
@@ -1271,6 +1313,7 @@
 				A5B6E5331C4110C00080E06F /* show@2x.png in Resources */,
 				A55984CD1C5A8AD60091A7FF /* bj1.png in Resources */,
 				A559844D1C5A66FF0091A7FF /* default@2x.png in Resources */,
+				04562C5B1C857790000269A7 /* controll_add@x.png in Resources */,
 				0410F9611C3B978C0069991E /* 37x-Checkmark@2x.png in Resources */,
 				A55984CB1C5A8AD60091A7FF /* 底.png in Resources */,
 				A55984AD1C5A895B0091A7FF /* SHHomeCell.xib in Resources */,
@@ -1309,6 +1352,7 @@
 				0410F9521C3B978C0069991E /* AFURLRequestSerialization.m in Sources */,
 				A5690DCC1C822A2C0045DCDE /* SHDeviceModel.m in Sources */,
 				A5690DBA1C82256E0045DCDE /* SHRefrigeratorControllView.m in Sources */,
+				04562C561C857701000269A7 /* SHNoteView.m in Sources */,
 				0410F9511C3B978C0069991E /* AFURLConnectionOperation.m in Sources */,
 				A5690DC91C822A1A0045DCDE /* SHRoomModel.m in Sources */,
 				A5B6E51B1C4100EF0080E06F /* CALayer+Additions.m in Sources */,
@@ -1332,6 +1376,7 @@
 				0410F9501C3B978C0069991E /* AFSecurityPolicy.m in Sources */,
 				A5B6E5561C412A4F0080E06F /* IQTitleBarButtonItem.m in Sources */,
 				A5E3B8A31C5D28AD00136A9C /* SHSceneCell.m in Sources */,
+				04562C611C8582CA000269A7 /* SHAddDeviceController.m in Sources */,
 				A5B6E5571C412A4F0080E06F /* IQToolbar.m in Sources */,
 				A5690DC31C8226400045DCDE /* SHDeviceControllView.m in Sources */,
 				0410F94C1C3B978C0069991E /* AFHTTPRequestOperation.m in Sources */,
@@ -1371,6 +1416,7 @@
 				0410F94D1C3B978C0069991E /* AFHTTPRequestOperationManager.m in Sources */,
 				A5690DB71C8225480045DCDE /* SHGasControllView.m in Sources */,
 				0410F94F1C3B978C0069991E /* AFNetworkReachabilityManager.m in Sources */,
+				04562C641C8582DC000269A7 /* SHAddRoomController.m in Sources */,
 				040B27031C3B9554003D6E47 /* main.m in Sources */,
 				A5690DD51C82CCEF0045DCDE /* SHSceneModel.m in Sources */,
 			);
