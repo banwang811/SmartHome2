@@ -25,6 +25,7 @@
         [self addSubview:self.backImageView];
         [self addSubview:self.imageView];
         [self addSubview:self.titleLabel];
+        [self addSubview:self.editImage];
     }
     return self;
 }
@@ -41,9 +42,17 @@
     if (_imageView == nil) {
         CGFloat orginY = (self.frame.size.height - self.frame.size.width/2 - 20 - speace_height)/2 ;
         _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.size.width/4, orginY, self.frame.size.width/2, self.frame.size.width/2)];
-        _imageView.image = [UIImage imageNamed:@"suimian"];
     }
     return _imageView;
+}
+
+- (UIImageView *)editImage{
+    if (_editImage == nil) {
+        _editImage = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.size.width - 20, 5, 20, 20)];
+        _editImage.image = [UIImage imageNamed:@"edit"];
+        _editImage.hidden = YES;
+    }
+    return _editImage;
 }
 
 - (UILabel *)titleLabel{
@@ -52,7 +61,6 @@
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(5,orginY , self.frame.size.width - 10, 20)];
         _titleLabel.textColor = [UIColor whiteColor];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        _titleLabel.text = @"离家模式";
     }
     return _titleLabel;
 }

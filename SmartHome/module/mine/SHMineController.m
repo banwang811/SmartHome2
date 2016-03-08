@@ -10,6 +10,7 @@
 #import "SHMineCell.h"
 #import "SHSetingController.h"
 #import "SHAboutController.h"
+#import "SHDeviceController.h"
 
 @interface SHMineController ()
 
@@ -114,6 +115,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 1) {
+        SHDeviceController *controller = [[SHDeviceController alloc] init];
+        controller.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:controller animated:YES];
+    }
     if (indexPath.section == 3) {
         SHAboutController *controller = [[SHAboutController alloc] init];
         controller.hidesBottomBarWhenPushed = YES;

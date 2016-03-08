@@ -10,10 +10,10 @@
 
 typedef NS_ENUM(NSInteger, NSDeviceType){
     NSDeviceType_Light = 1,//普通灯
+    NSDeviceType_Aircondition,//空调
+    NSDeviceType_TV,//电视
     NSDeviceType_Socket,//智能插座
     NSDeviceType_STB,//机顶盒
-    NSDeviceType_TV,//电视
-    NSDeviceType_Aircondition,//空调
     NSDeviceType_Camera,//摄像头控制
     NSDeviceType_TalkBack,//门铃对讲
     NSDeviceType_Curtain,//窗帘
@@ -31,13 +31,20 @@ typedef NS_ENUM(NSInteger, NSDeviceType){
     NSDeviceType_MUSIC,//音乐
 };
 
+typedef NS_ENUM(NSInteger, NSDeviceStatusType){
+    NSDeviceStatus_temperature,
+    NSDeviceStatus_close = 100,
+    NSDeviceStatus_open = 101,
+};
+
+
 @interface SHDeviceModel : NSObject
 
 @property (nonatomic, strong) NSString              *deviceID;
 @property (nonatomic, strong) NSString              *user_id;
 @property (nonatomic, strong) NSString              *room_id;
 @property (nonatomic, strong) NSString              *name;
-@property (nonatomic, assign) NSDeviceType          deviceType;
+@property (nonatomic, assign) NSDeviceType          type;
 @property (nonatomic, strong) NSString              *index;
 @property (nonatomic, strong) NSString              *brand;
 @property (nonatomic, strong) NSString              *model;
@@ -49,5 +56,7 @@ typedef NS_ENUM(NSInteger, NSDeviceType){
 @property (nonatomic, strong) NSString              *status;
 @property (nonatomic, strong) NSString              *updated_at;
 @property (nonatomic, strong) NSString              *created_at;
+
++ (NSString *)getDeviceIdentifier:(NSDeviceType)type;
 
 @end

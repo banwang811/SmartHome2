@@ -14,11 +14,13 @@
 
 @property (nonatomic, strong) UICollectionView             *collectionView;
 
-@property (nonatomic, strong) NSArray                      *titles;
+@property (nonatomic, strong) NSMutableArray               *dataArray;
 
-@property (nonatomic, strong) NSArray                      *images;
+@property (nonatomic, strong) UIBarButtonItem              *addItem;
 
+@property (nonatomic, strong) UIBarButtonItem              *editItem;
 
+@property (nonatomic, assign) BOOL                         isEdit;
 
 @end
 
@@ -26,8 +28,7 @@
 
 - (instancetype)init{
     if (self = [super init]) {
-        self.titles = [NSArray arrayWithObjects:@"工作模式",@"洗浴模式",@"休闲模式",@"影院模式",@"睡眠模式",@"光棍模式",@"自定义", nil];
-        self.images = [NSArray arrayWithObjects:@"gongzuo",@"xiyu",@"xiuxian",@"yingyuan",@"suimian",@"zidingyi",@"tianjia",nil];
+        self.dataArray = [NSMutableArray array];
     }
     return self;
 }
@@ -36,6 +37,49 @@
     [super viewDidLoad];
     self.navigationItem.title = @"情景模式";
     [self.view addSubview:self.collectionView];
+    self.navigationItem.rightBarButtonItem = self.addItem;
+    self.navigationItem.leftBarButtonItem = self.editItem;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self reloadData];
+}
+
+- (UIBarButtonItem *)addItem{
+    if (_addItem == nil) {
+        _addItem = [[UIBarButtonItem alloc] initWithTitle:@"添加"
+                                                    style:UIBarButtonItemStylePlain
+                                                   target:self
+                                                   action:@selector(addScene)];
+        _addItem.tintColor = [UIColor whiteColor];
+    }
+    return _addItem;
+}
+
+- (UIBarButtonItem *)editItem{
+    if (_editItem == nil) {
+        _editItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑"
+                                                    style:UIBarButtonItemStylePlain
+                                                   target:self
+                                                   action:@selector(editScene)];
+        _editItem.tintColor = [UIColor whiteColor];
+    }
+    return _editItem;
+}
+
+- (void)addScene{
+    
+}
+
+- (void)editScene{
+    self.isEdit = !self.isEdit;
+    if (self.isEdit) {
+        _editItem.title = @"完成";
+    }else{
+        _editItem.title = @"编辑";
+    }
+    [self.collectionView reloadData];
 }
 
 - (UICollectionView *)collectionView{
@@ -51,7 +95,7 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return [self.images count];
+    return [self.dataArray count];
 }
 
 //定义展示的Section的个数
@@ -61,10 +105,12 @@
 
 //每个UICollectionView展示的内容
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    SHSceneModel *model = [self.dataArray objectAtIndex:indexPath.row];
     static NSString *identify = @"cell";
     SHSceneCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
-    cell.imageView.image = [UIImage imageNamed:[self.images objectAtIndex:indexPath.row]];
-    cell.titleLabel.text = self.titles[indexPath.row];
+    cell.imageView.image = [UIImage imageNamed:[SHSceneModel getSceneIcon:model.type]];
+    cell.titleLabel.text = model.name;
+    cell.editImage.hidden = !self.isEdit;
     return cell;
 }
 
@@ -87,15 +133,59 @@
 #pragma mark --UICollectionViewDelegate
 //UICollectionView被选中时调用的方法
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    SHModelController *controller = [[SHModelController alloc] init];
-    controller.hidesBottomBarWhenPushed = YES;
-    controller.navigationItem.title = self.titles[indexPath.row];
-    [self.navigationController pushViewController:controller animated:YES];
+    SHSceneModel *model = [self.dataArray objectAtIndex:indexPath.row];
+    if (self.isEdit) {
+        SHModelController *controller = [[SHModelController alloc] init];
+        controller.hidesBottomBarWhenPushed = YES;
+        controller.navigationItem.title = model.name;
+        controller.model = model;
+        [self.navigationController pushViewController:controller animated:YES];
+    }else{
+        [self executeScene:model];
+    }
 }
 
 //返回这个UICollectionView是否可以被选择
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     return YES;
+}
+
+- (void)reloadData{
+    [[SHHTTPManager shareManager] requestSceneWithParas:nil success:^(id responseObject) {
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
+        NSLog(@"%@",dict);
+        if ([[dict objectForKey:@"error"] integerValue] == 0) {
+            [self.dataArray removeAllObjects];
+            NSArray *scenes = [dict objectForKey:@"scenes"];
+            for (NSDictionary *info in scenes) {
+                SHSceneModel *model = [[SHSceneModel alloc] init];
+                [model setValuesForKeysWithDictionary:info];
+                model.sceneID = [info objectForKey:@"id"];
+                model.type = (SHSceneType)[[info objectForKey:@"default_icon"] intValue];
+                [self.dataArray addObject:model];
+                [self.collectionView reloadData];
+            }
+            for (SHSceneModel *model in self.dataArray) {
+                NSLog(@"%@%d\n",model.name,(int)model.type);
+            }
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
+- (void)executeScene:(SHSceneModel *)model{
+    [SHProgress showProgress:@"执行中..." toView:self.view];
+    NSDictionary *params = @{@"sceneID":model.sceneID};
+    [[SHHTTPManager shareManager] requestOperateDeviceWithParas:params success:^(id responseObject) {
+        NSDictionary *result = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
+        if ([[result objectForKey:@"error"] intValue] == 0) {
+            //成功执行
+        }
+        [SHProgress hideProgress:self.view animated:YES];
+    } failure:^(NSError *error) {
+        [SHProgress hideProgress:self.view animated:YES];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

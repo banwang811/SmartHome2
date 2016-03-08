@@ -10,6 +10,7 @@
 
 @interface SHModelController : SHBaseViewController
 
+@property (nonatomic, strong) SHSceneModel              *model;
 
 @end
 

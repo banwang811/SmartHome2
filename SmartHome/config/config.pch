@@ -14,6 +14,7 @@
 #import "AppDelegate.h"
 #import "AFNetworking.h"
 #import "MBProgressHUD.h"
+#import "SHProgress.h"
 
 #import "APService.h"
 
@@ -25,6 +26,7 @@
 #import "service.h"
 #import "customDefs.h"
 
+
 #import "SHHTTPManager.h"
 #import "SHHTTPManager+Device.h"
 #import "SHHTTPManager+Room.h"
@@ -33,5 +35,6 @@
 #import "SHDeviceModel.h"
 #import "SHRoomModel.h"
 #import "SHError.h"
+#import "SHSceneModel.h"
 
 #endif

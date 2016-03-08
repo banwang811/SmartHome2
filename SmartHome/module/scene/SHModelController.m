@@ -28,9 +28,20 @@
 
 @property (nonatomic, strong) UIButton                  *startButton;
 
+@property (nonatomic, strong) NSMutableArray            *dataArray;
+
+@property (nonatomic, strong) UIBarButtonItem           *rightItem;
+
 @end
 
 @implementation SHModelController
+
+- (instancetype)init{
+    if (self = [super init]) {
+        self.dataArray = [NSMutableArray array];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,9 +54,21 @@
     [self.view addSubview:self.menuTableView];
     [self.view addSubview:self.goodsTableView];
     [self.view addSubview:self.startButton];
+    self.navigationItem.rightBarButtonItem = self.rightItem;
     self.selectIndxPath1 = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self reloadData];
 }
 
+- (UIBarButtonItem *)rightItem{
+    if (_rightItem == nil) {
+        _rightItem = [[UIBarButtonItem alloc] initWithTitle:@"添加设备"
+                                                      style:UIBarButtonItemStylePlain
+                                                     target:self
+                                                     action:@selector(addDevice)];
+        _rightItem.tintColor = [UIColor whiteColor];
+    }
+    return _rightItem;
+}
 
 - (UIButton *)startButton{
     if (_startButton == nil) {
@@ -53,8 +76,8 @@
         _startButton.frame = CGRectMake(28, SCREEN_HEIGHT - 40 - 20, SCREEN_WIDTH - 28 * 2, 40);
         _startButton.layer.cornerRadius = 5;
         [_startButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_startButton setBackgroundColor:[UIColor themeCoclor]];
-        [_startButton setTitle:@"执行场景" forState:UIControlStateNormal];
+        [_startButton setBackgroundColor:[UIColor redColor]];
+        [_startButton setTitle:@"保存场景" forState:UIControlStateNormal];
         [_startButton addTarget:self action:@selector(startScene) forControlEvents:UIControlEventTouchUpInside];
     }
     return _startButton;
@@ -89,18 +112,19 @@
     if (tableView == self.menuTableView) {
         return 1;
     }
-    return menuNumber;
+    return [self.dataArray count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (tableView == self.menuTableView) {
-        return menuNumber;
+        return [self.dataArray count];
     }
-    return 5;
+    return [[self.dataArray objectAtIndex:section] count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row % 4 == 3 && tableView == self.goodsTableView) {
+    SHDeviceModel *model = [[self.dataArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+    if (model.type == NSDeviceType_Aircondition && tableView == self.goodsTableView) {
         return 130;
     }
     return 100;
@@ -121,17 +145,16 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }else{
-        static NSString *cellid2 = @"goodsTableViewIdentifier";
-        SHBaseDeviceCell *cell = [tableView dequeueReusableCellWithIdentifier:cellid2];
+        SHDeviceModel *model = [[self.dataArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+        NSString *cellId = [SHDeviceModel getDeviceIdentifier:model.type];
+        SHBaseDeviceCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
         if (cell == nil) {
-            if (indexPath.row%4 ==0 ) {
-                cell = [[SHNormalCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellid2];
-            }else if (indexPath.row%4 == 1){
-                cell = [[SHLightCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellid2];
-            }else if (indexPath.row%4 == 2){
-                cell = [[SHLightCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellid2];
+            if (model.type == NSDeviceType_Light) {
+                cell = [[SHNormalCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+            }else if (model.type == NSDeviceType_TV){
+                cell = [[SHLightCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
             }else{
-                cell = [[SHAirconditionerCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellid2];
+                cell = [[SHAirconditionerCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
             }
         }
         if (indexPath == self.selectIndxPath2) {
@@ -141,6 +164,7 @@
             cell.backgroundColor = [UIColor whiteColor];
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.model = model;
         return cell;
     }
 }
@@ -164,6 +188,52 @@
     [_menuTableView reloadData];
 }
 
+/*
+ {
+ "created_at" = "2016-01-17 23:52:40";
+ "default_icon" = 0;
+ devices = "4=101;3=100;";
+ error = 0;
+ group = "\U534e\U90e1\U6d4b\U8bd5\U7ec4";
+ id = 38;
+ "is_default" = 0;
+ name = "\U6d4b\U8bd5";
+ "updated_at" = "2016-03-07 06:07:25";
+ "user_id" = 1;
+ }
+ */
+
+- (void)addDevice{
+
+}
+
+- (void)reloadData{
+    NSDictionary *params = @{@"sceneID":self.model.sceneID};
+    [[SHHTTPManager shareManager] requestSceneWithParas:params success:^(id responseObject) {
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
+        NSLog(@"%@",dict);
+        if ([[dict objectForKey:@"error"] integerValue] == 0) {
+            [self.dataArray removeAllObjects];
+            SHSceneModel *model = [[SHSceneModel alloc] init];
+            [model setValuesForKeysWithDictionary:dict];
+            model.sceneID = [dict objectForKey:@"id"];
+            model.type = (SHSceneType)[[dict objectForKey:@"default_icon"] intValue];
+            for (int i = 1; i < 4 ; i ++) {
+                NSMutableArray *array = [NSMutableArray array];
+                for (int j = 0; j < 5; j++) {
+                    SHDeviceModel *model = [[SHDeviceModel alloc] init];
+                    model.type = (NSDeviceType)i;
+                    [array addObject:model];
+                }
+                [self.dataArray addObject:array];
+            }
+            [_menuTableView reloadData];
+            [_goodsTableView reloadData];
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
 - (void)startScene{
 
 }

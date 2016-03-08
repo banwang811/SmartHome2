@@ -26,8 +26,8 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
-    self.accountTextField.text = @"13691495062";
-    self.passwordTextField.text = @"banwang811";
+    self.accountTextField.text = @"18818235912";
+    self.passwordTextField.text = @"12345678";
 }
 
 - (void)didReceiveMemoryWarning {

@@ -10,4 +10,6 @@
 
 @interface SHBaseDeviceCell : UITableViewCell
 
+@property (nonatomic, strong) SHDeviceModel             *model;
+
 @end

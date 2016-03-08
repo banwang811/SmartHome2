@@ -14,4 +14,6 @@
 
 @property (nonatomic, strong) UILabel                   *titleLabel;
 
+@property (nonatomic, strong) UIImageView               *editImage;
+
 @end

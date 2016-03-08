@@ -17,9 +17,9 @@
     NSString *sceneID = [paras objectForKey:@"sceneID"];
     NSString *requestUrl = nil;
     if (sceneID == nil) {
-        requestUrl = [NSString stringWithFormat:@"%@%@",serverAddress,device];
+        requestUrl = [NSString stringWithFormat:@"%@%@",serverAddress,scene];
     }else{
-        requestUrl = [NSString stringWithFormat:@"%@%@/%@",serverAddress,device,sceneID];
+        requestUrl = [NSString stringWithFormat:@"%@%@/%@",serverAddress,scene,sceneID];
     }
     [self getWithURL:requestUrl parameters:paras success:success failure:failure];
 }
@@ -55,7 +55,7 @@
                               success:(void (^)(id responseObject))success
                               failure:(void (^)(NSError *error))failure{
     NSString *sceneID = [paras objectForKey:@"sceneID"];
-    NSString *requestUrl = [NSString stringWithFormat:@"%@%@open/%@",serverAddress,scene,sceneID];
+    NSString *requestUrl = [NSString stringWithFormat:@"%@%@/open/%@",serverAddress,scene,sceneID];
     [self requestWithURL:requestUrl parameters:paras success:success failure:failure];
 }
 
