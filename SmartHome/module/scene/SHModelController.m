@@ -11,6 +11,7 @@
 #import "SHMenuCell.h"
 #import "SHLightCell.h"
 #import "SHAirconditionerCell.h"
+#import "SHSelectDeviceController.h"
 
 #define menuNumber  10
 
@@ -204,7 +205,9 @@
  */
 
 - (void)addDevice{
-
+    SHSelectDeviceController *controller = [[SHSelectDeviceController alloc] init];
+    
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (void)reloadData{

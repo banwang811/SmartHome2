@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) SHDeviceModel                 *model;
 
+@property (weak, nonatomic) IBOutlet UIButton               *selectButton;
+
 @end

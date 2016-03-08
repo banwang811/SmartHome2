@@ -14,8 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel                *deviceName;
 
-@property (weak, nonatomic) IBOutlet UIButton               *selectButton;
-
 @property (nonatomic, strong) UILabel                       *line;
 
 @end

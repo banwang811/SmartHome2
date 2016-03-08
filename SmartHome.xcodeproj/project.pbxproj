@@ -136,6 +136,7 @@
 		A598ADD61C8F16C100511689 /* weixuanze@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A598ADD31C8F16C100511689 /* weixuanze@2x.png */; };
 		A598ADD71C8F16C100511689 /* yixuanze@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A598ADD41C8F16C100511689 /* yixuanze@2x.png */; };
 		A598ADD81C8F16C100511689 /* yixuanze@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A598ADD51C8F16C100511689 /* yixuanze@3x.png */; };
+		A598ADDB1C8F211600511689 /* SHSelectDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A598ADDA1C8F211600511689 /* SHSelectDeviceController.m */; };
 		A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */; };
 		A5B6E50F1C40FDE50080E06F /* SHForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */; };
 		A5B6E5101C40FDE50080E06F /* SHLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B6E5091C40FDE50080E06F /* SHLoginController.m */; };
@@ -414,6 +415,8 @@
 		A598ADD31C8F16C100511689 /* weixuanze@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weixuanze@2x.png"; sourceTree = "<group>"; };
 		A598ADD41C8F16C100511689 /* yixuanze@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yixuanze@2x.png"; sourceTree = "<group>"; };
 		A598ADD51C8F16C100511689 /* yixuanze@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yixuanze@3x.png"; sourceTree = "<group>"; };
+		A598ADD91C8F211600511689 /* SHSelectDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSelectDeviceController.h; sourceTree = "<group>"; };
+		A598ADDA1C8F211600511689 /* SHSelectDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSelectDeviceController.m; sourceTree = "<group>"; };
 		A5B6E5051C40FDE50080E06F /* SHForgetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHForgetPasswordController.h; sourceTree = "<group>"; };
 		A5B6E5061C40FDE50080E06F /* SHForgetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHForgetPasswordController.m; sourceTree = "<group>"; };
 		A5B6E5071C40FDE50080E06F /* SHForgetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHForgetPasswordController.xib; sourceTree = "<group>"; };
@@ -947,6 +950,8 @@
 				A598ADCB1C8F120B00511689 /* SHDeviceCell.h */,
 				A598ADCC1C8F120B00511689 /* SHDeviceCell.m */,
 				A598ADCD1C8F120B00511689 /* SHDeviceCell.xib */,
+				A598ADD91C8F211600511689 /* SHSelectDeviceController.h */,
+				A598ADDA1C8F211600511689 /* SHSelectDeviceController.m */,
 			);
 			path = device;
 			sourceTree = "<group>";
@@ -1466,6 +1471,7 @@
 				A5B6E52E1C410EFE0080E06F /* UIViewController+extension.m in Sources */,
 				A5E3B8DB1C736DC700136A9C /* SHAirconditionControllView.m in Sources */,
 				A598ADC71C8F0D4100511689 /* SHDeviceController.m in Sources */,
+				A598ADDB1C8F211600511689 /* SHSelectDeviceController.m in Sources */,
 				A5B6E50E1C40FDE50080E06F /* SHForgetPasswordController.m in Sources */,
 				A5D6CE091C7F3B87008BDF4C /* BWButton.m in Sources */,
 				A5690DDE1C833C380045DCDE /* SHHTTPManager+Room.m in Sources */,
