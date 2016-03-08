@@ -28,7 +28,7 @@
 
 - (void)setModel:(SHDeviceModel *)model{
     _model = model;
-    _headImageView.image = [UIImage imageNamed:@"tv"];
+    _headImageView.image = [UIImage imageNamed:[SHDeviceModel getDeviceIcon:model.type]];
     _deviceName.text = model.name;
     _selectButton.hidden = YES;
     [self addSubview:self.line];

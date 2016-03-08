@@ -14,6 +14,51 @@
 
 }
 
++ (NSString *)getDeviceIcon:(NSDeviceType)type{
+    switch (type) {
+        case NSDeviceType_Light:
+            return @"device_light";
+            break;
+        case NSDeviceType_Curtain:
+            return @"blind";
+            break;
+        case NSDeviceType_Aircondition:
+            return @"aircondition";
+            break;
+        case NSDeviceType_TV:
+            return @"tv";
+            break;
+        case NSDeviceType_Socket:
+            return @"NSDeviceType_Socket";
+            break;
+        case NSDeviceType_STB:
+            return @"NSDeviceType_STB";
+            break;
+        case NSDeviceType_Camera:
+            return @"NSDeviceType_Camera";
+            break;
+        case NSDeviceType_TalkBack:
+            return @"NSDeviceType_TalkBack";
+            break;
+        case NSDeviceType_Window:
+            return @"NSDeviceType_Window";
+            break;
+        case NSDeviceType_FloorHeating:
+            return @"NSDeviceType_FloorHeating";
+            break;
+        case NSDeviceType_DVD:
+            return @"NSDeviceType_DVD";
+            break;
+        case NSDeviceType_Touying:
+            return @"NSDeviceType_Touying";
+            break;
+        default:
+            return @"music";
+            break;
+    }
+    
+}
+
 + (NSString *)getDeviceIdentifier:(NSDeviceType)type{
     switch (type) {
         case NSDeviceType_Light:

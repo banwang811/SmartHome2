@@ -57,6 +57,8 @@ typedef NS_ENUM(NSInteger, NSDeviceStatusType){
 @property (nonatomic, strong) NSString              *updated_at;
 @property (nonatomic, strong) NSString              *created_at;
 
++ (NSString *)getDeviceIcon:(NSDeviceType)type;
+
 + (NSString *)getDeviceIdentifier:(NSDeviceType)type;
 
 @end
