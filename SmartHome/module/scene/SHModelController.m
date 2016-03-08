@@ -57,6 +57,10 @@
     [self.view addSubview:self.startButton];
     self.navigationItem.rightBarButtonItem = self.rightItem;
     self.selectIndxPath1 = [NSIndexPath indexPathForRow:0 inSection:0];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(reloadDevice)
+                                                 name:SHDidSelectDeviceNotification
+                                               object:nil];
     [self reloadData];
 }
 
@@ -204,11 +208,31 @@
  }
  */
 
+- (void)reloadDevice{
+    
+}
+
 - (void)addDevice{
     SHSelectDeviceController *controller = [[SHSelectDeviceController alloc] init];
     
     [self.navigationController pushViewController:controller animated:YES];
 }
+
+
+/*
+ {
+ "created_at" = "2016-01-17 23:52:40";
+ "default_icon" = 0;
+ devices = "4=101;3=100;";
+ error = 0;
+ group = "\U534e\U90e1\U6d4b\U8bd5\U7ec4";
+ id = 38;
+ "is_default" = 0;
+ name = "\U6d4b\U8bd5";
+ "updated_at" = "2016-03-07 06:07:25";
+ "user_id" = 1;
+ }
+ */
 
 - (void)reloadData{
     NSDictionary *params = @{@"sceneID":self.model.sceneID};
@@ -221,6 +245,8 @@
             [model setValuesForKeysWithDictionary:dict];
             model.sceneID = [dict objectForKey:@"id"];
             model.type = (SHSceneType)[[dict objectForKey:@"default_icon"] intValue];
+            NSString *deviceStr = [dict objectForKey:@"devices"];
+            
             for (int i = 1; i < 4 ; i ++) {
                 NSMutableArray *array = [NSMutableArray array];
                 for (int j = 0; j < 5; j++) {
@@ -237,6 +263,19 @@
         
     }];
 }
+
+- (void)praseDevices:(NSString *)string{
+    NSArray *array = [string componentsSeparatedByString:@";"];
+    for (NSString *str in array) {
+        NSArray *info = [str componentsSeparatedByString:@"="];
+        if ([info count] == 2) {
+            SHDeviceModel *model = [[SHDeviceModel alloc] init];
+            model.deviceID = [info objectAtIndex:0];
+            model.status = (NSDeviceStatusType)[info objectAtIndex:1];
+        }
+    }
+}
+
 - (void)startScene{
 
 }

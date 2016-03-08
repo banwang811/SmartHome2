@@ -26,7 +26,7 @@
 #import "service.h"
 #import "customDefs.h"
 
-
+#import "CacheManager.h"
 #import "SHHTTPManager.h"
 #import "SHHTTPManager+Device.h"
 #import "SHHTTPManager+Room.h"

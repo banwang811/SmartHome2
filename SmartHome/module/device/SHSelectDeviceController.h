@@ -8,6 +8,8 @@
 
 #import "SHBaseViewController.h"
 
+extern NSString  *const SHDidSelectDeviceNotification;
+
 @interface SHSelectDeviceController : SHBaseViewController
 
 @property (nonatomic, strong) NSString                  *sceneID;

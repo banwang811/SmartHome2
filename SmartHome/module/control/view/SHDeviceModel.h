@@ -45,6 +45,7 @@ typedef NS_ENUM(NSInteger, NSDeviceStatusType){
 @property (nonatomic, strong) NSString              *room_id;
 @property (nonatomic, strong) NSString              *name;
 @property (nonatomic, assign) NSDeviceType          type;
+@property (nonatomic, assign) NSDeviceStatusType    status;
 @property (nonatomic, strong) NSString              *index;
 @property (nonatomic, strong) NSString              *brand;
 @property (nonatomic, strong) NSString              *model;
@@ -53,7 +54,6 @@ typedef NS_ENUM(NSInteger, NSDeviceStatusType){
 @property (nonatomic, strong) NSString              *address;
 @property (nonatomic, strong) NSString              *group;
 @property (nonatomic, strong) NSString              *infrared;
-@property (nonatomic, strong) NSString              *status;
 @property (nonatomic, strong) NSString              *updated_at;
 @property (nonatomic, strong) NSString              *created_at;
 

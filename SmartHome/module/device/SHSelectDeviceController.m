@@ -9,9 +9,13 @@
 #import "SHSelectDeviceController.h"
 #import "SHDeviceCell.h"
 
+NSString  *const SHDidSelectDeviceNotification = @"SHDidSelectDeviceNotification";
+
 @interface SHSelectDeviceController ()
 
 @property (nonatomic, strong) NSMutableArray                    *dataArray;
+
+@property (nonatomic, strong) UIBarButtonItem                   *rightItem;
 
 @end
 
@@ -30,7 +34,26 @@
     self.navigationItem.title = @"选择设备";
     [self.view addSubview:self.tableView];
     [self setleftBarItem];
+    self.navigationItem.rightBarButtonItem = self.rightItem;
     [self reloadData];
+}
+
+- (UIBarButtonItem *)rightItem{
+    if (_rightItem == nil) {
+        _rightItem = [[UIBarButtonItem alloc] initWithTitle:@"完成"
+                                                      style:UIBarButtonItemStylePlain
+                                                     target:self
+                                                     action:@selector(completed)];
+        _rightItem.tintColor = [UIColor whiteColor];
+    }
+    return _rightItem;
+}
+
+- (void)completed{
+    [[NSNotificationCenter defaultCenter] postNotificationName:SHDidSelectDeviceNotification
+                                                        object:nil
+                                                      userInfo:self.selectedDicts];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
