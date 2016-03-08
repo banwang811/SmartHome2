@@ -33,6 +33,8 @@
 
 @property (nonatomic, strong) UIBarButtonItem           *rightItem;
 
+@property (nonatomic, strong) NSMutableDictionary       *selectDicts;
+
 @end
 
 @implementation SHModelController
@@ -40,6 +42,7 @@
 - (instancetype)init{
     if (self = [super init]) {
         self.dataArray = [NSMutableArray array];
+        self.selectDicts = [NSMutableDictionary dictionary];
     }
     return self;
 }
@@ -61,6 +64,7 @@
                                              selector:@selector(reloadDevice)
                                                  name:SHDidSelectDeviceNotification
                                                object:nil];
+    [self getAllDevices];
     [self reloadData];
 }
 
@@ -128,9 +132,11 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    SHDeviceModel *model = [[self.dataArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
-    if (model.type == NSDeviceType_Aircondition && tableView == self.goodsTableView) {
-        return 130;
+    if (tableView == self.goodsTableView) {
+        SHDeviceModel *model = [[self.dataArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+        if (model.type == NSDeviceType_Aircondition) {
+            return 130;
+        }
     }
     return 100;
 }
@@ -158,8 +164,10 @@
                 cell = [[SHNormalCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
             }else if (model.type == NSDeviceType_TV){
                 cell = [[SHLightCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
-            }else{
+            }else if (model.type == NSDeviceType_Aircondition){
                 cell = [[SHAirconditionerCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+            }else{
+                cell = [[SHNormalCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
             }
         }
         if (indexPath == self.selectIndxPath2) {
@@ -193,48 +201,35 @@
     [_menuTableView reloadData];
 }
 
-/*
- {
- "created_at" = "2016-01-17 23:52:40";
- "default_icon" = 0;
- devices = "4=101;3=100;";
- error = 0;
- group = "\U534e\U90e1\U6d4b\U8bd5\U7ec4";
- id = 38;
- "is_default" = 0;
- name = "\U6d4b\U8bd5";
- "updated_at" = "2016-03-07 06:07:25";
- "user_id" = 1;
- }
- */
-
 - (void)reloadDevice{
-    
+    [self praseDevicesType];
 }
 
 - (void)addDevice{
     SHSelectDeviceController *controller = [[SHSelectDeviceController alloc] init];
-    
+    controller.selectedDicts = self.selectDicts;
     [self.navigationController pushViewController:controller animated:YES];
 }
 
-
-/*
- {
- "created_at" = "2016-01-17 23:52:40";
- "default_icon" = 0;
- devices = "4=101;3=100;";
- error = 0;
- group = "\U534e\U90e1\U6d4b\U8bd5\U7ec4";
- id = 38;
- "is_default" = 0;
- name = "\U6d4b\U8bd5";
- "updated_at" = "2016-03-07 06:07:25";
- "user_id" = 1;
- }
- */
+- (void)getAllDevices{
+    [[SHHTTPManager shareManager] requestDeviceWithParas:nil success:^(id responseObject) {
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject
+                                                             options:0
+                                                               error:nil];
+        if ([[dict objectForKey:@"error"] intValue] == 0) {
+            NSArray *devices = [dict objectForKey:@"devices"];
+            for (NSDictionary *info in devices) {
+                SHDeviceModel *model = [[SHDeviceModel alloc] init];
+                [model setValuesForKeysWithDictionary:info];
+                model.deviceID = [info objectForKey:@"id"];
+                [[CacheManager shareManager].devicesDicts setObject:model forKey:model.deviceID];
+            }
+        }
+    } failure:nil];
+}
 
 - (void)reloadData{
+    [SHProgress showProgress:@"加载中..." toView:self.view];
     NSDictionary *params = @{@"sceneID":self.model.sceneID};
     [[SHHTTPManager shareManager] requestSceneWithParas:params success:^(id responseObject) {
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
@@ -246,35 +241,94 @@
             model.sceneID = [dict objectForKey:@"id"];
             model.type = (SHSceneType)[[dict objectForKey:@"default_icon"] intValue];
             NSString *deviceStr = [dict objectForKey:@"devices"];
-            
-            for (int i = 1; i < 4 ; i ++) {
-                NSMutableArray *array = [NSMutableArray array];
-                for (int j = 0; j < 5; j++) {
-                    SHDeviceModel *model = [[SHDeviceModel alloc] init];
-                    model.type = (NSDeviceType)i;
-                    [array addObject:model];
-                }
-                [self.dataArray addObject:array];
-            }
-            [_menuTableView reloadData];
-            [_goodsTableView reloadData];
+            [self praseDevices:deviceStr];
         }
+        [SHProgress hideProgress:self.view animated:YES];
     } failure:^(NSError *error) {
-        
+        [SHProgress hideProgress:self.view animated:YES];
     }];
 }
 
 - (void)praseDevices:(NSString *)string{
+    [self.selectDicts removeAllObjects];
     NSArray *array = [string componentsSeparatedByString:@";"];
     for (NSString *str in array) {
         NSArray *info = [str componentsSeparatedByString:@"="];
         if ([info count] == 2) {
-            SHDeviceModel *model = [[SHDeviceModel alloc] init];
-            model.deviceID = [info objectAtIndex:0];
-            model.status = (NSDeviceStatusType)[info objectAtIndex:1];
+            NSString  *deviceID = [info objectAtIndex:0];
+            SHDeviceModel *model = [[CacheManager shareManager].devicesDicts objectForKey:deviceID];
+            SHDeviceModel *deviceModel = nil;
+            if (model) {
+                deviceModel = [model copy];
+            }else{
+                deviceModel = [[SHDeviceModel alloc] init];
+                deviceModel.deviceID = deviceID;
+            }
+            deviceModel.status = (NSDeviceStatusType)[[info objectAtIndex:1] integerValue];
+            [self.selectDicts setObject:deviceModel forKey:deviceModel.deviceID];
         }
     }
+    [self praseDevicesType];
 }
+
+- (void)praseDevicesType{
+    [self.dataArray removeAllObjects];
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    for (NSString *deviceID in [self.selectDicts allKeys]) {
+        SHDeviceModel *deviceModel = [self.selectDicts objectForKey:deviceID];
+        NSMutableArray *devices = [dict objectForKey:[NSNumber numberWithInteger:deviceModel.type]];
+        if (devices) {
+            [devices addObject:deviceModel];
+        }else{
+            devices = [NSMutableArray array];
+            [devices addObject:deviceModel];
+            [dict setObject:devices forKey:[NSNumber numberWithInteger:deviceModel.type]];
+        }
+    }
+    for (NSNumber *number in [dict allKeys]) {
+        NSArray *arr = [dict objectForKey:number];
+        [self.dataArray addObject:arr];
+    }
+    [_menuTableView reloadData];
+    [_goodsTableView reloadData];
+}
+
+/*
+- (void)praseDevices:(NSString *)string{
+    [self.selectDicts removeAllObjects];
+    [self.dataArray removeAllObjects];
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    NSArray *array = [string componentsSeparatedByString:@";"];
+    for (NSString *str in array) {
+        NSArray *info = [str componentsSeparatedByString:@"="];
+        if ([info count] == 2) {
+            NSString  *deviceID = [info objectAtIndex:0];
+            SHDeviceModel *model = [[CacheManager shareManager].devicesDicts objectForKey:deviceID];
+            SHDeviceModel *deviceModel = nil;
+            if (model) {
+                deviceModel = [model copy];
+            }else{
+                deviceModel = [[SHDeviceModel alloc] init];
+                deviceModel.deviceID = deviceID;
+            }
+            deviceModel.status = (NSDeviceStatusType)[[info objectAtIndex:1] integerValue];
+            [self.selectDicts setObject:deviceModel forKey:deviceModel.deviceID];
+            NSMutableArray *devices = [dict objectForKey:[NSNumber numberWithInteger:deviceModel.type]];
+            if (devices) {
+                [devices addObject:deviceModel];
+            }else{
+                devices = [NSMutableArray array];
+                [devices addObject:deviceModel];
+                [dict setObject:devices forKey:[NSNumber numberWithInteger:deviceModel.type]];
+            }
+        }
+    }
+    for (NSNumber *number in [dict allKeys]) {
+        NSArray *arr = [dict objectForKey:number];
+        [self.dataArray addObject:arr];
+    }
+}
+*/
 
 - (void)startScene{
 

@@ -10,6 +10,27 @@
 
 @implementation SHDeviceModel
 
+- (id)copyWithZone:(NSZone *)zone{
+    SHDeviceModel *model = [[SHDeviceModel allocWithZone:zone] init];
+    model.deviceID = [_deviceID copy];
+    model.user_id = [_user_id copy];
+    model.room_id = [_room_id copy];
+    model.name = [_name copy];
+    model.type = _type;
+    model.status = _status;
+    model.index = [_index copy];
+    model.brand = [_brand copy];
+    model.model = [_model copy];
+    model.imei = [_imei copy];
+    model.nodeID = [_nodeID copy];
+    model.address = [_address copy];
+    model.group = [_group copy];
+    model.infrared = [_infrared copy];
+    model.updated_at = [_updated_at copy];
+    model.created_at = [_created_at copy];
+    return model;
+}
+
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key{
 
 }

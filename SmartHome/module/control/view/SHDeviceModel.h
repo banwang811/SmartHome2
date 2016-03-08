@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger, NSDeviceStatusType){
 };
 
 
-@interface SHDeviceModel : NSObject
+@interface SHDeviceModel : NSObject<NSCopying>
 
 @property (nonatomic, strong) NSString              *deviceID;
 @property (nonatomic, strong) NSString              *user_id;
