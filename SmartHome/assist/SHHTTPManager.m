@@ -83,6 +83,13 @@
     [self requestWithURL:requestUrl parameters:paras success:success failure:failure];
 }
 
+//获取所有控制
+- (void)requestControlWithParas:(NSDictionary *)paras
+                        success:(void (^)(id responseObject))success
+                        failure:(void (^)(NSError *error))failure{
+    NSString *requestUrl = [NSString stringWithFormat:@"%@%@",serverAddress,SHControll];
+    [self getWithURL:requestUrl parameters:paras success:success failure:failure];
+}
 
 //http请求
 - (void)requestWithURL:(NSString *)url

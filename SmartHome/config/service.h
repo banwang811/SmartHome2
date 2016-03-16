@@ -20,6 +20,7 @@
 #define device                  @"device"
 #define room                    @"room"
 #define scene                   @"scene"
+#define SHControll              @"control"
 
 #define modifyname              @"modifyname"
 #define modifyname              @"modifyname"

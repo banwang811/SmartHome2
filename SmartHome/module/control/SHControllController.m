@@ -30,6 +30,12 @@
 
 @property (nonatomic, strong) SHNoteView                *noteView;
 
+@property (nonatomic, strong) NSMutableArray            *floorsArray;
+
+@property (nonatomic, strong) NSMutableArray            *roomsArray;
+
+@property (nonatomic, strong) NSMutableArray            *devicesArray;
+
 @end
 
 @implementation SHControllController
@@ -40,6 +46,9 @@
 
 - (instancetype)init{
     if (self = [super init]) {
+        self.floorsArray = [NSMutableArray array];
+        self.roomsArray = [NSMutableArray array];
+        self.devicesArray = [NSMutableArray array];
         self.buttonRadius = 55;
     }
     return self;
@@ -109,11 +118,25 @@
     return _deviceControllView;
 }
 
-
 - (void)getAllDevices{
-    [[SHHTTPManager shareManager] requestDeviceWithParas:nil success:^(id responseObject) {
+    [[SHHTTPManager shareManager] requestControlWithParas:nil success:^(id responseObject) {
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
         if ([[dict objectForKey:@"error"] intValue] == 0) {
+            NSArray *floors = [dict objectForKey:@"floors"];
+            for (NSDictionary *info in floors) {
+                NSArray *rooms = [dict objectForKey:@"rooms"];
+                for (NSDictionary *roomInfo in rooms) {
+                    SHRoomModel *roomModel = [[SHRoomModel alloc] init];
+                    roomModel.name = [roomInfo objectForKey:@"name"];
+                    roomModel.roomId = [roomInfo objectForKey:@"room_id"];
+                    roomModel.roomType = (NSRoomType)[[roomInfo objectForKey:@"type"] integerValue];
+                    NSArray *devices = [dict objectForKey:@"devices"];
+                    for (NSDictionary *deviceInfo in devices) {
+                        SHDeviceModel *deviceModel = [[SHDeviceModel alloc] init];
+                        [deviceModel setValuesForKeysWithDictionary:deviceInfo];
+                    }
+                }
+            }
         }else{
             SHError *error = [SHError errorWithCode:[[dict objectForKey:@"error"] intValue]];
             showAlert(error.desString);

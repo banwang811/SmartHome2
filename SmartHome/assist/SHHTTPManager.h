@@ -47,6 +47,11 @@
                               success:(void (^)(id responseObject))success
                               failure:(void (^)(NSError *error))failure;
 
+//获取所有控制
+- (void)requestControlWithParas:(NSDictionary *)paras
+                              success:(void (^)(id responseObject))success
+                              failure:(void (^)(NSError *error))failure;
+
 - (void)requestWithURL:(NSString *)url
             parameters:(NSDictionary *)paras
                success:(void (^)(id responseObject))success

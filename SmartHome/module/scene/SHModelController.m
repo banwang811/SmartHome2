@@ -114,6 +114,9 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    if (section == 0) {
+        return 0;
+    }
     return 10;
 }
 
@@ -292,43 +295,6 @@
     [_menuTableView reloadData];
     [_goodsTableView reloadData];
 }
-
-/*
-- (void)praseDevices:(NSString *)string{
-    [self.selectDicts removeAllObjects];
-    [self.dataArray removeAllObjects];
-    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-    NSArray *array = [string componentsSeparatedByString:@";"];
-    for (NSString *str in array) {
-        NSArray *info = [str componentsSeparatedByString:@"="];
-        if ([info count] == 2) {
-            NSString  *deviceID = [info objectAtIndex:0];
-            SHDeviceModel *model = [[CacheManager shareManager].devicesDicts objectForKey:deviceID];
-            SHDeviceModel *deviceModel = nil;
-            if (model) {
-                deviceModel = [model copy];
-            }else{
-                deviceModel = [[SHDeviceModel alloc] init];
-                deviceModel.deviceID = deviceID;
-            }
-            deviceModel.status = (NSDeviceStatusType)[[info objectAtIndex:1] integerValue];
-            [self.selectDicts setObject:deviceModel forKey:deviceModel.deviceID];
-            NSMutableArray *devices = [dict objectForKey:[NSNumber numberWithInteger:deviceModel.type]];
-            if (devices) {
-                [devices addObject:deviceModel];
-            }else{
-                devices = [NSMutableArray array];
-                [devices addObject:deviceModel];
-                [dict setObject:devices forKey:[NSNumber numberWithInteger:deviceModel.type]];
-            }
-        }
-    }
-    for (NSNumber *number in [dict allKeys]) {
-        NSArray *arr = [dict objectForKey:number];
-        [self.dataArray addObject:arr];
-    }
-}
-*/
 
 - (void)startScene{
 
