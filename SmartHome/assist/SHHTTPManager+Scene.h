@@ -10,6 +10,11 @@
 
 @interface SHHTTPManager (Scene)
 
+//最近使用的情景模式
+- (void)requestRecentlySceneWithParas:(NSDictionary *)paras
+                              success:(void (^)(id responseObject))success
+                              failure:(void (^)(NSError *error))failure;
+
 - (void)requestSceneWithParas:(NSDictionary *)paras
                       success:(void (^)(id responseObject))success
                       failure:(void (^)(NSError *error))failure;

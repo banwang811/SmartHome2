@@ -10,6 +10,14 @@
 
 @implementation SHHTTPManager (Scene)
 
+- (void)requestRecentlySceneWithParas:(NSDictionary *)paras
+                              success:(void (^)(id responseObject))success
+                              failure:(void (^)(NSError *error))failure{
+    NSString *requestUrl = [NSString stringWithFormat:@"%@%@/%@",serverAddress,scene,recentlyScene];
+    [self getWithURL:requestUrl parameters:paras success:success failure:failure];
+}
+
+
 //获取所有情景模式
 - (void)requestSceneWithParas:(NSDictionary *)paras
                                success:(void (^)(id responseObject))success

@@ -34,13 +34,6 @@
     [super didReceiveMemoryWarning];
 }
 
-- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
-    return YES;
-}
-- (void)textFieldDidBeginEditing:(UITextField *)textField{
-
-}
-
 - (void)textFieldDidEndEditing:(UITextField *)textField{
     if (textField == self.accountTextField) {
         [SHAccountManager shareManager].account = textField.text;

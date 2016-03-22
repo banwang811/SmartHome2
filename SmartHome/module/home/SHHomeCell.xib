@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huanjin_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="oWc-b5-z59">
@@ -121,11 +121,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wmP-Jl-zAy" id="OgE-TW-8zF">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="279.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="279"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bj1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ydD-KS-bOU">
-                        <rect key="frame" x="0.0" y="-1" width="320" height="281.5"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bj1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ydD-KS-bOU">
+                        <rect key="frame" x="0.0" y="-1" width="320" height="282"/>
                     </imageView>
                 </subviews>
                 <constraints>
@@ -141,11 +141,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KjP-O1-liJ" id="a75-JM-45n">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bj2.png" translatesAutoresizingMaskIntoConstraints="NO" id="mYD-MX-Y1P">
-                        <rect key="frame" x="0.0" y="-5" width="320" height="109.5"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bj2.png" translatesAutoresizingMaskIntoConstraints="NO" id="mYD-MX-Y1P">
+                        <rect key="frame" x="0.0" y="-5" width="320" height="110"/>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warn.png" translatesAutoresizingMaskIntoConstraints="NO" id="7hr-Ji-RGy">
                         <rect key="frame" x="20" y="10" width="17" height="17"/>
@@ -154,13 +154,13 @@
                             <constraint firstAttribute="width" constant="17" id="ptq-va-bG0"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warn_su.png" translatesAutoresizingMaskIntoConstraints="NO" id="soQ-wS-gPx">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="warn_su.png" translatesAutoresizingMaskIntoConstraints="NO" id="soQ-wS-gPx">
                         <rect key="frame" x="20" y="37" width="280" height="27"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="27" id="cyN-cK-oAV"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你的煤气达到预警值！请关闭！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFl-jd-wxz">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="你的煤气达到预警值！请关闭！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFl-jd-wxz">
                         <rect key="frame" x="49" y="16" width="223" height="13"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="223" id="6MG-ba-sAk"/>
@@ -169,14 +169,14 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="luo-KX-2c8">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="luo-KX-2c8">
                         <rect key="frame" x="198" y="71" width="8" height="8"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="8" id="W6E-pJ-Ze2"/>
                             <constraint firstAttribute="width" constant="8" id="ldT-PP-FyR"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015.11.6 7.01PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbn-UZ-HbA">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2015.11.6 7.01PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbn-UZ-HbA">
                         <rect key="frame" x="211" y="70" width="89" height="11"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="11" id="PYL-st-aOF"/>
@@ -213,11 +213,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jy7-rL-6DT" id="nga-xu-Jpd">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bj2.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Eo-uo-Xuq">
-                        <rect key="frame" x="0.0" y="-1" width="320" height="76.5"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bj2.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Eo-uo-Xuq">
+                        <rect key="frame" x="0.0" y="-1" width="320" height="77"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015.11.6 7.01PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peV-tb-aCE">
                         <rect key="frame" x="33" y="54" width="89" height="11"/>

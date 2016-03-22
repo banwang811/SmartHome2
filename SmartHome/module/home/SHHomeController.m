@@ -11,6 +11,8 @@
 
 @interface SHHomeController ()
 
+@property (nonatomic, strong) NSMutableArray                *dataArray;
+
 @end
 
 @implementation SHHomeController
@@ -19,6 +21,11 @@
     [super viewDidLoad];
     self.navigationItem.title = @"My Home";
     [self.view addSubview:self.tableView];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self getRecentlyScene];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,16 +65,36 @@
     return cell;
 }
 
-
-
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.section == 3) {        
+    if (indexPath.section == 3) {
+        
     }
 }
 
 - (NSInteger)getIndexWithIndexPath:(NSIndexPath *)indexPath{
     return indexPath.section;
+}
+
+- (void)getRecentlyScene{
+    [[SHHTTPManager shareManager] requestRecentlySceneWithParas:nil success:^(id responseObject) {
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
+        if ([[dict objectForKey:@"error"] intValue] == 0) {
+            NSArray *sceneInfos = [dict objectForKey:@"scenes"];
+            for (NSDictionary *info in sceneInfos) {
+                SHSceneModel *model = [[SHSceneModel alloc] init];
+                [model setValuesForKeysWithDictionary:info];
+                model.sceneID = [info objectForKey:@"id"];
+                model.type = (SHSceneType)[[info objectForKey:@"default_icon"] intValue];
+                [self.dataArray addObject:model];
+            }
+        }else{
+            SHError *error = [SHError errorWithCode:[[dict objectForKey:@"error"] intValue]];
+            showAlert(error.desString);
+        }
+        
+    } failure:^(NSError *error) {
+        showAlert(@"请求失败！");
+    }];
 }
 
 
