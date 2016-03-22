@@ -28,7 +28,7 @@
 }
 
 - (BOOL)smallScreen{
-    if (SCREEN_WIDTH <= 320) {
+    if (gScreenwidth <= 320) {
         return YES;
     }
     return NO;

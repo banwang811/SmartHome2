@@ -33,7 +33,7 @@
 - (UIButton *)logout{
     if (_logout == nil) {
         _logout = [UIButton buttonWithType:UIButtonTypeCustom];
-        _logout.frame = CGRectMake(28, 250, SCREEN_WIDTH - 28 * 2, 40);
+        _logout.frame = CGRectMake(28, 250, gScreenwidth - 28 * 2, 40);
         _logout.layer.cornerRadius = 5;
         [_logout setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_logout setBackgroundColor:[UIColor themeCoclor]];

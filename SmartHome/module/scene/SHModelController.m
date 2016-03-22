@@ -82,7 +82,7 @@
 - (UIButton *)startButton{
     if (_startButton == nil) {
         _startButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        _startButton.frame = CGRectMake(28, SCREEN_HEIGHT - 40 - 20, SCREEN_WIDTH - 28 * 2, 40);
+        _startButton.frame = CGRectMake(28, gScreenheight - 40 - 20, gScreenwidth - 28 * 2, 40);
         _startButton.layer.cornerRadius = 5;
         [_startButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_startButton setBackgroundColor:[UIColor redColor]];
@@ -94,7 +94,7 @@
 
 - (UITableView *)menuTableView{
     if (_menuTableView == nil) {
-        _menuTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, _width1, SCREEN_HEIGHT - 80) style:UITableViewStylePlain];
+        _menuTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, _width1, gScreenheight - 80) style:UITableViewStylePlain];
         _menuTableView.delegate = self;
         _menuTableView.dataSource = self;
         _menuTableView.showsVerticalScrollIndicator = NO;
@@ -105,7 +105,7 @@
 
 - (UITableView *)goodsTableView{
     if (_goodsTableView == nil) {
-        _goodsTableView = [[UITableView alloc] initWithFrame:CGRectMake(_width1, 64,SCREEN_WIDTH - _width1, SCREEN_HEIGHT -64 - 80) style:UITableViewStylePlain];
+        _goodsTableView = [[UITableView alloc] initWithFrame:CGRectMake(_width1, 64,gScreenwidth - _width1, gScreenheight -64 - 80) style:UITableViewStylePlain];
         _goodsTableView.delegate = self;
         _goodsTableView.dataSource = self;
         _goodsTableView.separatorStyle  = UITableViewCellSeparatorStyleNone;

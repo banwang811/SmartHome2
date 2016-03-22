@@ -44,7 +44,7 @@
     if (_openButton == nil) {
         _openButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _openButton.frame = CGRectMake(self.space_width, self.space_higth, 70, 70);
-        _openButton.center = CGPointMake(SCREEN_WIDTH - 70 - 35 , self.center.y);
+        _openButton.center = CGPointMake(gScreenwidth - 70 - 35 , self.center.y);
         [_openButton setImage:[UIImage imageNamed:@"controll_window_open"] forState:UIControlStateNormal];
     }
     return _openButton;
@@ -53,7 +53,7 @@
 - (UIButton *)colseButton{
     if (_colseButton == nil) {
         _colseButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        _colseButton.frame = CGRectMake(SCREEN_WIDTH - 70 - self.space_width, self.space_higth, 70, 70);
+        _colseButton.frame = CGRectMake(gScreenwidth - 70 - self.space_width, self.space_higth, 70, 70);
         _colseButton.center = CGPointMake(self.space_width + 35 , self.center.y);
         [_colseButton setImage:[UIImage imageNamed:@"controll_window_close"] forState:UIControlStateNormal];
     }

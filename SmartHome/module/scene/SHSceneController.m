@@ -117,7 +117,7 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     //边距占5*4=20 ，2个
     //图片为正方形，边长：(fDeviceWidth-20)/2-5-5 所以总高(fDeviceWidth-20)/2-5-5 +20+30+5+5 label高20 btn高30 边
-    return CGSizeMake((SCREEN_WIDTH - 15)/2, (SCREEN_WIDTH - 15)/2);
+    return CGSizeMake((gScreenwidth - 15)/2, (gScreenwidth - 15)/2);
 }
 
 //定义每个UICollectionView 的间距

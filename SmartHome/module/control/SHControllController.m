@@ -14,10 +14,6 @@
 #import "SHAddDeviceController.h"
 #import "SHAddRoomController.h"
 
-#define gScreenheight [UIScreen mainScreen].bounds.size.height
-
-#define gScreenwidth [UIScreen mainScreen].bounds.size.width
-
 @interface SHControllController ()
 
 @property (nonatomic, assign) CGFloat                   buttonRadius;
@@ -113,7 +109,8 @@
 
 - (SHDeviceControllView *)deviceControllView{
     if (_deviceControllView == nil) {
-        _deviceControllView = [[SHDeviceControllView alloc] initWithFrame:CGRectMake(0, 64, gScreenwidth , gScreenheight   - 64 - 49 - gScreenwidth/2 - self.buttonRadius) viewType:BWDeviceType_light];
+        _deviceControllView = [[SHDeviceControllView alloc] initWithFrame:CGRectMake(0, 64, gScreenwidth , gScreenheight   - 64 - 49 - gScreenwidth/2 - self.buttonRadius)
+                                                                 viewType:BWDeviceType_light];
     }
     return _deviceControllView;
 }

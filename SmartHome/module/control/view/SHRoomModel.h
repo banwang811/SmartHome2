@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-
+/*
+ 1 客厅
+ 2 卧室
+ 3 厨房
+ 4 卫生间
+ 5 书房
+ 6 儿童间
+ 7 衣帽间
+ 8 餐厅
+ 9 家庭影院
+ */
 typedef NS_ENUM(NSInteger, NSRoomType){
     NSRoomType_Drawing = 1,
     NSRoomType_Bedroom,

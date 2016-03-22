@@ -39,28 +39,28 @@
     [self.controllView removeFromSuperview];
     switch (type) {
         case BWDeviceType_light:
-            self.controllView = [[SHLightControllView alloc] initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH,self.frame.size.height)];
+            self.controllView = [[SHLightControllView alloc] initWithFrame:CGRectMake(0, 0,gScreenwidth,self.frame.size.height)];
             break;
         case BWDeviceType_window:
-            self.controllView = [[SHWindowControllView alloc] initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH,self.frame.size.height)];
+            self.controllView = [[SHWindowControllView alloc] initWithFrame:CGRectMake(0, 0,gScreenwidth,self.frame.size.height)];
             break;
         case BWDeviceType_tv:
-            self.controllView = [[SHTVControllView alloc] initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH,self.frame.size.height)];
+            self.controllView = [[SHTVControllView alloc] initWithFrame:CGRectMake(0, 0,gScreenwidth,self.frame.size.height)];
             break;
         case BWDeviceType_music:
-            self.controllView = [[SHMusicControllView alloc] initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH,self.frame.size.height)];
+            self.controllView = [[SHMusicControllView alloc] initWithFrame:CGRectMake(0, 0,gScreenwidth,self.frame.size.height)];
             break;
         case BWDeviceType_gas:
-            self.controllView = [[SHGasControllView alloc] initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH,self.frame.size.height)];
+            self.controllView = [[SHGasControllView alloc] initWithFrame:CGRectMake(0, 0,gScreenwidth,self.frame.size.height)];
             break;
         case BWDeviceType_refrigerator:
-            self.controllView = [[SHRefrigeratorControllView alloc] initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH,self.frame.size.height)];
+            self.controllView = [[SHRefrigeratorControllView alloc] initWithFrame:CGRectMake(0, 0,gScreenwidth,self.frame.size.height)];
             break;
         case BWDeviceType_socket:
-            self.controllView = [[SHSocketControllView alloc] initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH,self.frame.size.height)];
+            self.controllView = [[SHSocketControllView alloc] initWithFrame:CGRectMake(0, 0,gScreenwidth,self.frame.size.height)];
             break;
         case BWDeviceType_airconditioner:
-            self.controllView = [[SHAirControllView alloc] initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH,self.frame.size.height)];
+            self.controllView = [[SHAirControllView alloc] initWithFrame:CGRectMake(0, 0,gScreenwidth,self.frame.size.height)];
             break;
         default:
             break;

@@ -278,13 +278,13 @@
 		0410F9781C3BA4E60069991E /* SHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNavigationController.h; sourceTree = "<group>"; };
 		0410F9791C3BA4E60069991E /* SHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNavigationController.m; sourceTree = "<group>"; };
 		0410F97B1C3BA87D0069991E /* config.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.pch; sourceTree = "<group>"; };
-		0410F97C1C3BAB970069991E /* MacroDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefine.h; sourceTree = "<group>"; };
+		0410F97C1C3BAB970069991E /* MacroDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MacroDefine.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		0410F9921C3BB6020069991E /* SHHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHHomeController.h; sourceTree = "<group>"; };
 		0410F9931C3BB6020069991E /* SHHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHHomeController.m; sourceTree = "<group>"; };
 		0410F9951C3BB6020069991E /* SHMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHMineController.h; sourceTree = "<group>"; };
 		0410F9961C3BB6020069991E /* SHMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHMineController.m; sourceTree = "<group>"; };
 		0410F9981C3BB6020069991E /* SHSceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSceneController.h; sourceTree = "<group>"; };
-		0410F9991C3BB6020069991E /* SHSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSceneController.m; sourceTree = "<group>"; };
+		0410F9991C3BB6020069991E /* SHSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SHSceneController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		0410F9A01C3BB7090069991E /* UIColor+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+extension.h"; sourceTree = "<group>"; };
 		0410F9A11C3BB7090069991E /* UIColor+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+extension.m"; sourceTree = "<group>"; };
 		04562C521C8576A2000269A7 /* controll_bar_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "controll_bar_add@2x.png"; sourceTree = "<group>"; };
@@ -316,7 +316,7 @@
 		A559844A1C5A66FF0091A7FF /* seting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seting@2x.png"; sourceTree = "<group>"; };
 		A55984521C5A6C930091A7FF /* customDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = customDefs.h; sourceTree = "<group>"; };
 		A55984551C5A76EA0091A7FF /* SHSetingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSetingController.h; sourceTree = "<group>"; };
-		A55984561C5A76EA0091A7FF /* SHSetingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSetingController.m; sourceTree = "<group>"; };
+		A55984561C5A76EA0091A7FF /* SHSetingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SHSetingController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A55984581C5A77C40091A7FF /* account@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "account@2x.png"; sourceTree = "<group>"; };
 		A55984591C5A77C40091A7FF /* update@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "update@2x.png"; sourceTree = "<group>"; };
 		A559845C1C5A77FB0091A7FF /* password@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "password@2x.png"; sourceTree = "<group>"; };
@@ -368,9 +368,9 @@
 		A5690D9E1C8211350045DCDE /* SHControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHControllView.h; sourceTree = "<group>"; };
 		A5690D9F1C8211350045DCDE /* SHControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHControllView.m; sourceTree = "<group>"; };
 		A5690DA01C8211350045DCDE /* SHLightControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLightControllView.h; sourceTree = "<group>"; };
-		A5690DA11C8211350045DCDE /* SHLightControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLightControllView.m; sourceTree = "<group>"; };
+		A5690DA11C8211350045DCDE /* SHLightControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SHLightControllView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A5690DA41C821C8B0045DCDE /* SHWindowControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHWindowControllView.h; sourceTree = "<group>"; };
-		A5690DA51C821C8B0045DCDE /* SHWindowControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHWindowControllView.m; sourceTree = "<group>"; };
+		A5690DA51C821C8B0045DCDE /* SHWindowControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SHWindowControllView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A5690DA71C821EEC0045DCDE /* controll_device_tv@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "controll_device_tv@2x.png"; sourceTree = "<group>"; };
 		A5690DA81C821EEC0045DCDE /* controll_widindow_change.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = controll_widindow_change.png; sourceTree = "<group>"; };
 		A5690DA91C821EEC0045DCDE /* controll_window_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "controll_window_close@2x.png"; sourceTree = "<group>"; };
@@ -386,7 +386,7 @@
 		A5690DBB1C8225A60045DCDE /* SHSocketControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSocketControllView.h; sourceTree = "<group>"; };
 		A5690DBC1C8225A60045DCDE /* SHSocketControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSocketControllView.m; sourceTree = "<group>"; };
 		A5690DC11C8226400045DCDE /* SHDeviceControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDeviceControllView.h; sourceTree = "<group>"; };
-		A5690DC21C8226400045DCDE /* SHDeviceControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDeviceControllView.m; sourceTree = "<group>"; };
+		A5690DC21C8226400045DCDE /* SHDeviceControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SHDeviceControllView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A5690DC41C8226A50045DCDE /* SHAirControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAirControllView.h; sourceTree = "<group>"; };
 		A5690DC51C8226A50045DCDE /* SHAirControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAirControllView.m; sourceTree = "<group>"; };
 		A5690DC71C822A1A0045DCDE /* SHRoomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHRoomModel.h; path = SmartHome/module/control/view/SHRoomModel.h; sourceTree = SOURCE_ROOT; };
@@ -411,7 +411,7 @@
 		A598ADC51C8F0D4100511689 /* SHDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDeviceController.h; sourceTree = "<group>"; };
 		A598ADC61C8F0D4100511689 /* SHDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDeviceController.m; sourceTree = "<group>"; };
 		A598ADCB1C8F120B00511689 /* SHDeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDeviceCell.h; sourceTree = "<group>"; };
-		A598ADCC1C8F120B00511689 /* SHDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDeviceCell.m; sourceTree = "<group>"; };
+		A598ADCC1C8F120B00511689 /* SHDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SHDeviceCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A598ADCD1C8F120B00511689 /* SHDeviceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHDeviceCell.xib; sourceTree = "<group>"; };
 		A598ADD31C8F16C100511689 /* weixuanze@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weixuanze@2x.png"; sourceTree = "<group>"; };
 		A598ADD41C8F16C100511689 /* yixuanze@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yixuanze@2x.png"; sourceTree = "<group>"; };
@@ -440,7 +440,7 @@
 		A5B6E5231C41041A0080E06F /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		A5B6E5241C41041A0080E06F /* qiu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qiu@2x.png"; sourceTree = "<group>"; };
 		A5B6E5291C410B1C0080E06F /* AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
-		A5B6E52A1C410B1C0080E06F /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
+		A5B6E52A1C410B1C0080E06F /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A5B6E52C1C410EFE0080E06F /* UIViewController+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+extension.h"; sourceTree = "<group>"; };
 		A5B6E52D1C410EFE0080E06F /* UIViewController+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+extension.m"; sourceTree = "<group>"; };
 		A5B6E5301C4110C00080E06F /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
@@ -487,7 +487,7 @@
 		A5E3B8AD1C5D2C1100136A9C /* yingyuan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yingyuan@2x.png"; sourceTree = "<group>"; };
 		A5E3B8B31C5D322400136A9C /* tianjia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tianjia@2x.png"; sourceTree = "<group>"; };
 		A5E3B8B81C735B9A00136A9C /* SHModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHModelController.h; sourceTree = "<group>"; };
-		A5E3B8B91C735B9A00136A9C /* SHModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHModelController.m; sourceTree = "<group>"; };
+		A5E3B8B91C735B9A00136A9C /* SHModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SHModelController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A5E3B8BD1C735C5100136A9C /* GQSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQSegmentedControl.h; sourceTree = "<group>"; };
 		A5E3B8BE1C735C5100136A9C /* GQSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQSegmentedControl.m; sourceTree = "<group>"; };
 		A5E3B8BF1C735C5100136A9C /* SHDeviceHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDeviceHeadView.h; sourceTree = "<group>"; };

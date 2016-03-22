@@ -34,7 +34,7 @@
 
 - (UILabel *)line{
     if (_line == nil) {
-        _line = [[UILabel alloc] initWithFrame:CGRectMake(0, self.frame.size.height - 0.5, SCREEN_WIDTH, 0.5)];
+        _line = [[UILabel alloc] initWithFrame:CGRectMake(0, self.frame.size.height - 0.5, gScreenwidth, 0.5)];
         _line.backgroundColor = RGB(237, 237, 237, 1);
     }
     return _line;
